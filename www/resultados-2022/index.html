@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1" />
+    <meta name="theme-color" content="#FFF" />
+    <link rel="canonical" href="https://data.larepublica.pe/encuesta-iep-aprobacion-desaprobacion-peru-presidente-congreso-de-la-republica/resultados-2022/" />
+    <meta name="robots" content="index,follow" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="description" content="Más del 55% de las personas consultadas confía en el Jurado Nacional de Elecciones (JNE) y en el Organismo Nacional de Procesos Electorales (ONPE). El sondeo también revela que la mayoría de los encuestados decidieron por sus representantes durante la última semana de votación o el mismo día. #EncuestaIEP"
+    />
+    <meta property="og:url" content="https://data.larepublica.pe/encuesta-iep-aprobacion-desaprobacion-peru-presidente-congreso-de-la-republica/resultados-2022/" />
+    <meta property="og:title" content="ONPE Y JNE con mayoritaria aprobación, según IEP" />
+    <meta property="og:image" content="https://cdn.glitch.global/ec8d0208-9b5b-4476-8cdf-056fde2a22b0/portada-resultados.jpg" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta property="fb:pages" content="94604237016" />
+    <meta property="fb:app_id" content="489210501129201" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@larepublica_pe" />
+    <meta name="twitter:title" content=" ONPE Y JNE con mayoritaria aprobación, según IEP" />
+    <meta name="twitter:description" content="Más del 55% de las personas consultadas confía en el Jurado Nacional de Elecciones (JNE) y en el Organismo Nacional de Procesos Electorales (ONPE). El sondeo también revela que la mayoría de los encuestados decidieron por sus representantes durante la última semana de votación o el mismo día. #EncuestaIEP"
+    />
+    <meta name="twitter:image" content="https://cdn.glitch.global/ec8d0208-9b5b-4476-8cdf-056fde2a22b0/portada-resultados.jpg" />
+    <meta name="distribution" content="global" />
+    <meta name="rating" content="general" />
+    <meta name="lang" content="es_PE" />
+    <meta name="author" content="Redacción LR" />
+    <meta name="keywords" content="Encuesta, elecciones, alcaldía, Castillo, congreso, Maria del Carmen Alva, IEP, Octubre 2022, política, elecciones regionales, Rafael Lopez Aliaga, Daniel Urresti, George Forsyth" />
+    <title>ONPE Y JNE con mayoritaria aprobación, según IEP</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.larepublica.pe/favicon-32x32.png" />
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/billboard.js/3.6.1/billboard.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/billboard.js/3.6.1/billboard.css" />
+    <link rel="stylesheet" href="https://naver.github.io/billboard.js/release/latest/dist/theme/graph.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.css" rel="stylesheet" />
+    <!-- Import the webpage's stylesheet -->
+    <!-- <link rel="stylesheet" href="/style.css" /> -->
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=Newsreader:wght@500&display=swap");
+        body {
+            background: #f1f1f0;
+            font-family: "Mukta", serif;
+        }
+        
+        h1 {
+            font-family: "Newsreader", sans-serif;
+            font-size: 2.5rem;
+            text-align: center;
+            margin-top: 2rem;
+        }
+        
+        .mt-x {
+            margin-top: 5rem;
+        }
+        
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 2;
+            transition: all 0.5s ease;
+            padding: 15px 42px;
+            background: lightgrey;
+            border-bottom: 4px solid #fe0404;
+        }
+        
+        header span {
+            font-size: 0;
+        }
+        
+        header img {
+            width: 140px;
+        }
+        
+        span [class*="btn-"] {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            margin-left: 10px;
+        }
+        
+        span a.btn-fb {
+            margin-left: 0;
+        }
+        
+        span a.btn-fb,
+        span a.btn-twt,
+        span a.btn-wsp {
+            background-image: url(https://files.larepublica.pe/Larepublica/2020/11/09/iconos-redes-sociales-blanco-1604962294.svg);
+            background-position: 0 0;
+            background-repeat: no-repeat;
+            background-size: 30px;
+        }
+        
+        span a.btn-twt {
+            background-position: 0 -40px;
+            background-repeat: no-repeat;
+        }
+        
+        span a.btn-wsp {
+            background-position: 0 -80px;
+            background-repeat: no-repeat;
+        }
+        
+        .menu__left {
+            display: inline-block;
+            vertical-align: middle;
+            width: calc(100% - 38px);
+            /*width: 160px;*/
+        }
+        
+        .menu__right {
+            display: none;
+            /*display: inline-block;*/
+            text-align: right;
+            vertical-align: middle;
+            width: calc(100% - 198px);
+        }
+        
+        .container__menu {
+            font-size: 0;
+        }
+        
+        h2 {
+            margin-bottom: 21px;
+            margin-top: 35px;
+            font-size: 1.8rem;
+            font-family: "Newsreader", sans-serif;
+        }
+        
+        a {
+            color: #000;
+            text-decoration: underline;
+        }
+        
+        a:hover {
+            color: #000;
+            text-decoration: none;
+        }
+        
+        #map,
+        #aprobacion_congreso,
+        #aprobacion_castillo,
+        #aprobacion_nse,
+        #aprobacion_ambito {
+            width: 100%;
+            max-width: 700px;
+            margin: auto;
+            min-height: 450px;
+        }
+        
+        #aprueba_desaprueba,
+        #select_macrozonas {
+            text-align: center;
+            display: block;
+            margin: auto;
+        }
+        
+        .special_box {
+            text-align: center;
+            display: block;
+            margin: auto;
+        }
+        
+        .special_box p {
+            font-size: 15px;
+            margin-bottom: 4px;
+        }
+        
+        #despues_vacancia,
+        #razones_castillo,
+        #corrupto_castillo,
+        #aprobacion_congreso,
+        #aprobacion_mca,
+        #ministro_salud {
+            min-height: 400px;
+        }
+        
+        #chart_jne,
+        #chart_onpe,
+        #chart_reniec {
+            /* width: 100%;
+            display: block; */
+            min-height: 100px;
+            max-width: 50%;
+            margin: auto;
+            display: block;
+        }
+        
+        text.bb-chart-arcs-gauge-title,
+        .bb-chart-arcs .bb-chart-arcs-title {
+            font-size: 13px !important;
+            fill: #8c8c8c;
+            font-style: italic;
+        }
+        
+        #despues_vacancia .bb-tooltip-container {
+            max-width: 200px;
+        }
+        
+        #aprobacion_castillo .bb-axis-x .tick text {
+            font-size: 11px;
+            transform: translate(0px, -4px);
+        }
+        
+        #decision_voto_lima .bb-axis-x .tick text {
+            font-size: 11px;
+            transform: translate(0px, -4px);
+        }
+        
+        #aprobacion_congreso .bb-axis-x .tick text {
+            font-size: 11px;
+            transform: translate(0px, -4px);
+            /* transform: rotate(338deg); */
+        }
+        
+        #intencion_1 .bb-axis-x .tick text {
+            font-size: 11px;
+            transform: translate(0px, -4px);
+            /* transform: rotate(338deg); */
+        }
+        
+        #intencion_2 .bb-axis-x .tick text {
+            font-size: 11px;
+            transform: translate(0px, -4px);
+            /* transform: rotate(338deg); */
+        }
+        
+        #intencion_3 .bb-axis-x .tick text {
+            font-size: 11px;
+            transform: translate(0px, -4px);
+            /* transform: rotate(338deg); */
+        }
+        
+        #aprobacion_castillo .bb-legend-item,
+        #razones_castillo .bb-legend-item,
+        #aprobacion_congreso .bb-legend-item,
+        #aprobacion_mca .bb-legend-item,
+        #corrupcion_generalizada .bb-legend-item,
+        #mca_castillo .bb-legend-item {
+            transform: translate(0px, 6px) !important;
+        }
+        
+        .legend_color {
+            display: block;
+            margin: auto;
+            max-width: 360px;
+            text-align: center;
+        }
+        
+        .color-1 {
+            width: 10px;
+            height: 10px;
+            background-color: #adcc76;
+            display: inline-block;
+            margin-left: 21px;
+        }
+        
+        .color-2 {
+            width: 10px;
+            height: 10px;
+            background-color: #de425b;
+            display: inline-block;
+            margin-left: 21px;
+        }
+        
+        .color-3 {
+            width: 10px;
+            height: 10px;
+            background-color: #ffe48f;
+            display: inline-block;
+            margin-left: 21px;
+        }
+        
+        .color-4 {
+            width: 10px;
+            height: 10px;
+            background-color: #e76c5d;
+            display: inline-block;
+            margin-left: 21px;
+        }
+        
+        #vacancia_castillo .bb-axis-x .tick text {
+            font-size: 11px;
+            transform: translate(0px, -4px);
+        }
+        
+        #vacancia_castillo .bb-legend-item {
+            transform: translate(0px, 6px) !important;
+        }
+        
+        #corrupto_castillo .bb-axis-x .tick text {
+            font-size: 11px;
+            transform: translate(0px, -4px);
+        }
+        
+        #corrupto_castillo .bb-legend-item {
+            transform: translate(0px, 6px) !important;
+        }
+        
+        #aprobacion_ambito .bb-axis-x .tick text {
+            font-size: 11px;
+            transform: translate(0px, -4px);
+        }
+        
+        #aprobacion_ambito .bb-legend-item {
+            transform: translate(0px, 6px) !important;
+        }
+        
+        #map {
+            min-height: 500px;
+        }
+        
+        #aprobacion_nse .bb-axis-y text {
+            fill: #555;
+        }
+        
+        #aprobacion_ambito .bb-axis-y text {
+            fill: #555;
+        }
+        
+        #week_a_week {
+            display: block;
+        }
+        
+        .mapboxgl-popup-content {
+            min-width: 120px;
+            padding: 7px 7px 4px 7px;
+            text-align: center;
+            font-family: "Mukta", serif;
+        }
+        
+        .mapboxgl-popup-content .provincia {
+            margin: 7px 7px 0px 7px;
+        }
+        
+        .mapboxgl-popup-content .totales {
+            margin: 1px 7px 0px 7px;
+        }
+        
+        .bb-line {
+            stroke-width: 2px;
+        }
+        
+        #aprobacion_ambito path.bb-bar,
+        #aprobacion_ambito_vacancia path.bb-bar {
+            opacity: 0.6 !important;
+        }
+        
+        .macro_zona {
+            margin-bottom: 0;
+        }
+        
+        footer {
+            padding: 42px;
+            font-family: sans-serif;
+        }
+        
+        footer span {
+            display: block;
+            text-align: center;
+            color: #545b6a;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        
+        .w-1000 {
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        dl {
+            display: flex;
+            background-color: white;
+            flex-direction: column;
+            width: 100%;
+            max-width: 700px;
+            position: relative;
+            padding: 20px;
+        }
+        
+        dt {
+            align-self: flex-start;
+            width: 100%;
+            font-weight: 700;
+            display: block;
+            text-align: center;
+            font-size: 1.2em;
+            font-weight: 700;
+            margin-bottom: 20px;
+            margin-left: 130px;
+        }
+        
+        .text {
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            /* height: 40px; */
+            width: 100px;
+            /*         background-color: white; */
+            position: absolute;
+            left: 10px;
+            justify-content: flex-start;
+            line-height: 21px;
+        }
+        
+        .percentage {
+            font-size: 0.8em;
+            line-height: 1;
+            text-transform: uppercase;
+            width: 70%;
+            height: 20px;
+            margin-left: 102px;
+            background: repeating-linear-gradient( to right, #ddd, #ddd 1px, #fff 1px, #fff 5%);
+        }
+        
+        .percentage:after {
+            content: "";
+            display: block;
+            background-color: #e76c5d;
+            opacity: 1;
+            /*         width: 50px; */
+            margin-bottom: 10px;
+            height: 90%;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .historico {
+            padding: 0;
+            text-align: center;
+            margin: auto;
+        }
+        
+        .historico a {
+            text-decoration: none;
+        }
+        
+        .historico span {
+            margin-right: 14px;
+        }
+        
+        .percentage:hover:after,
+        .percentage:focus:after {
+            background-color: #aaa;
+        }
+        
+        .separador {
+            display: block;
+            margin: auto;
+            max-width: 60px;
+            padding-top: 42px;
+        }
+        
+        .durara p,
+        .no_durara p {}
+        /*       .durara{
+                    max-width: 80%;
+                  } */
+        
+        .horizontal-bar {
+            max-width: 400px;
+            margin: auto;
+        }
+        
+        #desagregado_button {
+            text-align: center;
+            display: block;
+            margin: auto;
+            max-width: 100px;
+            text-decoration: none;
+        }
+        
+        #desagregado_1,
+        #desagregado_2 {
+            padding-top: 42px;
+        }
+        
+        .horizontal-bar p {
+            text-align: center;
+            margin-bottom: 0;
+            margin-top: 30px;
+            font-weight: 600;
+            font-size: 14px;
+            margin-left: 49px;
+        }
+        
+        .helicopter {
+            border: none;
+            margin-bottom: 14px;
+        }
+        
+        .preferencia {
+            text-align: center;
+        }
+        
+        .resultados {
+            margin: 7px 0 21px 7px;
+            font-size: 2rem;
+            font-weight: 700;
+        }
+        
+        .number_1,
+        .number_2 {
+            display: inline-block;
+        }
+        
+        .preferencia img {
+            width: 130px;
+            height: 130px;
+            display: block;
+            margin: auto;
+        }
+        
+        .question {
+            font-size: 14px;
+            font-weight: 700;
+            text-align: center;
+            margin: 35px auto 21px auto;
+        }
+        
+        .mt-21 {
+            margin-top: 21px;
+        }
+        
+        .iframe_yt {
+            max-width: 700px;
+            margin: 42px auto 21px auto;
+            display: block;
+        }
+        
+        .ficha_tecnica {
+            font-size: 13px;
+            color: #555;
+        }
+        
+        .btn-outline-danger {
+            color: #de425b;
+            border-color: #de425b;
+        }
+        
+        .btn-outline-danger:hover {
+            color: #fff;
+            background-color: #de425b;
+            border-color: #de425b;
+        }
+        
+        #corrupcion_generalizada .bb-legend {
+            display: none;
+        }
+        
+        @media (min-width: 768px) {
+            #corrupcion_generalizada .bb-legend {
+                display: block;
+            }
+            h1 {
+                font-size: 3rem;
+            }
+            p {
+                font-size: 18px;
+            }
+            h2 {
+                font-size: 2rem;
+            }
+            .historico {
+                padding: 14px 7px;
+            }
+            .text {
+                left: 180px;
+                width: 130px;
+            }
+            header img {
+                width: 160px;
+            }
+            span [class*="btn-"] {
+                display: inline-block;
+                width: 40px;
+                height: 40px;
+                margin-left: 10px;
+            }
+            span a.btn-fb,
+            span a.btn-twt,
+            span a.btn-wsp {
+                background-size: cover;
+                background-color: #fff;
+                border-radius: 50%;
+            }
+            span a.btn-twt {
+                background-position: 0 -40px;
+                background-repeat: no-repeat;
+            }
+            span a.btn-wsp {
+                background-position: 0 -80px;
+                background-repeat: no-repeat;
+            }
+            .menu__button {
+                display: none;
+            }
+            .menu__left {
+                width: 300px;
+            }
+            .menu__right {
+                display: inline-block;
+                width: calc(100% - 300px);
+            }
+            .content__menu-mobile {
+                display: none;
+            }
+            .items__menu {
+                display: block;
+            }
+            .percentage {
+                width: 100%;
+                margin-left: 110px;
+            }
+            .helicopter {
+                border-bottom: none;
+                border-right: 1px solid #8c8c8c;
+                margin-bottom: 0px;
+            }
+            .intertitulado {
+                border-bottom: 1px solid #8c8c8c;
+                line-height: 35px;
+            }
+        }
+        
+        @media (min-width: 993px) {
+            .percentage {
+                width: 100%;
+                margin-left: 21px;
+            }
+        }
+        
+        @media (max-width: 767px) {
+            header {
+                padding: 7px 20px;
+            }
+            footer {
+                padding: 27.9px 30px;
+            }
+        }
+        
+        .flourish-chart {
+            max-width: 400px;
+            margin: auto;
+        }
+        
+        .flourish-credit {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="w-header">
+        <div class="container__menu">
+            <!-- <div class="menu__button">                <div class="menu"> <button id="menuMobile"> <span></span> <span></span> <span></span> </button> </div>            </div> -->
+            <div class="menu__left">
+                <a href="https://data.larepublica.pe/" rel="noopener" style="display: inline-block" target="_blank">
+                    <picture>
+                        <source id="w-sourceLogoDesktop" media="(min-width: 768px)" srcset="
+                  https://larepublica.cronosmedia.glr.pe/data/2121/10/05/logo.png
+                " />
+                        <img id="w-sourceLogoMobile" src="https://larepublica.cronosmedia.glr.pe/data/2121/10/05/logo.png" />
+                    </picture>
+                </a>
+            </div>
+            <div class="menu__right">
+                <span class="items_shared">
+            <a
+              class="btn-fb btn-Social"
+              data-social="facebook"
+              href="https://www.facebook.com/sharer/sharer.php?u=https://data.larepublica.pe/encuesta-iep-aprobacion-desaprobacion-peru-presidente-congreso-de-la-republica/resultados-2022/"
+              id="id-btn-fb"
+              rel="noopener"
+            >
+            </a>
+            <a
+              class="btn-twt btn-Social"
+              data-social="twitter"
+              href="https://twitter.com/share?url=https://data.larepublica.pe/encuesta-iep-aprobacion-desaprobacion-peru-presidente-congreso-de-la-republica/resultados-2022/&via=LRData"
+              id="id-btn-twt"
+              rel="noopener"
+            >
+            </a>
+            <a
+              class="btn-wsp"
+              href="https://api.whatsapp.com/send?text=https://data.larepublica.pe/encuesta-iep-aprobacion-desaprobacion-peru-presidente-congreso-de-la-republica/resultados-2022/"
+              id="id-btn-wsp"
+              rel="noopener"
+              target="_blank"
+            >
+            </a>
+          </span>
+            </div>
+        </div>
+    </header>
+    <div class="container mt-x">
+        <div class="row">
+            <div class="col">
+                <h1 class="font-weight-bold">
+                    ONPE Y JNE con mayoritaria aprobación, según IEP
+                </h1>
+                <p>
+                    <i>La encuesta de octubre del Instituto de Estudios Peruanos (IEP)
+              sobre el proceso electoral 2022, llevado a cabo el 2 de este mes,
+              evidencia que más del 55% de las personas consultadas confía en el
+              Jurado Nacional de Elecciones (JNE) y en el Organismo Nacional de
+              Procesos Electorales (ONPE). El sondeo también revela que la
+              mayoría de los encuestados decidieron por sus representantes
+              durante la última semana de votación o el mismo día.
+            </i>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h2 class="font-weight-bold">
+                    Confianza en las instituciones del proceso electoral
+                </h2>
+                <p>
+                    El Registro Nacional de Identificación y Estado Civil (Reniec) es la institución que mayor aceptación tiene sobre su desempeño, ya que un 62% aprueba su labor. Por su parte, la ONPE también tiene alta aprobación, puesto que 60% está a favor de su trabajo,
+                    mientras que el JNE tiene un 56%. Ambas entidades electorales aumentaron su valoración considerablemente en comparación a la medición de junio de 2021, cuando solo un 38% reconocía la labor de la ONPE y un 30% la del JNE.
+                </p>
+                <p class="question">
+                    ¿Usted aprueba o desaprueba el desempeño del …?
+                </p>
+                <div class="legend_color">
+                    <span>
+              <div class="color-1"></div>
+              Aprueba
+            </span>
+
+                    <span>
+              <div class="color-2"></div>
+              Desaprueba
+            </span>
+                    <span>
+              <div class="color-3"></div>
+              NS/NP
+            </span>
+                </div>
+                <div class="special_box">
+                    <p>
+                        <b>Registro Nacional de Identificación y Estado Civil (RENIEC)
+              </b>
+                    </p>
+                    <div id="chart_reniec"></div>
+                    <p><b>Organismo Nacional de Procesos Electorales (ONPE) </b></p>
+                    <div id="chart_onpe"></div>
+                    <p><b>Jurado Nacional de Elecciones (JNE) </b></p>
+                    <div id="chart_jne"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h2 class="font-weight-bold">Decisión de los votos</h2>
+                <p>
+                    De acuerdo con la indagación del IEP, más de la mitad de las personas encuestadas decidieron su voto durante la última semana o el mismo día de la elección. Así, un 56% escogió a su representante para el Gobierno regional, un 55% lo hizo para la alcaldía
+                    provincial y un 54% para su distrito. Sin embargo, cabe mencionar que, en su mayoría, los ciudadanos optaron por sus candidatos el mismo 2 de octubre.
+                </p>
+                <p class="question">¿Cuándo decidió su voto para …?</p>
+
+                <div class="special_box">
+                    <p><b>Opción 1</b>: El mismo domingo 2 de octubre</p>
+                    <p>
+                        <b>Opción 2</b>: Durante la última semana antes de las elecciones
+                    </p>
+                    <p><b>Opción 3</b>: Durante el mes de setiembre</p>
+
+                    <p><b>Opción 4</b>: Desde hace más tiempo</p>
+                </div>
+                <div id="decision_voto"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h2 class="font-weight-bold">
+                    Decisión de voto en Lima Metropolitana
+                </h2>
+                <p>
+                    En el caso de la alcaldía provincial de Lima, las y los votantes eligieron a su representante según cada perfil. El 32% de los electores de Rafael López Aliaga lo hizo en la última semana y un 31% ya lo tenía definido un tiempo antes, el 40% de los votos
+                    de George Forsyth se decidieron el mismo domingo y el 39% del electorado de Daniel Urresti lo apoyó con mayor anticipación.
+                </p>
+                <p class="question">
+                    ¿Cuándo decidió su voto para alcalde provincial?
+                </p>
+
+                <div class="special_box">
+                    <p>
+                        <span class="color-1"></span> <b>Opción 1:</b> El mismo domingo 2 de octubre
+                    </p>
+                    <p>
+                        <span class="color-2"></span> <b>Opción 2</b>: Durante la última semana antes de las elecciones
+                    </p>
+                    <p>
+                        <span class="color-3"></span> <b>Opción 3</b>: Durante el mes de setiembre
+                    </p>
+                    <p>
+                        <span class="color-4"></span> <b>Opción 4</b>: Desde hace más tiempo
+                    </p>
+                </div>
+                <div id="decision_voto_lima"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row mt-21">
+                <div class="col-12">
+                    <p class="question text-left">FICHA TÉCNICA:</p>
+                    <p class="ficha_tecnica">
+                        Encuestadora: Instituto de Estudios Peruanos (IEP). Partida 0393-REE/JNE – 281-2021-DCGI/JNE. Financiación: Instituto de Estudios Peruanos. Objetivo: Recoger la opinión de la ciudadanía sobre coyuntura política. Tamaño y distribución de la muestra: 1211
+                        entrevistados en 24 departamentos, 152 provincias y 421 distritos. Encuesta telefónica. Muestreo probabilístico con método de selección aleatoria de números de celular. Puntos de muestreo: Lima Met., Perú urbano y Perú rural. Margen
+                        de error: ± 2,8 pts. para resultados a nivel nacional. Nivel de confianza: 95%. Representatividad provincial: 95.6%. Fuente de marco muestral: Relación de cabeceras de operadores de móviles (MTC 2019). Fecha de campo: 13 al 19
+                        de octubre de 2022. Página web:
+                        <a href="https://larepublica.pe/" target="_blank">www.larepublica.pe</a
+              >. y
+              <a href="http://www.iep.org.pe/" target="_blank">www.iep.org.pe</a
+              >.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer style="background-color: #f0f0f0">
+      <div class="w-1000">
+        <span><strong>Redacción:</strong> La República</span>
+        <span><strong>Desarrollo Web:</strong> Génesis León</span>
+        <br />
+        <span>© Grupo La República </span>
+        <span>Todos los derechos reservados.</span>
+      </div>
+    </footer>
+    <script
+      defer
+      src="https://www.googletagmanager.com/gtag/js?id=UA-6536106-1"
+    ></script>
+    <script type="text/javascript" defer>
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      (window.dataLayer = window.dataLayer || []),
+        gtag("js", new Date()),
+        gtag("config", "UA-6536106-1");
+    </script>
+    <script>
+      const chart_reniec = bb.generate({
+        data: {
+          columns: [
+            ["Aprueba", 62],
+            ["Desaprueba", 31],
+            ["NS/NP", 7],
+          ],
+          type: "bar",
+          groups: [["Aprueba", "Desaprueba", "NS/NP"]],
+          colors: {
+            Aprueba: "#adcc76",
+            Desaprueba: "#de425b",
+            "NS/NP": "#ffe48f",
+          },
+        },
+        axis: {
+          rotated: true,
+          y: {
+            show: false,
+          },
+          x: {
+            type: "category",
+            categories: ["Oct-22"],
+          },
+        },
+        bar: {
+          width: {
+            ratio: 0.5,
+            max: 20,
+          },
+        },
+        legend: {
+          show: false,
+        },
+        bindto: "#chart_reniec",
+      });
+
+      const chart_onpe = bb.generate({
+        data: {
+          columns: [
+            ["Aprueba", 38, 60],
+            ["Desaprueba", 61, 33],
+            ["NS/NP", 2, 7],
+          ],
+          type: "bar",
+          colors: {
+            Aprueba: "#adcc76",
+            Desaprueba: "#de425b",
+            "NS/NP": "#ffe48f",
+          },
+          groups: [["Aprueba", "Desaprueba", "NS/NP"]],
+        },
+        axis: {
+          rotated: true,
+          x: {
+            type: "category",
+            categories: ["Jun-22", "Oct-22"],
+          },
+          y: {
+            show: false,
+          },
+        },
+        bar: {
+          width: {
+            ratio: 0.5,
+            max: 20,
+          },
+        },
+        legend: {
+          show: false,
+        },
+        bindto: "#chart_onpe",
+      });
+
+      const chart_jne = bb.generate({
+        data: {
+          columns: [
+            ["Aprueba", 30, 56],
+            ["Desaprueba", 68, 35],
+            ["NS/NP", 2, 9],
+          ],
+          type: "bar",
+          colors: {
+            Aprueba: "#adcc76",
+            Desaprueba: "#de425b",
+            "NS/NP": "#ffe48f",
+          },
+          groups: [["Aprueba", "Desaprueba", "NS/NP"]],
+        },
+        axis: {
+          rotated: true,
+          x: {
+            type: "category",
+            categories: ["Jun-22", "Oct-22"],
+          },
+          y: {
+            show: false,
+          },
+        },
+        bar: {
+          width: {
+            ratio: 0.5,
+            max: 20,
+          },
+        },
+        legend: {
+          show: false,
+        },
+        bindto: "#chart_jne",
+      });
+
+      const decision_voto = bb.generate({
+        data: {
+          columns: [
+            ["data1", 36, 20, 15, 24],
+            ["data2", 32, 23, 16, 26],
+            ["data3", 31, 23, 17, 26],
+          ],
+          type: "bar", // for ESM specify as: bar()
+          names: {
+            data1: "Gobernador regional",
+            data2: "Alcalde provincial",
+            data3: "Alcalde distrital",
+          },
+          colors: {
+            data1: "#adcc76",
+            data2: "#f7c856",
+            data3: "#de425b",
+          },
+        },
+        axis: {
+          x: {
+            type: "category",
+            categories: [
+              "Opción 1",
+              "Opción 2",
+              "Opción 3",
+              "Opción 4",
+              "Opción 5",
+            ],
+          },
+        },
+        bar: 10,
+        tooltip: {
+          format: {
+            value: function (value, ratio, id) {
+              return d3.format(",")(Math.round(value)) + "%";
+            },
+          },
+        },
+
+        bindto: "#decision_voto",
+      });
+
+      const decision_voto_lima = bb.generate({
+        padding: {
+          // top: 20,
+          // right: 50,
+          bottom: 20,
+          left: 0,
+        },
+        data: {
+          columns: [
+            ["data1", 22, 20, 40, 21, 26],
+            ["data2", 32, 24, 32, 22, 17],
+            ["data3", 15, 17, 9, 25, 21],
+            ["data4", 31, 39, 19, 28, 26],
+          ],
+          type: "bar", // for ESM specify as: bar()
+          names: {
+            data1: "Opción 1",
+            data2: "Opción 2",
+            data3: "Opción 3",
+            data4: "Opción 4",
+          },
+          colors: {
+            data1: "#adcc76",
+            data2: "#f7c856",
+            data3: "#de425b",
+            data4: "#e76c5d",
+          },
+        },
+        axis: {
+          x: {
+            type: "category",
+            categories: [
+              "Rafael Lopez Aliaga",
+              "Daniel Urresti",
+              "George Forsyth",
+              "Otro",
+              "No precisa",
+            ],
+          },
+        },
+        bar: 10,
+        tooltip: {
+          format: {
+            value: function (value, ratio, id) {
+              return d3.format(",")(Math.round(value)) + "%";
+            },
+          },
+        },
+        legend: {
+          show: false,
+        },
+        bindto: "#decision_voto_lima",
+      });
+    </script>
+    <!-- <script src="script.js" defer></script> -->
+  </body>
+</html>

@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1" />
+    <meta name="theme-color" content="#FFF" />
+    <link rel="canonical" href="https://data.larepublica.pe/encuesta-iep-aprobacion-desaprobacion-peru-presidente-congreso-de-la-republica" />
+    <meta name="robots" content="index,follow" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="description" content="Más de dos tercios de la población está de acuerdo con que se renueve al presidente y al Congreso. Una medida vinculada con el descontento social ante la situación política y económica." />
+    <meta property="og:url" content="https://data.larepublica.pe/encuesta-iep-aprobacion-desaprobacion-peru-presidente-congreso-de-la-republica" />
+    <meta property="og:title" content="Encuesta IEP: el 68% de los peruanos está de acuerdo con el adelanto de elecciones" />
+    <meta property="og:image" content="https://cdn.glitch.me/09ad6912-77fe-457b-af64-54b232bf7e67/ss.jpg" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta property="fb:pages" content="94604237016" />
+    <meta property="fb:app_id" content="489210501129201" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@larepublica_pe" />
+    <meta name="twitter:title" content="Encuesta IEP: el 68% de los peruanos está de acuerdo con el adelanto de elecciones" />
+    <meta name="twitter:description" content="Más de dos tercios de la población está de acuerdo con que se renueve al presidente y al Congreso. Una medida vinculada con el descontento social ante la situación política y económica." />
+    <meta name="twitter:image" content="https://cdn.glitch.me/09ad6912-77fe-457b-af64-54b232bf7e67/ss.jpg" />
+    <meta name="distribution" content="global" />
+    <meta name="rating" content="general" />
+    <meta name="lang" content="es_PE" />
+    <meta name="author" content="Redacción LR" />
+    <meta name="keywords" content="Encuesta, Castillo, congreso, Maria del Carmen Alva, IEP, Febrero 2022, política" />
+    <title>
+        Encuesta IEP: el 68% de los peruanos está de acuerdo con el adelanto de elecciones
+    </title>
+    <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.larepublica.pe/favicon-32x32.png" />
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/billboard.js/2.1.4/billboard.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/billboard.js/2.1.4/billboard.min.css" />
+    <link rel="stylesheet" href="https://naver.github.io/billboard.js/release/latest/dist/theme/graph.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.css" rel="stylesheet" />
+    <!-- Import the webpage's stylesheet -->
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <header id="w-header">
+        <div class="container__menu">
+            <!-- <div class="menu__button">                <div class="menu"> <button id="menuMobile"> <span></span> <span></span> <span></span> </button> </div>            </div> -->
+            <div class="menu__left">
+                <a href="https://data.larepublica.pe/" rel="noopener" style="display: inline-block" target="_blank">
+                    <picture>
+                        <source id="w-sourceLogoDesktop" media="(min-width: 768px)" srcset="
+                            https://larepublica.cronosmedia.glr.pe/data/2121/10/05/logo.png
+                        " />
+                        <img id="w-sourceLogoMobile" src="https://larepublica.cronosmedia.glr.pe/data/2121/10/05/logo.png" />
+                    </picture>
+                </a>
+            </div>
+            <div class="menu__right">
+                <span class="items_shared">
+                    <a class="btn-fb btn-Social" data-social="facebook"
+                        href="https://www.facebook.com/sharer/sharer.php?u=https://data.larepublica.pe/encuesta-iep-aprobacion-desaprobacion-peru-presidente-congreso-de-la-republica"
+                        id="id-btn-fb" rel="noopener">
+                    </a>
+                    <a class="btn-twt btn-Social" data-social="twitter"
+                        href="https://twitter.com/share?url=https://data.larepublica.pe/encuesta-iep-aprobacion-desaprobacion-peru-presidente-congreso-de-la-republica&via=LRData"
+                        id="id-btn-twt" rel="noopener">
+                    </a>
+                    <a class="btn-wsp"
+                        href="https://api.whatsapp.com/send?text=https://data.larepublica.pe/encuesta-iep-aprobacion-desaprobacion-peru-presidente-congreso-de-la-republica"
+                        id="id-btn-wsp" rel="noopener" target="_blank">
+                    </a>
+                </span>
+            </div>
+        </div>
+    </header>
+    <div class="container mt-x">
+        <div class="row">
+            <div class="col">
+                <h1 class="font-weight-bold">
+                    El 68% de los peruanos está de acuerdo con el adelanto de elecciones, según IEP
+                </h1>
+                <p>
+                    De acuerdo con la última encuesta IEP, más de dos tercios de la población pide el adelanto de elecciones y que con ello se renueve al presidente y al Congreso. Una medida vinculada al descontento social que se siente ante la situación política y económica
+                    que se vive en el país.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h2 class="font-weight-bold">
+                    A favor del adelanto de elecciones
+                </h2>
+                <p>
+                    Una propuesta que ha repercutido en la población es la del adelanto de elecciones: un 68% está de acuerdo con ello y que se tenga a otro presidente y un nuevo Legislativo. En tanto, un 31% no respalda dicha sugerencia.
+                </p>
+                <p class="question">
+                    Hay quienes proponen el adelanto de elecciones. ¿Está de acuerdo o en desacuerdo con que se adelanten las elecciones y tengamos un nuevo presidente y un nuevo Congreso? (Pregunta asistida)
+                </p>
+                <div id="adelantar_elecciones"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h2 class="font-weight-bold">
+                    La principal salida a la crisis política son nuevas elecciones
+                </h2>
+                <p>
+                    En la misma línea, ante una serie de posibilidades para la salida a la crisis política actual, el adelanto de elecciones es la que tiene mayor aceptación con un 61%, que aumenta en un 13% en comparación al mes de febrero. Por otro lado, un 27% cree que
+                    Pedro Castillo debe seguir como presidente y un 4% que Dina Boluarte sea quien asuma la presidencia.
+                </p>
+                <p class="question">
+                    ¿Qué cree que sería lo más conveniente para el país? (Pregunta asistida)
+                </p>
+                <div class="special_box">
+                    <p><b>Opción 1</b>: Que haya Elecciones Generales y se elija nuevo presidente y congresistas</p>
+                    <p><b>Opción 2</b>: Que Pedro Castillo se mantenga como presidente hasta 2026</p>
+                    <p><b>Opción 3</b>: Que Pedro Castillo deje el gobierno y que Dina Boluarte asuma la presidencia</p>
+                    <p><b>Opción 4</b>: Que haya elecciones presidenciales y se mantengan los mismos congresistas</p>
+                    <p><b>Opción 5</b>: NS/NP</p>
+                </div>
+                <div id="adelantar_elecciones_2"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h2 class="font-weight-bold">
+                    En una peor situación política
+                </h2>
+                <p>
+                    En comparación con la percepción de octubre de 2021, la ciudadanía cree que la situación política está peor. Hace seis meses, un 49% consideraba que el manejo político era malo, pero —en la medición de abril— un 73% lo piensa. Es decir, aumentó en 24
+                    puntos más.
+                </p>
+                <p class="question">
+                    ¿Considera usted que la situación política actual del país es mejor, igual o peor que hace doce meses?* (pregunta asistida)
+                </p>
+                <div id="situacion_politica"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h2 class="font-weight-bold">
+                    La situación económica también está peor
+                </h2>
+                <p>
+                    Otro aspecto social a considerar es la situación económica, la cual aumenta ligeramente su percepción negativa en comparación a la medición de octubre del 2021 (55%). En la última encuesta de IEP, un 66% cree que está peor que hace un año, lo que implica
+                    11 puntos más que hace seis meses.
+                </p>
+                <p class="question">
+                    ¿Considera usted que la situación económica actual del país es mejor, igual o peor que hace doce meses?* (Pregunta asistida)
+                </p>
+                <div id="situacion_economica"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h2 class="font-weight-bold">
+                    La situación económica es la que más afecta a la ciudadanía
+                </h2>
+                <p>
+                    En comparación, lo económico es lo que más afecta a la ciudadanía en relación con lo político: un 57% señala esta opción frente al 20% que considera la segunda. Solo un 22% piensa que es afectada por ambas situaciones.
+                </p>
+                <p class="question">
+                    ¿Qué le afecta más a usted en este momento? (Pregunta asistida)
+                </p>
+                <div id="situacion_economica_2"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h2 class="font-weight-bold">
+                    Desaprobación de Pedro Castillo se mantiene
+                </h2>
+                <p>
+                    En tanto, el presidente Pedro Castillo mantiene su alta desaprobación con un 67%. Un rechazo que permanece por encima del 60% desde noviembre del 2021. Solo un 25% respalda su accionar en el Ejecutivo.
+                </p>
+                <p class="question">
+                    ¿Usted aprueba o desaprueba la forma como Predro Castillo está condiciendo su gobierno?
+                </p>
+                <a href="#anexo_container" type="button" class="btn btn-success btn-sm" id="desagregado_button">Ver
+                    detalle.</a>
+                <div id="aprobacion_castillo"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h2 class="font-weight-bold">
+                    La mayoría considera que Castillo no terminará su gobierno
+                </h2>
+                <p>
+                    La percepción de la permanencia del presidente Pedro Castillo disminuye a diferencia de marzo: pasa de 71% a 65% en abril. Solo el 25% de las personas entrevistadas considera que durará 5 años como presidente, lo que implica un ligero aumento frente a
+                    la encuesta IEP del mes pasado.
+                </p>
+                <p class="question">
+                    ¿Cree que Pedro Castillo...? (Pregunta asistida)
+                </p>
+                <div class="special_box" style="width: 280px;">
+                    <p><b>Opción 1</b>: No terminará su gobierno</p>
+                    <p><b>Opción 2</b>: Durará 5 años como presidente</p>
+                    <p><b>Opción 3</b>: NS/NP</p>
+                </div>
+                <div id="permanencia_castillo"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h2 class="font-weight-bold">
+                    Razones por las que no terminará su mandato
+                </h2>
+                <p>
+                    Respecto a las razones por las que no culminará su mandato, la incapacidad para gobernar es la principal causa por la que se cree que el presidente Pedro Castillo no terminará su gobierno: un 63% mantiene su percepción sobre este motivo. En tanto, ligeramente
+                    disminuye la opción de que no acabará su gobierno porque no lo dejan gobernar (30%).
+                </p>
+                <p class="question">
+                    ¿Por qué cree que Pedro Castillo no terminará su gobierno?* (Pregunta asistida)
+                </p>
+                <div class="special_box" style="width: 325px;">
+                    <p><b>Opción 1</b>: Por su incapasidad para gobernar</p>
+                    <p><b>Opción 2</b>: Porque no lo dejan gobernar</p>
+                    <p><b>Opción 3</b>: Ambas razones</p>
+                    <p><b>Opción 4</b>: Otro</p>
+                </div>
+                <div id="razon_no_permanencia"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h2 class="font-weight-bold">
+                    Sigue la desaprobación de Aníbal Torres
+                </h2>
+                <p>
+                    Por su parte, el rechazo al titular de la Presidencia del Consejo de Ministros (PCM), Aníbal Torres, sigue en aumento: un 67% desaprueba su gestión y solo un 24% lo aprueba. Cuando ingresó, a inicios de febrero de 2022, un 54% de la ciudadanía estuvo
+                    en contra de su designación como jefe del gabinete ministerial.
+                </p>
+                <p class="question">
+                    ¿Usted aprueba o desaprueba el desempeño del presidente del Consejo de Ministros, Aníbal Torres? (Pregunta asistida)
+                </p>
+                <div id="aprobacion_anibal"></div>
+            </div>
+        </div>
+        <div id="anexo_container">
+            <div class="row">
+                <div class="col">
+                    <img src="hr.png" alt="" class="separador" />
+                    <h2 class="font-weight-bold">
+                        Pedro Castillo: aprobación del presidente por nivel socioeconómico
+                    </h2>
+                    <p>
+                        La aprobación del presidente cambia ligeramente por nivel socioeconómico. Su aprobación aumenta 4% en los sectores A y B (19%) y 2% en los sectores D y E (31%). Mientras tanto, en el sector socioeconómico C disminuye un 2% (21%).
+                    </p>
+                    <p class="question">
+                        ¿Usted aprueba o desaprueba la forma como Pedro Castillo está conduciendo su gobierno?
+                    </p>
+                    <select id="aprueba_desaprueba">
+                        <option>Aprobación</option>
+                        <option>Desaprobación</option>
+                    </select>
+                    <div id="aprobacion_nse"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h2 class="font-weight-bold">
+                        Aprobación de Pedro Castillo en ámbitos urbano y rural
+                    </h2>
+                    <p>
+                        En los ámbitos urbano y rural, la aprobación de Pedro Castillo también varía. En Perú urbano, el mandatario aumenta un 4% más en comparación a marzo de 2022 y logra un 28%. De igual manera, sube 2% en el Perú rural en comparación al mes anterior y logra
+                        un 39%. Solo en Lima Metropolitana disminuye su aprobación un 4% (13%).
+                    </p>
+                    <p class="question">
+                        ¿Usted aprueba o desaprueba la forma como Pedro Castillo está conduciendo su gobierno?
+                    </p>
+                    <div id="aprobacion_ambito"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="col-12">
+                    <p class="question text-left">FICHA TÉCNICA:</p>
+                    <p class="ficha_tecnica">
+                        Encuestadora: Instituto de Estudios Peruanos (IEP). Registro: 0393-REE/JNE – 281-2021-DCGI/JNE. Financiación del estudio: Diario La República y recursos propios del IEP. Tamaño de la población objeto de estudio: Población de 18 años a más con DNI: 24,290,921
+                        personas (RENIEC, Padrón Electoral de las Elecciones Generales 2021). Tamaño y distribución de la muestra: 1201 entrevistados distribuidos en 24 departamentos, 153 provincias y 413 distritos. Margen de error: ± 2.8 pts. para los
+                        resultados a nivel nacional. Nivel de confianza: 95% considerando una varianza máxima en las proporciones poblacionales (p=q=0.5). Representatividad provincial: 96%. Fuente de marco muestral: Relación de cabeceras de operadores
+                        de móviles, Ministerio de Transportes y Comunicaciones (2019). Tipo de muestreo aplicado: Muestreo probabilístico, con método de selección aleatoria de números de celular, encuesta telefónica. Puntos de muestreo: Lima Metropolitana,
+                        Perú urbano, Perú rural. Fecha de campo: del 18 al 21 de abril de 2022. Página web: www.iep.org.pe
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="historico">
+            <span>Histórico de encuestas:</span>
+            <a role="button" class="btn btn-outline-danger" style="margin-right: 10px" href="marzo-2022/">
+                Marzo 2022
+            </a>
+            <a role="button" class="btn btn-outline-danger" style="margin-right: 10px" href="febrero-2022/">
+                Febrero 2022
+            </a>
+            <a role="button" class="btn btn-outline-danger" style="margin-right: 10px" href="enero-2022/">
+                Enero 2022
+            </a>
+            <a role="button" class="btn btn-outline-danger" href="diciembre-2021/">
+                Diciembre 2021
+            </a>
+        </div>
+    </div>
+    </div>
+    <footer style="background-color: #f0f0f0">
+        <div class="w-1000">
+            <span><strong>Redacción:</strong> Milagros Requena</span>
+            <span><strong>Desarrollo Web:</strong> Alejandro Mayurí</span>
+            <br />
+            <span>© Grupo La República </span>
+            <span>Todos los derechos reservados.</span>
+        </div>
+    </footer>
+    <script defer src="https://www.googletagmanager.com/gtag/js?id=UA-6536106-1"></script>
+    <script type="text/javascript" defer>
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        (window.dataLayer = window.dataLayer || []),
+        gtag("js", new Date()),
+            gtag("config", "UA-6536106-1");
+    </script>
+    <script>
+        const adelantar_elecciones = bb.generate({
+            data: {
+                columns: [
+                    ["data1", 1],
+                    ["data2", 68],
+                    ["data3", 31],
+                ],
+                type: "donut", // for ESM specify as: donut()
+                names: {
+                    data1: "NS/NP",
+                    data2: "De acuerdo",
+                    data3: "En desacuerdo",
+                },
+                colors: {
+                    data1: "#ffe48f",
+                    data2: "#adcc76",
+                    data3: "#de425b",
+                },
+                onclick: function(d, i) {
+                    // console.log("onclick", d, i);
+                },
+                onover: function(d, i) {
+                    // console.log("onover", d, i);
+                },
+                onout: function(d, i) {
+                    // console.log("onout", d, i);
+                },
+            },
+            donut: {
+                title: "Adelanto de Elecciones",
+            },
+            tooltip: {
+                format: {
+                    title: function(id) {
+                        return id;
+                    },
+                    value: function(value, ratio, id) {
+                        return d3.format(",")(value.toFixed(1)) + "%";
+                    },
+                },
+            },
+            bindto: "#adelantar_elecciones",
+        });
+
+        const adelantar_elecciones_2 = bb.generate({
+            data: {
+                columns: [
+                    ["data1", 48, 38, 4, 4, 6],
+                    ["data2", 61, 27, 4, 3, 5],
+                ],
+                type: "bar", // for ESM specify as: bar()
+                names: {
+                    data1: "Febrero 2021 ",
+                    data2: "Abril 2022 ",
+                },
+                colors: {
+                    data1: "#adcc76",
+                    data2: "#f7c856",
+                    data1: "#de425b"
+                },
+            },
+            axis: {
+                x: {
+                    type: "category",
+                    categories: [
+                        "Opción 1",
+                        "Opción 2",
+                        "Opción 3",
+                        "Opción 4",
+                        "Opción 5",
+                    ],
+                },
+            },
+            bar: 10,
+            tooltip: {
+                format: {
+                    value: function(value, ratio, id) {
+                        return d3.format(",")(Math.round(value)) + "%";
+                    },
+                },
+            },
+            bindto: "#adelantar_elecciones_2",
+        });
+
+        const situacion_politica = bb.generate({
+            data: {
+                columns: [
+                    ["data1", 13, 34, 49, 4],
+                    ["data2", 7, 20, 73, 0],
+                ],
+                type: "bar", // for ESM specify as: bar()
+                names: {
+                    data1: "Octubre 2021 ",
+                    data2: "Abril 2022 ",
+                },
+                colors: {
+                    data1: "#adcc76",
+                    data2: "#f7c856",
+                },
+            },
+            axis: {
+                x: {
+                    type: "category",
+                    categories: [
+                        "Mejor",
+                        "Igual",
+                        "Peor",
+                        "NS/NP",
+                    ],
+                },
+            },
+            bar: 10,
+            tooltip: {
+                format: {
+                    value: function(value, ratio, id) {
+                        return d3.format(",")(Math.round(value)) + "%";
+                    },
+                },
+            },
+            bindto: "#situacion_politica",
+        });
+
+        const situacion_economica = bb.generate({
+            data: {
+                columns: [
+                    ["data1", 9, 34, 55, 2],
+                    ["data2", 6, 27, 66, 1],
+                ],
+                type: "bar", // for ESM specify as: bar()
+                names: {
+                    data1: "Octubre 2021 ",
+                    data2: "Abril 2022 ",
+                },
+                colors: {
+                    data1: "#adcc76",
+                    data2: "#f7c856",
+                },
+            },
+            axis: {
+                x: {
+                    type: "category",
+                    categories: [
+                        "Mejor",
+                        "Igual",
+                        "Peor",
+                        "NS/NP",
+                    ],
+                },
+            },
+            bar: 10,
+            tooltip: {
+                format: {
+                    value: function(value, ratio, id) {
+                        return d3.format(",")(Math.round(value)) + "%";
+                    },
+                },
+            },
+            bindto: "#situacion_economica",
+        });
+
+        const situacion_economica_2 = bb.generate({
+            data: {
+                columns: [
+                    ["data1", 57, 20, 22, 1]
+                ],
+                type: "bar", // for ESM specify as: bar()
+                names: {
+                    data1: "  ",
+                },
+                colors: {
+                    data1: "#e76c5d",
+                },
+            },
+            axis: {
+                x: {
+                    type: "category",
+                    categories: [
+                        "La situación económica",
+                        "La situación política",
+                        "Ambas/las dos",
+                        "NS/NP",
+                    ],
+                },
+            },
+            bar: 10,
+            tooltip: {
+                format: {
+                    value: function(value, ratio, id) {
+                        return d3.format(",")(Math.round(value)) + "%";
+                    },
+                },
+            },
+            legend: {
+                show: false,
+            },
+            padding: {
+                bottom: 20,
+                top: 0,
+                left: 0,
+                right: 0,
+            },
+            bindto: "#situacion_economica_2",
+        });
+
+        const aprobacion_castillo = bb.generate({
+            data: {
+                x: "x",
+                columns: [
+                    [
+                        "x",
+                        "Ago 21",
+                        "Set 21",
+                        "Oct 21",
+                        "Nov 21",
+                        "Dic 21",
+                        "Ene 22",
+                        "Feb 22",
+                        "Mar 22",
+                        "Abr 22",
+                    ],
+                    [
+                        "data1", 16, 18, 17, 10, 12, 9, 9, 8, 8
+                    ],
+                    [
+                        "data2", 38, 40, 35, 25, 28, 29, 28, 24, 25
+                    ],
+                    [
+                        "data3", 46, 42, 48, 65, 60, 62, 63, 68, 67
+                    ],
+                ],
+                types: {
+                    data1: "line", // for ESM specify as: step()
+                    data2: "line",
+                    data3: "line",
+                },
+                names: {
+                    data1: "NS/NP",
+                    data2: "Aprueba",
+                    data3: "Desaprueba",
+                },
+                colors: {
+                    data1: "#ffe48f",
+                    data2: "#adcc76",
+                    data3: "#de425b",
+                },
+                labels: false,
+                // labels :{
+                //   colors: "#FFF"
+                // }
+            },
+            // axis: {
+            //     x: {
+            //         type: "category",
+            //         categories: [
+            //             "Ago 21",
+            //             "Set-21",
+            //             "Oct-21",
+            //             "Nov-21",
+            //             "Dic-21",
+            //             "Ene-22",
+            //             "Feb-22",
+            //             "Mar-22",
+            //         ],
+            //     },
+            // },
+            axis: {
+                x: {
+                    type: "category",
+                },
+            },
+            tooltip: {
+                format: {
+                    value: function(value, ratio, id) {
+                        return d3.format(",")(Math.round(value)) + "%";
+                    },
+                },
+            },
+            bindto: "#aprobacion_castillo",
+        });
+
+        const permanencia_castillo = bb.generate({
+            data: {
+                columns: [
+                    ["data1", 62, 31, 7],
+                    ["data2", 58, 33, 9],
+                    ["data3", 71, 22, 7],
+                    ["data4", 65, 25, 10],
+                ],
+                type: "bar", // for ESM specify as: bar()
+                names: {
+                    data1: "Noviembre 2021 ",
+                    data2: "Diciembre 2022 ",
+                    data3: "Marzo 2022",
+                    data4: "Abril 2022",
+                },
+                colors: {
+                    data1: "#adcc76",
+                    data2: "#f7c856",
+                    data3: "#a7dc76",
+                    data4: "#fdc856",
+                },
+            },
+            axis: {
+                x: {
+                    type: "category",
+                    categories: [
+                        "Opción 1",
+                        "Opción 2",
+                        "Opción 3",
+                    ],
+                },
+            },
+            bar: 10,
+            tooltip: {
+                format: {
+                    value: function(value, ratio, id) {
+                        return d3.format(",")(Math.round(value)) + "%";
+                    },
+                },
+            },
+            bindto: "#permanencia_castillo",
+        });
+
+        const razon_no_permanencia = bb.generate({
+            data: {
+                columns: [
+                    ["data1", 63, 33, 2, 2],
+                    ["data2", 63, 30, 6, 1],
+                ],
+                type: "bar", // for ESM specify as: bar()
+                names: {
+                    data1: "Marzo 2022 ",
+                    data2: "Abril 2022 ",
+                },
+                colors: {
+                    data1: "#adcc76",
+                    data2: "#f7c856",
+                },
+            },
+            axis: {
+                x: {
+                    type: "category",
+                    categories: [
+                        "Opción 1",
+                        "Opción 2",
+                        "Opción 3",
+                        "Opción 4",
+                    ],
+                },
+            },
+            bar: 10,
+            tooltip: {
+                format: {
+                    value: function(value, ratio, id) {
+                        return d3.format(",")(Math.round(value)) + "%";
+                    },
+                },
+            },
+            bindto: "#razon_no_permanencia",
+        });
+
+        const aprobacion_anibal = bb.generate({
+            data: {
+                x: "x",
+                columns: [
+                    [
+                        "x",
+                        "Feb-22*",
+                        "Mar-22",
+                        "Abr-22",
+                    ],
+                    [
+                        "data1", 10, 10, 9
+                    ],
+                    [
+                        "data2", 36, 29, 24
+                    ],
+                    [
+                        "data3", 54, 61, 67
+                    ],
+                ],
+                types: {
+                    data1: "line", // for ESM specify as: step()
+                    data2: "line",
+                    data3: "line",
+                },
+                names: {
+                    data1: "NS/NP",
+                    data2: "Aprueba",
+                    data3: "Desaprueba",
+                },
+                colors: {
+                    data1: "#ffe48f",
+                    data2: "#adcc76",
+                    data3: "#de425b",
+                },
+                labels: false,
+                // labels :{
+                //   colors: "#FFF"
+                // }
+            },
+            // axis: {
+            //     x: {
+            //         type: "category",
+            //         categories: [
+            //             "Ago 21",
+            //             "Set-21",
+            //             "Oct-21",
+            //             "Nov-21",
+            //             "Dic-21",
+            //             "Ene-22",
+            //             "Feb-22",
+            //             "Mar-22",
+            //         ],
+            //     },
+            // },
+            axis: {
+                x: {
+                    type: "category",
+                },
+            },
+            tooltip: {
+                format: {
+                    value: function(value, ratio, id) {
+                        return d3.format(",")(Math.round(value)) + "%";
+                    },
+                },
+            },
+            bindto: "#aprobacion_anibal",
+        });
+
+        const nse_aprobacion = bb.generate({
+            data: {
+                columns: [
+                    [
+                        "data1", 27, 26, 24, 13, 19, 20, 18, 15, 19
+                    ],
+                    [
+                        "data2", 35, 34, 33, 18, 26, 25, 28, 23, 21
+                    ],
+                    [
+                        "data3", 43, 49, 41, 35, 34, 36, 33, 29, 31
+                    ],
+                ],
+                type: "bubble", // for ESM specify as: bubble()
+                names: {
+                    data1: "NSE A/B",
+                    data2: "NSE C",
+                    data3: "NSE D/E",
+                },
+                colors: {
+                    data1: "#7580d8",
+                    data2: "#60af64",
+                    data3: "#bb6336",
+                },
+                labels: false,
+            },
+            bubble: {
+                maxR: 25,
+            },
+            axis: {
+                x: {
+                    type: "category",
+                    categories: [
+                        "Ago 21",
+                        "Set 21",
+                        "Oct 21",
+                        "Nov 21",
+                        "Dic 21",
+                        "Ene 22",
+                        "Feb 22",
+                        "Mar 22",
+                        "Abr 22",
+                    ],
+                },
+                y: {
+                    label: "Porcentaje (%)",
+                    max: 100,
+                },
+            },
+            tooltip: {
+                grouped: true,
+                format: {
+                    value: function(value, ratio, id) {
+                        return d3.format(",")(Math.round(value)) + "%";
+                    },
+                },
+            },
+            legend: {
+                position: "bottom", // bottom, right, inset
+                padding: 10,
+                inset: {
+                    anchor: "bottom-right", // top-left, top-right, bottom-left, bottom-right
+                    x: 20,
+                    y: -10,
+                },
+            },
+            bindto: "#aprobacion_nse",
+        });
+
+        document
+            .getElementById("aprueba_desaprueba")
+            .addEventListener("change", function() {
+                var obj = document.getElementById("aprueba_desaprueba");
+                obj_select = obj.options[obj.selectedIndex].text;
+                console.log(obj_select);
+
+                if (obj_select == "Aprobación") {
+                    nse_aprobacion.load({
+                        columns: [
+                            [
+                                "data1", 27, 26, 24, 13, 19, 20, 18, 15, 19
+                            ],
+                            [
+                                "data2", 35, 34, 33, 18, 26, 25, 28, 23, 21
+                            ],
+                            [
+                                "data3", 43, 49, 41, 35, 34, 36, 33, 29, 31
+                            ],
+                        ],
+                    });
+                }
+                if (obj_select == "Desaprobación") {
+                    nse_aprobacion.load({
+                        columns: [
+                            [
+                                "data1", 61, 60, 70, 58, 80, 73, 79, 80, 77
+                            ],
+                            [
+                                "data2", 47, 72, 47, 64, 55, 65, 65, 71, 71
+                            ],
+                            [
+                                "data3", 37, 54, 33, 54, 39, 54, 55, 60, 60
+                            ],
+                        ],
+                    });
+                }
+            });
+
+        const aprobacion_ambito = bb.generate({
+            data: {
+                columns: [
+                    [
+                        "data1", 25.4, 28.7, 16.3, 18.8, 18.2, 17, 17, 13
+                    ],
+                    [
+                        "data2", 54.8, 40.6, 39.8, 36.3, 39, 40, 37, 39
+                    ],
+                    [
+                        "data3", 44.7, 38, 23.9, 32, 32.3, 32, 24, 28
+                    ],
+                ],
+                type: "bar", // for ESM specify as: bubble()
+                names: {
+                    data1: "Lima Metropolitana",
+                    data2: "Perú rural",
+                    data3: "Perú urbano",
+                },
+                colors: {
+                    data1: "#7580d8",
+                    data2: "#60af64",
+                    data3: "#bb6336",
+                },
+                labels: false,
+            },
+            axis: {
+                x: {
+                    type: "category",
+                    categories: [
+                        "Ago 21",
+                        "Set-21",
+                        "Oct-21",
+                        "Nov-21",
+                        "Dic-21",
+                        "Ene-22",
+                        "Feb-22",
+                        "Mar-22",
+                        "Abr-22",
+                    ],
+                },
+                y: {
+                    label: "Aprobación (%)",
+                    max: 95,
+                },
+            },
+            tooltip: {
+                format: {
+                    value: function(value, ratio, id) {
+                        return d3.format(",")(value.toFixed(1)) + "%";
+                    },
+                },
+            },
+            bindto: "#aprobacion_ambito",
+        });
+    </script>
+</body>
+
+</html>

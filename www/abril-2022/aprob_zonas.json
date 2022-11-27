@@ -1,0 +1,6354 @@
+{
+    "schema": {
+        "fields": [
+            { "name": "zona", "type": "string" },
+            { "name": "prov", "type": "string" },
+            { "name": "aprobacion", "type": "number" },
+            { "name": "periodo", "type": "string" }
+        ],
+        "pandas_version": "0.20.0"
+    },
+    "data": [{
+            "zona": "CENTRO",
+            "prov": "HUANCAYO",
+            "aprobacion": 46.8482583673,
+            "desaprobacion": 33.19,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "HUANUCO",
+            "aprobacion": 46.8482583673,
+            "desaprobacion": 33.19,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "JUNIN",
+            "aprobacion": 46.8482583673,
+            "desaprobacion": 33.19,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "HUANCAVELICA",
+            "aprobacion": 46.8482583673,
+            "desaprobacion": 33.19,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "HUAMALIES",
+            "aprobacion": 46.8482583673,
+            "desaprobacion": 33.19,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "LAURICOCHA",
+            "aprobacion": 46.8482583673,
+            "desaprobacion": 33.19,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "CHURCAMPA",
+            "aprobacion": 46.8482583673,
+            "desaprobacion": 33.19,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "HUARAL",
+            "aprobacion": 46.8482583673,
+            "desaprobacion": 33.19,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "DANIEL ALCIDES CARRION",
+            "aprobacion": 46.8482583673,
+            "desaprobacion": 33.19,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "ANGARAES",
+            "aprobacion": 46.8482583673,
+            "desaprobacion": 33.19,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "PASCO",
+            "aprobacion": 46.8482583673,
+            "desaprobacion": 33.19,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "TARMA",
+            "aprobacion": 46.8482583673,
+            "desaprobacion": 33.19,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "TAYACAJA",
+            "aprobacion": 46.8482583673,
+            "desaprobacion": 33.19,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "CAÑETE",
+            "aprobacion": 46.8482583673,
+            "desaprobacion": 33.19,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "DOS DE MAYO",
+            "aprobacion": 46.8482583673,
+            "desaprobacion": 33.19,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "HUAROCHIRI",
+            "aprobacion": 46.8482583673,
+            "desaprobacion": 33.19,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "HUAURA",
+            "aprobacion": 46.8482583673,
+            "desaprobacion": 33.19,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "JAUJA",
+            "aprobacion": 46.8482583673,
+            "desaprobacion": 33.19,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "OYON",
+            "aprobacion": 46.8482583673,
+            "desaprobacion": 33.19,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "YAULI",
+            "aprobacion": 46.8482583673,
+            "desaprobacion": 33.19,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "CONCEPCION",
+            "aprobacion": 46.8482583673,
+            "desaprobacion": 33.19,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "LIMA METROPOLITANA",
+            "prov": "LIMA",
+            "aprobacion": 25.466873405,
+            "desaprobacion": 61.3,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "LIMA METROPOLITANA",
+            "prov": "CALLAO",
+            "aprobacion": 25.466873405,
+            "desaprobacion": 61.3,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "MOYOBAMBA",
+            "aprobacion": 39.7745643068,
+            "desaprobacion": 36.22,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "TOCACHE",
+            "aprobacion": 39.7745643068,
+            "desaprobacion": 36.22,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "UTCUBAMBA",
+            "aprobacion": 39.7745643068,
+            "desaprobacion": 36.22,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "LA CONVENCION",
+            "aprobacion": 39.7745643068,
+            "desaprobacion": 36.22,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "BAGUA",
+            "aprobacion": 39.7745643068,
+            "desaprobacion": 36.22,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "JAEN",
+            "aprobacion": 39.7745643068,
+            "desaprobacion": 36.22,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "CHANCHAMAYO",
+            "aprobacion": 39.7745643068,
+            "desaprobacion": 36.22,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "SAN MARTIN",
+            "aprobacion": 39.7745643068,
+            "desaprobacion": 36.22,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "LAMAS",
+            "aprobacion": 39.7745643068,
+            "desaprobacion": 36.22,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "TAHUAMANU",
+            "aprobacion": 39.7745643068,
+            "desaprobacion": 36.22,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "SAN IGNACIO",
+            "aprobacion": 39.7745643068,
+            "desaprobacion": 36.22,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "MARISCAL RAMON CASTILLA",
+            "aprobacion": 39.7745643068,
+            "desaprobacion": 36.22,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "LEONCIO PRADO",
+            "aprobacion": 39.7745643068,
+            "desaprobacion": 36.22,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "MARISCAL CACERES",
+            "aprobacion": 39.7745643068,
+            "desaprobacion": 36.22,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "TAMBOPATA",
+            "aprobacion": 39.7745643068,
+            "desaprobacion": 36.22,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "MANU",
+            "aprobacion": 39.7745643068,
+            "desaprobacion": 36.22,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "CORONEL PORTILLO",
+            "aprobacion": 39.7745643068,
+            "desaprobacion": 36.22,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "MAYNAS",
+            "aprobacion": 39.7745643068,
+            "desaprobacion": 36.22,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "MARAÑON",
+            "aprobacion": 39.7745643068,
+            "desaprobacion": 36.22,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "PUERTO INCA",
+            "aprobacion": 39.7745643068,
+            "desaprobacion": 36.22,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "ALTO AMAZONAS",
+            "aprobacion": 39.7745643068,
+            "desaprobacion": 36.22,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "RIOJA",
+            "aprobacion": 39.7745643068,
+            "desaprobacion": 36.22,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "RODRIGUEZ DE MENDOZA",
+            "aprobacion": 39.7745643068,
+            "desaprobacion": 36.22,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "EL DORADO",
+            "aprobacion": 39.7745643068,
+            "desaprobacion": 36.22,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "UCAYALI",
+            "aprobacion": 39.7745643068,
+            "desaprobacion": 36.22,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "PIURA",
+            "aprobacion": 39.9510017021,
+            "desaprobacion": 43.22,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "PAITA",
+            "aprobacion": 39.9510017021,
+            "desaprobacion": 43.22,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "SULLANA",
+            "aprobacion": 39.9510017021,
+            "desaprobacion": 43.22,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "CHICLAYO",
+            "aprobacion": 39.9510017021,
+            "desaprobacion": 43.22,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "CAJAMARCA",
+            "aprobacion": 39.9510017021,
+            "desaprobacion": 43.22,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "HUARAZ",
+            "aprobacion": 39.9510017021,
+            "desaprobacion": 43.22,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "CELENDIN",
+            "aprobacion": 39.9510017021,
+            "desaprobacion": 43.22,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "RECUAY",
+            "aprobacion": 39.9510017021,
+            "desaprobacion": 43.22,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "CHOTA",
+            "aprobacion": 39.9510017021,
+            "desaprobacion": 43.22,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "ASCOPE",
+            "aprobacion": 39.9510017021,
+            "desaprobacion": 43.22,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "AYABACA",
+            "aprobacion": 39.9510017021,
+            "desaprobacion": 43.22,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "TRUJILLO",
+            "aprobacion": 39.9510017021,
+            "desaprobacion": 43.22,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "LUYA",
+            "aprobacion": 39.9510017021,
+            "desaprobacion": 43.22,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "HUALGAYOC",
+            "aprobacion": 39.9510017021,
+            "desaprobacion": 43.22,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "SECHURA",
+            "aprobacion": 39.9510017021,
+            "desaprobacion": 43.22,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "MORROPON",
+            "aprobacion": 39.9510017021,
+            "desaprobacion": 43.22,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "OTUZCO",
+            "aprobacion": 39.9510017021,
+            "desaprobacion": 43.22,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "CASMA",
+            "aprobacion": 39.9510017021,
+            "desaprobacion": 43.22,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "TUMBES",
+            "aprobacion": 39.9510017021,
+            "desaprobacion": 43.22,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "HUANCABAMBA",
+            "aprobacion": 39.9510017021,
+            "desaprobacion": 43.22,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "BOLIVAR",
+            "aprobacion": 39.9510017021,
+            "desaprobacion": 43.22,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "FERREÑAFE",
+            "aprobacion": 39.9510017021,
+            "desaprobacion": 43.22,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "HUAYLAS",
+            "aprobacion": 39.9510017021,
+            "desaprobacion": 43.22,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "CHEPEN",
+            "aprobacion": 39.9510017021,
+            "desaprobacion": 43.22,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "PACASMAYO",
+            "aprobacion": 39.9510017021,
+            "desaprobacion": 43.22,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "HUARI",
+            "aprobacion": 39.9510017021,
+            "desaprobacion": 43.22,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "SANTA",
+            "aprobacion": 39.9510017021,
+            "desaprobacion": 43.22,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "LAMBAYEQUE",
+            "aprobacion": 39.9510017021,
+            "desaprobacion": 43.22,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "SANCHEZ CARRION",
+            "aprobacion": 39.9510017021,
+            "desaprobacion": 43.22,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "YUNGAY",
+            "aprobacion": 39.9510017021,
+            "desaprobacion": 43.22,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "QUISPICANCHI",
+            "aprobacion": 49.8757668439,
+            "desaprobacion": 32.13,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "URUBAMBA",
+            "aprobacion": 49.8757668439,
+            "desaprobacion": 32.13,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "CUSCO",
+            "aprobacion": 49.8757668439,
+            "desaprobacion": 32.13,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "AYMARAES",
+            "aprobacion": 49.8757668439,
+            "desaprobacion": 32.13,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "MARISCAL NIETO",
+            "aprobacion": 49.8757668439,
+            "desaprobacion": 32.13,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "HUAMANGA",
+            "aprobacion": 49.8757668439,
+            "desaprobacion": 32.13,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "PUNO",
+            "aprobacion": 49.8757668439,
+            "desaprobacion": 32.13,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "AREQUIPA",
+            "aprobacion": 49.8757668439,
+            "desaprobacion": 32.13,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "ANTA",
+            "aprobacion": 49.8757668439,
+            "desaprobacion": 32.13,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "COTABAMBAS",
+            "aprobacion": 49.8757668439,
+            "desaprobacion": 32.13,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "TACNA",
+            "aprobacion": 49.8757668439,
+            "desaprobacion": 32.13,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "HUANCA SANCOS",
+            "aprobacion": 49.8757668439,
+            "desaprobacion": 32.13,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "AZANGARO",
+            "aprobacion": 49.8757668439,
+            "desaprobacion": 32.13,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "CARAVELI",
+            "aprobacion": 49.8757668439,
+            "desaprobacion": 32.13,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "CAMANA",
+            "aprobacion": 49.8757668439,
+            "desaprobacion": 32.13,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "ACOMAYO",
+            "aprobacion": 49.8757668439,
+            "desaprobacion": 32.13,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "PISCO",
+            "aprobacion": 49.8757668439,
+            "desaprobacion": 32.13,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "ICA",
+            "aprobacion": 49.8757668439,
+            "desaprobacion": 32.13,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "NAZCA",
+            "aprobacion": 49.8757668439,
+            "desaprobacion": 32.13,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "YUNGUYO",
+            "aprobacion": 49.8757668439,
+            "desaprobacion": 32.13,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "CARABAYA",
+            "aprobacion": 49.8757668439,
+            "desaprobacion": 32.13,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "PARINACOCHAS",
+            "aprobacion": 49.8757668439,
+            "desaprobacion": 32.13,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "LA MAR",
+            "aprobacion": 49.8757668439,
+            "desaprobacion": 32.13,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "CALCA",
+            "aprobacion": 49.8757668439,
+            "desaprobacion": 32.13,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "PAUCAR DEL SARA SARA",
+            "aprobacion": 49.8757668439,
+            "desaprobacion": 32.13,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "EL COLLAO",
+            "aprobacion": 49.8757668439,
+            "desaprobacion": 32.13,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "SAN ROMAN",
+            "aprobacion": 49.8757668439,
+            "desaprobacion": 32.13,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "ESPINAR",
+            "aprobacion": 49.8757668439,
+            "desaprobacion": 32.13,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "ISLAY",
+            "aprobacion": 49.8757668439,
+            "desaprobacion": 32.13,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "CHINCHEROS",
+            "aprobacion": 49.8757668439,
+            "desaprobacion": 32.13,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "LUCANAS",
+            "aprobacion": 49.8757668439,
+            "desaprobacion": 32.13,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "CANGALLO",
+            "aprobacion": 49.8757668439,
+            "desaprobacion": 32.13,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "VILCAS HUAMAN",
+            "aprobacion": 49.8757668439,
+            "desaprobacion": 32.13,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "LAMPA",
+            "aprobacion": 49.8757668439,
+            "desaprobacion": 32.13,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "GRAU",
+            "aprobacion": 49.8757668439,
+            "desaprobacion": 32.13,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "CHUCUITO",
+            "aprobacion": 49.8757668439,
+            "desaprobacion": 32.13,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "CHINCHA",
+            "aprobacion": 49.8757668439,
+            "desaprobacion": 32.13,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "MELGAR",
+            "aprobacion": 49.8757668439,
+            "desaprobacion": 32.13,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "ANDAHUAYLAS",
+            "aprobacion": 49.8757668439,
+            "desaprobacion": 32.13,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "PAUCARTAMBO",
+            "aprobacion": 49.8757668439,
+            "desaprobacion": 32.13,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "CHUMBIVILCAS",
+            "aprobacion": 49.8757668439,
+            "desaprobacion": 32.13,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "HUANTA",
+            "aprobacion": 49.8757668439,
+            "desaprobacion": 32.13,
+            "periodo": "AGOSTO 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "PASCO",
+            "aprobacion": 48.0280405498,
+            "desaprobacion": 35.65,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "DANIEL ALCIDES CARRION",
+            "aprobacion": 48.0280405498,
+            "desaprobacion": 35.65,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "CANTA",
+            "aprobacion": 48.0280405498,
+            "desaprobacion": 35.65,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "CAÑETE",
+            "aprobacion": 48.0280405498,
+            "desaprobacion": 35.65,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "HUANUCO",
+            "aprobacion": 48.0280405498,
+            "desaprobacion": 35.65,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "OYON",
+            "aprobacion": 48.0280405498,
+            "desaprobacion": 35.65,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "HUAROCHIRI",
+            "aprobacion": 48.0280405498,
+            "desaprobacion": 35.65,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "HUANCAYO",
+            "aprobacion": 48.0280405498,
+            "desaprobacion": 35.65,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "CHURCAMPA",
+            "aprobacion": 48.0280405498,
+            "desaprobacion": 35.65,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "AMBO",
+            "aprobacion": 48.0280405498,
+            "desaprobacion": 35.65,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "CONCEPCION",
+            "aprobacion": 48.0280405498,
+            "desaprobacion": 35.65,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "TARMA",
+            "aprobacion": 48.0280405498,
+            "desaprobacion": 35.65,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "HUARAL",
+            "aprobacion": 48.0280405498,
+            "desaprobacion": 35.65,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "ANGARAES",
+            "aprobacion": 48.0280405498,
+            "desaprobacion": 35.65,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "HUAYTARA",
+            "aprobacion": 48.0280405498,
+            "desaprobacion": 35.65,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "HUAURA",
+            "aprobacion": 48.0280405498,
+            "desaprobacion": 35.65,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "HUANCAVELICA",
+            "aprobacion": 48.0280405498,
+            "desaprobacion": 35.65,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "JAUJA",
+            "aprobacion": 48.0280405498,
+            "desaprobacion": 35.65,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "BARRANCA",
+            "aprobacion": 48.0280405498,
+            "desaprobacion": 35.65,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "CHUPACA",
+            "aprobacion": 48.0280405498,
+            "desaprobacion": 35.65,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "JUNIN",
+            "aprobacion": 48.0280405498,
+            "desaprobacion": 35.65,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "TAYACAJA",
+            "aprobacion": 48.0280405498,
+            "desaprobacion": 35.65,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "HUAMALIES",
+            "aprobacion": 48.0280405498,
+            "desaprobacion": 35.65,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "DOS DE MAYO",
+            "aprobacion": 48.0280405498,
+            "desaprobacion": 35.65,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "LIMA METROPOLITANA",
+            "prov": "LIMA",
+            "aprobacion": 25.3797881732,
+            "desaprobacion": 57.9,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "LIMA METROPOLITANA",
+            "prov": "CALLAO",
+            "aprobacion": 25.3797881732,
+            "desaprobacion": 57.9,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "MOYOBAMBA",
+            "aprobacion": 43.1215313939,
+            "desaprobacion": 33.13,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "RIOJA",
+            "aprobacion": 43.1215313939,
+            "desaprobacion": 33.13,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "UTCUBAMBA",
+            "aprobacion": 43.1215313939,
+            "desaprobacion": 33.13,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "SAN IGNACIO",
+            "aprobacion": 43.1215313939,
+            "desaprobacion": 33.13,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "MAYNAS",
+            "aprobacion": 43.1215313939,
+            "desaprobacion": 33.13,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "SAN MARTIN",
+            "aprobacion": 43.1215313939,
+            "desaprobacion": 33.13,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "CORONEL PORTILLO",
+            "aprobacion": 43.1215313939,
+            "desaprobacion": 33.13,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "TOCACHE",
+            "aprobacion": 43.1215313939,
+            "desaprobacion": 33.13,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "SATIPO",
+            "aprobacion": 43.1215313939,
+            "desaprobacion": 33.13,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "LA CONVENCION",
+            "aprobacion": 43.1215313939,
+            "desaprobacion": 33.13,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "LEONCIO PRADO",
+            "aprobacion": 43.1215313939,
+            "desaprobacion": 33.13,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "TAMBOPATA",
+            "aprobacion": 43.1215313939,
+            "desaprobacion": 33.13,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "ALTO AMAZONAS",
+            "aprobacion": 43.1215313939,
+            "desaprobacion": 33.13,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "CHANCHAMAYO",
+            "aprobacion": 43.1215313939,
+            "desaprobacion": 33.13,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "EL DORADO",
+            "aprobacion": 43.1215313939,
+            "desaprobacion": 33.13,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "BONGARA",
+            "aprobacion": 43.1215313939,
+            "desaprobacion": 33.13,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "LAMAS",
+            "aprobacion": 43.1215313939,
+            "desaprobacion": 33.13,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "JAEN",
+            "aprobacion": 43.1215313939,
+            "desaprobacion": 33.13,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "LORETO",
+            "aprobacion": 43.1215313939,
+            "desaprobacion": 33.13,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "LAMBAYEQUE",
+            "aprobacion": 42.2056045796,
+            "desaprobacion": 37.89,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "PIURA",
+            "aprobacion": 42.2056045796,
+            "desaprobacion": 37.89,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "HUARAZ",
+            "aprobacion": 42.2056045796,
+            "desaprobacion": 37.89,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "SANTA",
+            "aprobacion": 42.2056045796,
+            "desaprobacion": 37.89,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "TRUJILLO",
+            "aprobacion": 42.2056045796,
+            "desaprobacion": 37.89,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "SAN MARCOS",
+            "aprobacion": 42.2056045796,
+            "desaprobacion": 37.89,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "HUALGAYOC",
+            "aprobacion": 42.2056045796,
+            "desaprobacion": 37.89,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "TUMBES",
+            "aprobacion": 42.2056045796,
+            "desaprobacion": 37.89,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "SANTIAGO DE CHUCO",
+            "aprobacion": 42.2056045796,
+            "desaprobacion": 37.89,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "FERREÑAFE",
+            "aprobacion": 42.2056045796,
+            "desaprobacion": 37.89,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "JULCAN",
+            "aprobacion": 42.2056045796,
+            "desaprobacion": 37.89,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "CHOTA",
+            "aprobacion": 42.2056045796,
+            "desaprobacion": 37.89,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "CHACHAPOYAS",
+            "aprobacion": 42.2056045796,
+            "desaprobacion": 37.89,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "ZARUMILLA",
+            "aprobacion": 42.2056045796,
+            "desaprobacion": 37.89,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "CAJABAMBA",
+            "aprobacion": 42.2056045796,
+            "desaprobacion": 37.89,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "SULLANA",
+            "aprobacion": 42.2056045796,
+            "desaprobacion": 37.89,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "CHICLAYO",
+            "aprobacion": 42.2056045796,
+            "desaprobacion": 37.89,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "AYABACA",
+            "aprobacion": 42.2056045796,
+            "desaprobacion": 37.89,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "PAITA",
+            "aprobacion": 42.2056045796,
+            "desaprobacion": 37.89,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "HUARI",
+            "aprobacion": 42.2056045796,
+            "desaprobacion": 37.89,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "CAJAMARCA",
+            "aprobacion": 42.2056045796,
+            "desaprobacion": 37.89,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "SANCHEZ CARRION",
+            "aprobacion": 42.2056045796,
+            "desaprobacion": 37.89,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "CUTERVO",
+            "aprobacion": 42.2056045796,
+            "desaprobacion": 37.89,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "CONTUMAZA",
+            "aprobacion": 42.2056045796,
+            "desaprobacion": 37.89,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "TALARA",
+            "aprobacion": 42.2056045796,
+            "desaprobacion": 37.89,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "MORROPON",
+            "aprobacion": 42.2056045796,
+            "desaprobacion": 37.89,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "CELENDIN",
+            "aprobacion": 42.2056045796,
+            "desaprobacion": 37.89,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "HUANCABAMBA",
+            "aprobacion": 42.2056045796,
+            "desaprobacion": 37.89,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "ASCOPE",
+            "aprobacion": 42.2056045796,
+            "desaprobacion": 37.89,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "VIRU",
+            "aprobacion": 42.2056045796,
+            "desaprobacion": 37.89,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "PALLASCA",
+            "aprobacion": 42.2056045796,
+            "desaprobacion": 37.89,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "SANTA CRUZ",
+            "aprobacion": 42.2056045796,
+            "desaprobacion": 37.89,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "SAN MIGUEL",
+            "aprobacion": 42.2056045796,
+            "desaprobacion": 37.89,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "CASMA",
+            "aprobacion": 42.2056045796,
+            "desaprobacion": 37.89,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "SAN PABLO",
+            "aprobacion": 42.2056045796,
+            "desaprobacion": 37.89,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "CUSCO",
+            "aprobacion": 57.9378801569,
+            "desaprobacion": 27.9,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "TACNA",
+            "aprobacion": 57.9378801569,
+            "desaprobacion": 27.9,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "CALCA",
+            "aprobacion": 57.9378801569,
+            "desaprobacion": 27.9,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "CHINCHA",
+            "aprobacion": 57.9378801569,
+            "desaprobacion": 27.9,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "AREQUIPA",
+            "aprobacion": 57.9378801569,
+            "desaprobacion": 27.9,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "SAN ROMAN",
+            "aprobacion": 57.9378801569,
+            "desaprobacion": 27.9,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "ICA",
+            "aprobacion": 57.9378801569,
+            "desaprobacion": 27.9,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "PUNO",
+            "aprobacion": 57.9378801569,
+            "desaprobacion": 27.9,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "CHUCUITO",
+            "aprobacion": 57.9378801569,
+            "desaprobacion": 27.9,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "QUISPICANCHI",
+            "aprobacion": 57.9378801569,
+            "desaprobacion": 27.9,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "ESPINAR",
+            "aprobacion": 57.9378801569,
+            "desaprobacion": 27.9,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "JORGE BASADRE",
+            "aprobacion": 57.9378801569,
+            "desaprobacion": 27.9,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "GENERAL SANCHEZ CERRO",
+            "aprobacion": 57.9378801569,
+            "desaprobacion": 27.9,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "HUAMANGA",
+            "aprobacion": 57.9378801569,
+            "desaprobacion": 27.9,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "CASTILLA",
+            "aprobacion": 57.9378801569,
+            "desaprobacion": 27.9,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "YUNGUYO",
+            "aprobacion": 57.9378801569,
+            "desaprobacion": 27.9,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "PARURO",
+            "aprobacion": 57.9378801569,
+            "desaprobacion": 27.9,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "CARABAYA",
+            "aprobacion": 57.9378801569,
+            "desaprobacion": 27.9,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "AZANGARO",
+            "aprobacion": 57.9378801569,
+            "desaprobacion": 27.9,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "LA UNION",
+            "aprobacion": 57.9378801569,
+            "desaprobacion": 27.9,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "ABANCAY",
+            "aprobacion": 57.9378801569,
+            "desaprobacion": 27.9,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "CHUMBIVILCAS",
+            "aprobacion": 57.9378801569,
+            "desaprobacion": 27.9,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "PARINACOCHAS",
+            "aprobacion": 57.9378801569,
+            "desaprobacion": 27.9,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "MARISCAL NIETO",
+            "aprobacion": 57.9378801569,
+            "desaprobacion": 27.9,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "VILCAS HUAMAN",
+            "aprobacion": 57.9378801569,
+            "desaprobacion": 27.9,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "CHINCHEROS",
+            "aprobacion": 57.9378801569,
+            "desaprobacion": 27.9,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "CANCHIS",
+            "aprobacion": 57.9378801569,
+            "desaprobacion": 27.9,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "ANDAHUAYLAS",
+            "aprobacion": 57.9378801569,
+            "desaprobacion": 27.9,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "CANGALLO",
+            "aprobacion": 57.9378801569,
+            "desaprobacion": 27.9,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "LA MAR",
+            "aprobacion": 57.9378801569,
+            "desaprobacion": 27.9,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "PISCO",
+            "aprobacion": 57.9378801569,
+            "desaprobacion": 27.9,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "CANAS",
+            "aprobacion": 57.9378801569,
+            "desaprobacion": 27.9,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "PAUCARTAMBO",
+            "aprobacion": 57.9378801569,
+            "desaprobacion": 27.9,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "HUANCANE",
+            "aprobacion": 57.9378801569,
+            "desaprobacion": 27.9,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "GRAU",
+            "aprobacion": 57.9378801569,
+            "desaprobacion": 27.9,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "CAYLLOMA",
+            "aprobacion": 57.9378801569,
+            "desaprobacion": 27.9,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "HUANTA",
+            "aprobacion": 57.9378801569,
+            "desaprobacion": 27.9,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "ILO",
+            "aprobacion": 57.9378801569,
+            "desaprobacion": 27.9,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "ISLAY",
+            "aprobacion": 57.9378801569,
+            "desaprobacion": 27.9,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "CONDESUYOS",
+            "aprobacion": 57.9378801569,
+            "desaprobacion": 27.9,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "NAZCA",
+            "aprobacion": 57.9378801569,
+            "desaprobacion": 27.9,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "LUCANAS",
+            "aprobacion": 57.9378801569,
+            "desaprobacion": 27.9,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "TARATA",
+            "aprobacion": 57.9378801569,
+            "desaprobacion": 27.9,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "URUBAMBA",
+            "aprobacion": 57.9378801569,
+            "desaprobacion": 27.9,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "VICTOR FAJARDO",
+            "aprobacion": 57.9378801569,
+            "desaprobacion": 27.9,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "MELGAR",
+            "aprobacion": 57.9378801569,
+            "desaprobacion": 27.9,
+            "periodo": "SETIEMBRE 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "DANIEL ALCIDES CARRION",
+            "aprobacion": 35.3292034195,
+            "desaprobacion": 48.54,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "PASCO",
+            "aprobacion": 35.3292034195,
+            "desaprobacion": 48.54,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "HUANCAVELICA",
+            "aprobacion": 35.3292034195,
+            "desaprobacion": 48.54,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "HUAURA",
+            "aprobacion": 35.3292034195,
+            "desaprobacion": 48.54,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "HUANCAYO",
+            "aprobacion": 35.3292034195,
+            "desaprobacion": 48.54,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "HUANUCO",
+            "aprobacion": 35.3292034195,
+            "desaprobacion": 48.54,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "HUACAYBAMBA",
+            "aprobacion": 35.3292034195,
+            "desaprobacion": 48.54,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "CAÑETE",
+            "aprobacion": 35.3292034195,
+            "desaprobacion": 48.54,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "ANGARAES",
+            "aprobacion": 35.3292034195,
+            "desaprobacion": 48.54,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "HUARAL",
+            "aprobacion": 35.3292034195,
+            "desaprobacion": 48.54,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "CHUPACA",
+            "aprobacion": 35.3292034195,
+            "desaprobacion": 48.54,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "DOS DE MAYO",
+            "aprobacion": 35.3292034195,
+            "desaprobacion": 48.54,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "TARMA",
+            "aprobacion": 35.3292034195,
+            "desaprobacion": 48.54,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "CONCEPCION",
+            "aprobacion": 35.3292034195,
+            "desaprobacion": 48.54,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "LIMA METROPOLITANA",
+            "prov": "LIMA",
+            "aprobacion": 28.7051824032,
+            "desaprobacion": 55.62,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "LIMA METROPOLITANA",
+            "prov": "CALLAO",
+            "aprobacion": 28.7051824032,
+            "desaprobacion": 55.62,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "SAN MARTIN",
+            "aprobacion": 45.8995507017,
+            "desaprobacion": 38.94,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "UCAYALI",
+            "aprobacion": 45.8995507017,
+            "desaprobacion": 38.94,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "LEONCIO PRADO",
+            "aprobacion": 45.8995507017,
+            "desaprobacion": 38.94,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "LAMAS",
+            "aprobacion": 45.8995507017,
+            "desaprobacion": 38.94,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "MAYNAS",
+            "aprobacion": 45.8995507017,
+            "desaprobacion": 38.94,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "BELLAVISTA",
+            "aprobacion": 45.8995507017,
+            "desaprobacion": 38.94,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "REQUENA",
+            "aprobacion": 45.8995507017,
+            "desaprobacion": 38.94,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "OXAPAMPA",
+            "aprobacion": 45.8995507017,
+            "desaprobacion": 38.94,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "MOYOBAMBA",
+            "aprobacion": 45.8995507017,
+            "desaprobacion": 38.94,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "DATEM DEL MARAÑON",
+            "aprobacion": 45.8995507017,
+            "desaprobacion": 38.94,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "CHANCHAMAYO",
+            "aprobacion": 45.8995507017,
+            "desaprobacion": 38.94,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "PADRE ABAD",
+            "aprobacion": 45.8995507017,
+            "desaprobacion": 38.94,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "TAMBOPATA",
+            "aprobacion": 45.8995507017,
+            "desaprobacion": 38.94,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "LORETO",
+            "aprobacion": 45.8995507017,
+            "desaprobacion": 38.94,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "CORONEL PORTILLO",
+            "aprobacion": 45.8995507017,
+            "desaprobacion": 38.94,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "SATIPO",
+            "aprobacion": 45.8995507017,
+            "desaprobacion": 38.94,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "MANU",
+            "aprobacion": 45.8995507017,
+            "desaprobacion": 38.94,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "JAEN",
+            "aprobacion": 45.8995507017,
+            "desaprobacion": 38.94,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "UTCUBAMBA",
+            "aprobacion": 45.8995507017,
+            "desaprobacion": 38.94,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "ALTO AMAZONAS",
+            "aprobacion": 45.8995507017,
+            "desaprobacion": 38.94,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "BAGUA",
+            "aprobacion": 45.8995507017,
+            "desaprobacion": 38.94,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "RIOJA",
+            "aprobacion": 45.8995507017,
+            "desaprobacion": 38.94,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "TOCACHE",
+            "aprobacion": 45.8995507017,
+            "desaprobacion": 38.94,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "BONGARA",
+            "aprobacion": 45.8995507017,
+            "desaprobacion": 38.94,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "LA CONVENCION",
+            "aprobacion": 45.8995507017,
+            "desaprobacion": 38.94,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "PAITA",
+            "aprobacion": 34.2225125629,
+            "desaprobacion": 47.86,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "LAMBAYEQUE",
+            "aprobacion": 34.2225125629,
+            "desaprobacion": 47.86,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "PIURA",
+            "aprobacion": 34.2225125629,
+            "desaprobacion": 47.86,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "ASCOPE",
+            "aprobacion": 34.2225125629,
+            "desaprobacion": 47.86,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "FERREÑAFE",
+            "aprobacion": 34.2225125629,
+            "desaprobacion": 47.86,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "CHICLAYO",
+            "aprobacion": 34.2225125629,
+            "desaprobacion": 47.86,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "ZARUMILLA",
+            "aprobacion": 34.2225125629,
+            "desaprobacion": 47.86,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "CHOTA",
+            "aprobacion": 34.2225125629,
+            "desaprobacion": 47.86,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "CAJAMARCA",
+            "aprobacion": 34.2225125629,
+            "desaprobacion": 47.86,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "TRUJILLO",
+            "aprobacion": 34.2225125629,
+            "desaprobacion": 47.86,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "SANTIAGO DE CHUCO",
+            "aprobacion": 34.2225125629,
+            "desaprobacion": 47.86,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "CHEPEN",
+            "aprobacion": 34.2225125629,
+            "desaprobacion": 47.86,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "TALARA",
+            "aprobacion": 34.2225125629,
+            "desaprobacion": 47.86,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "SULLANA",
+            "aprobacion": 34.2225125629,
+            "desaprobacion": 47.86,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "SANCHEZ CARRION",
+            "aprobacion": 34.2225125629,
+            "desaprobacion": 47.86,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "CAJABAMBA",
+            "aprobacion": 34.2225125629,
+            "desaprobacion": 47.86,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "CELENDIN",
+            "aprobacion": 34.2225125629,
+            "desaprobacion": 47.86,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "TUMBES",
+            "aprobacion": 34.2225125629,
+            "desaprobacion": 47.86,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "LUYA",
+            "aprobacion": 34.2225125629,
+            "desaprobacion": 47.86,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "CASMA",
+            "aprobacion": 34.2225125629,
+            "desaprobacion": 47.86,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "SAN MARCOS",
+            "aprobacion": 34.2225125629,
+            "desaprobacion": 47.86,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "SANTA CRUZ",
+            "aprobacion": 34.2225125629,
+            "desaprobacion": 47.86,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "HUARAZ",
+            "aprobacion": 34.2225125629,
+            "desaprobacion": 47.86,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "HUALGAYOC",
+            "aprobacion": 34.2225125629,
+            "desaprobacion": 47.86,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "VIRU",
+            "aprobacion": 34.2225125629,
+            "desaprobacion": 47.86,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "SANTA",
+            "aprobacion": 34.2225125629,
+            "desaprobacion": 47.86,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "HUARMEY",
+            "aprobacion": 34.2225125629,
+            "desaprobacion": 47.86,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "SECHURA",
+            "aprobacion": 34.2225125629,
+            "desaprobacion": 47.86,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "SAN MIGUEL",
+            "aprobacion": 34.2225125629,
+            "desaprobacion": 47.86,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "HUARI",
+            "aprobacion": 34.2225125629,
+            "desaprobacion": 47.86,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "AYABACA",
+            "aprobacion": 34.2225125629,
+            "desaprobacion": 47.86,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "CORONGO",
+            "aprobacion": 34.2225125629,
+            "desaprobacion": 47.86,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "YUNGAY",
+            "aprobacion": 34.2225125629,
+            "desaprobacion": 47.86,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "MORROPON",
+            "aprobacion": 34.2225125629,
+            "desaprobacion": 47.86,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "PAUCARTAMBO",
+            "aprobacion": 42.1999521002,
+            "desaprobacion": 39.45,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "CHINCHA",
+            "aprobacion": 42.1999521002,
+            "desaprobacion": 39.45,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "CANCHIS",
+            "aprobacion": 42.1999521002,
+            "desaprobacion": 39.45,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "NAZCA",
+            "aprobacion": 42.1999521002,
+            "desaprobacion": 39.45,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "AREQUIPA",
+            "aprobacion": 42.1999521002,
+            "desaprobacion": 39.45,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "ABANCAY",
+            "aprobacion": 42.1999521002,
+            "desaprobacion": 39.45,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "ICA",
+            "aprobacion": 42.1999521002,
+            "desaprobacion": 39.45,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "AZANGARO",
+            "aprobacion": 42.1999521002,
+            "desaprobacion": 39.45,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "SAN ROMAN",
+            "aprobacion": 42.1999521002,
+            "desaprobacion": 39.45,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "CARABAYA",
+            "aprobacion": 42.1999521002,
+            "desaprobacion": 39.45,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "HUAMANGA",
+            "aprobacion": 42.1999521002,
+            "desaprobacion": 39.45,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "SUCRE",
+            "aprobacion": 42.1999521002,
+            "desaprobacion": 39.45,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "PARINACOCHAS",
+            "aprobacion": 42.1999521002,
+            "desaprobacion": 39.45,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "PARURO",
+            "aprobacion": 42.1999521002,
+            "desaprobacion": 39.45,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "CUSCO",
+            "aprobacion": 42.1999521002,
+            "desaprobacion": 39.45,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "ANDAHUAYLAS",
+            "aprobacion": 42.1999521002,
+            "desaprobacion": 39.45,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "MARISCAL NIETO",
+            "aprobacion": 42.1999521002,
+            "desaprobacion": 39.45,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "CALCA",
+            "aprobacion": 42.1999521002,
+            "desaprobacion": 39.45,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "TACNA",
+            "aprobacion": 42.1999521002,
+            "desaprobacion": 39.45,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "ILO",
+            "aprobacion": 42.1999521002,
+            "desaprobacion": 39.45,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "COTABAMBAS",
+            "aprobacion": 42.1999521002,
+            "desaprobacion": 39.45,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "TARATA",
+            "aprobacion": 42.1999521002,
+            "desaprobacion": 39.45,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "CHUMBIVILCAS",
+            "aprobacion": 42.1999521002,
+            "desaprobacion": 39.45,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "CANDARAVE",
+            "aprobacion": 42.1999521002,
+            "desaprobacion": 39.45,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "YUNGUYO",
+            "aprobacion": 42.1999521002,
+            "desaprobacion": 39.45,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "HUANTA",
+            "aprobacion": 42.1999521002,
+            "desaprobacion": 39.45,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "PAUCAR DEL SARA SARA",
+            "aprobacion": 42.1999521002,
+            "desaprobacion": 39.45,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "CHUCUITO",
+            "aprobacion": 42.1999521002,
+            "desaprobacion": 39.45,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "PUNO",
+            "aprobacion": 42.1999521002,
+            "desaprobacion": 39.45,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "ISLAY",
+            "aprobacion": 42.1999521002,
+            "desaprobacion": 39.45,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "MELGAR",
+            "aprobacion": 42.1999521002,
+            "desaprobacion": 39.45,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "CHINCHEROS",
+            "aprobacion": 42.1999521002,
+            "desaprobacion": 39.45,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "PISCO",
+            "aprobacion": 42.1999521002,
+            "desaprobacion": 39.45,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "GRAU",
+            "aprobacion": 42.1999521002,
+            "desaprobacion": 39.45,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "LAMPA",
+            "aprobacion": 42.1999521002,
+            "desaprobacion": 39.45,
+            "periodo": "OCTUBRE 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "HUANCAVELICA",
+            "aprobacion": 23.3889130612,
+            "desaprobacion": 60.96,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "HUAROCHIRI",
+            "aprobacion": 23.3889130612,
+            "desaprobacion": 60.96,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "TAYACAJA",
+            "aprobacion": 23.3889130612,
+            "desaprobacion": 60.96,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "HUANUCO",
+            "aprobacion": 23.3889130612,
+            "desaprobacion": 60.96,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "JAUJA",
+            "aprobacion": 23.3889130612,
+            "desaprobacion": 60.96,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "HUANCAYO",
+            "aprobacion": 23.3889130612,
+            "desaprobacion": 60.96,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "DOS DE MAYO",
+            "aprobacion": 23.3889130612,
+            "desaprobacion": 60.96,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "CHUPACA",
+            "aprobacion": 23.3889130612,
+            "desaprobacion": 60.96,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "HUARAL",
+            "aprobacion": 23.3889130612,
+            "desaprobacion": 60.96,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "PASCO",
+            "aprobacion": 23.3889130612,
+            "desaprobacion": 60.96,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "HUAMALIES",
+            "aprobacion": 23.3889130612,
+            "desaprobacion": 60.96,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "BARRANCA",
+            "aprobacion": 23.3889130612,
+            "desaprobacion": 60.96,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "ACOBAMBA",
+            "aprobacion": 23.3889130612,
+            "desaprobacion": 60.96,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "CHURCAMPA",
+            "aprobacion": 23.3889130612,
+            "desaprobacion": 60.96,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "LIMA METROPOLITANA",
+            "prov": "LIMA",
+            "aprobacion": 16.2920623862,
+            "desaprobacion": 76.32,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "LIMA METROPOLITANA",
+            "prov": "CALLAO",
+            "aprobacion": 16.2920623862,
+            "desaprobacion": 76.32,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "MARISCAL CACERES",
+            "aprobacion": 33.1336235338,
+            "desaprobacion": 54.6,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "SAN MARTIN",
+            "aprobacion": 33.1336235338,
+            "desaprobacion": 54.6,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "BAGUA",
+            "aprobacion": 33.1336235338,
+            "desaprobacion": 54.6,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "JAEN",
+            "aprobacion": 33.1336235338,
+            "desaprobacion": 54.6,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "CORONEL PORTILLO",
+            "aprobacion": 33.1336235338,
+            "desaprobacion": 54.6,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "EL DORADO",
+            "aprobacion": 33.1336235338,
+            "desaprobacion": 54.6,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "TAMBOPATA",
+            "aprobacion": 33.1336235338,
+            "desaprobacion": 54.6,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "LEONCIO PRADO",
+            "aprobacion": 33.1336235338,
+            "desaprobacion": 54.6,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "SATIPO",
+            "aprobacion": 33.1336235338,
+            "desaprobacion": 54.6,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "RIOJA",
+            "aprobacion": 33.1336235338,
+            "desaprobacion": 54.6,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "SAN IGNACIO",
+            "aprobacion": 33.1336235338,
+            "desaprobacion": 54.6,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "PICOTA",
+            "aprobacion": 33.1336235338,
+            "desaprobacion": 54.6,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "DATEM DEL MARAÑON",
+            "aprobacion": 33.1336235338,
+            "desaprobacion": 54.6,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "LA CONVENCION",
+            "aprobacion": 33.1336235338,
+            "desaprobacion": 54.6,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "MAYNAS",
+            "aprobacion": 33.1336235338,
+            "desaprobacion": 54.6,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "MOYOBAMBA",
+            "aprobacion": 33.1336235338,
+            "desaprobacion": 54.6,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "LORETO",
+            "aprobacion": 33.1336235338,
+            "desaprobacion": 54.6,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "PADRE ABAD",
+            "aprobacion": 33.1336235338,
+            "desaprobacion": 54.6,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "BELLAVISTA",
+            "aprobacion": 33.1336235338,
+            "desaprobacion": 54.6,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "TAHUAMANU",
+            "aprobacion": 33.1336235338,
+            "desaprobacion": 54.6,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "SANTA",
+            "aprobacion": 25.8997719183,
+            "desaprobacion": 64.66,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "ZARUMILLA",
+            "aprobacion": 25.8997719183,
+            "desaprobacion": 64.66,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "SAN MARCOS",
+            "aprobacion": 25.8997719183,
+            "desaprobacion": 64.66,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "PAITA",
+            "aprobacion": 25.8997719183,
+            "desaprobacion": 64.66,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "SANTA CRUZ",
+            "aprobacion": 25.8997719183,
+            "desaprobacion": 64.66,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "CHEPEN",
+            "aprobacion": 25.8997719183,
+            "desaprobacion": 64.66,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "CELENDIN",
+            "aprobacion": 25.8997719183,
+            "desaprobacion": 64.66,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "TALARA",
+            "aprobacion": 25.8997719183,
+            "desaprobacion": 64.66,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "TUMBES",
+            "aprobacion": 25.8997719183,
+            "desaprobacion": 64.66,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "CHICLAYO",
+            "aprobacion": 25.8997719183,
+            "desaprobacion": 64.66,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "SULLANA",
+            "aprobacion": 25.8997719183,
+            "desaprobacion": 64.66,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "CUTERVO",
+            "aprobacion": 25.8997719183,
+            "desaprobacion": 64.66,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "CAJAMARCA",
+            "aprobacion": 25.8997719183,
+            "desaprobacion": 64.66,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "HUARI",
+            "aprobacion": 25.8997719183,
+            "desaprobacion": 64.66,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "HUANCABAMBA",
+            "aprobacion": 25.8997719183,
+            "desaprobacion": 64.66,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "VIRU",
+            "aprobacion": 25.8997719183,
+            "desaprobacion": 64.66,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "CHACHAPOYAS",
+            "aprobacion": 25.8997719183,
+            "desaprobacion": 64.66,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "SECHURA",
+            "aprobacion": 25.8997719183,
+            "desaprobacion": 64.66,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "YUNGAY",
+            "aprobacion": 25.8997719183,
+            "desaprobacion": 64.66,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "SANCHEZ CARRION",
+            "aprobacion": 25.8997719183,
+            "desaprobacion": 64.66,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "TRUJILLO",
+            "aprobacion": 25.8997719183,
+            "desaprobacion": 64.66,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "CARHUAZ",
+            "aprobacion": 25.8997719183,
+            "desaprobacion": 64.66,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "HUARAZ",
+            "aprobacion": 25.8997719183,
+            "desaprobacion": 64.66,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "PIURA",
+            "aprobacion": 25.8997719183,
+            "desaprobacion": 64.66,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "AYABACA",
+            "aprobacion": 25.8997719183,
+            "desaprobacion": 64.66,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "CHOTA",
+            "aprobacion": 25.8997719183,
+            "desaprobacion": 64.66,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "CUSCO",
+            "aprobacion": 33.5269592798,
+            "desaprobacion": 55.57,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "CARAVELI",
+            "aprobacion": 33.5269592798,
+            "desaprobacion": 55.57,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "ABANCAY",
+            "aprobacion": 33.5269592798,
+            "desaprobacion": 55.57,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "PUNO",
+            "aprobacion": 33.5269592798,
+            "desaprobacion": 55.57,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "AREQUIPA",
+            "aprobacion": 33.5269592798,
+            "desaprobacion": 55.57,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "ANTABAMBA",
+            "aprobacion": 33.5269592798,
+            "desaprobacion": 55.57,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "SAN ANTONIO DE PUTINA",
+            "aprobacion": 33.5269592798,
+            "desaprobacion": 55.57,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "MELGAR",
+            "aprobacion": 33.5269592798,
+            "desaprobacion": 55.57,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "ILO",
+            "aprobacion": 33.5269592798,
+            "desaprobacion": 55.57,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "URUBAMBA",
+            "aprobacion": 33.5269592798,
+            "desaprobacion": 55.57,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "ANDAHUAYLAS",
+            "aprobacion": 33.5269592798,
+            "desaprobacion": 55.57,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "SAN ROMAN",
+            "aprobacion": 33.5269592798,
+            "desaprobacion": 55.57,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "CANDARAVE",
+            "aprobacion": 33.5269592798,
+            "desaprobacion": 55.57,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "AZANGARO",
+            "aprobacion": 33.5269592798,
+            "desaprobacion": 55.57,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "HUAMANGA",
+            "aprobacion": 33.5269592798,
+            "desaprobacion": 55.57,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "CARABAYA",
+            "aprobacion": 33.5269592798,
+            "desaprobacion": 55.57,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "CHUCUITO",
+            "aprobacion": 33.5269592798,
+            "desaprobacion": 55.57,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "LAMPA",
+            "aprobacion": 33.5269592798,
+            "desaprobacion": 55.57,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "CANCHIS",
+            "aprobacion": 33.5269592798,
+            "desaprobacion": 55.57,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "MARISCAL NIETO",
+            "aprobacion": 33.5269592798,
+            "desaprobacion": 55.57,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "PAUCARTAMBO",
+            "aprobacion": 33.5269592798,
+            "desaprobacion": 55.57,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "LA MAR",
+            "aprobacion": 33.5269592798,
+            "desaprobacion": 55.57,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "ISLAY",
+            "aprobacion": 33.5269592798,
+            "desaprobacion": 55.57,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "ICA",
+            "aprobacion": 33.5269592798,
+            "desaprobacion": 55.57,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "CHINCHEROS",
+            "aprobacion": 33.5269592798,
+            "desaprobacion": 55.57,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "TACNA",
+            "aprobacion": 33.5269592798,
+            "desaprobacion": 55.57,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "AYMARAES",
+            "aprobacion": 33.5269592798,
+            "desaprobacion": 55.57,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "PAUCAR DEL SARA SARA",
+            "aprobacion": 33.5269592798,
+            "desaprobacion": 55.57,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "CASTILLA",
+            "aprobacion": 33.5269592798,
+            "desaprobacion": 55.57,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "EL COLLAO",
+            "aprobacion": 33.5269592798,
+            "desaprobacion": 55.57,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "JORGE BASADRE",
+            "aprobacion": 33.5269592798,
+            "desaprobacion": 55.57,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "CHINCHA",
+            "aprobacion": 33.5269592798,
+            "desaprobacion": 55.57,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "PISCO",
+            "aprobacion": 33.5269592798,
+            "desaprobacion": 55.57,
+            "periodo": "NOVIEMBRE 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "HUANCAVELICA",
+            "aprobacion": 33.0,
+            "desaprobacion": 54.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "HUAROCHIRI",
+            "aprobacion": 33.0,
+            "desaprobacion": 54.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "TAYACAJA",
+            "aprobacion": 33.0,
+            "desaprobacion": 54.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "HUANUCO",
+            "aprobacion": 33.0,
+            "desaprobacion": 54.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "JAUJA",
+            "aprobacion": 33.0,
+            "desaprobacion": 54.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "HUANCAYO",
+            "aprobacion": 33.0,
+            "desaprobacion": 54.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "DOS DE MAYO",
+            "aprobacion": 33.0,
+            "desaprobacion": 54.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "CHUPACA",
+            "aprobacion": 33.0,
+            "desaprobacion": 54.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "HUARAL",
+            "aprobacion": 33.0,
+            "desaprobacion": 54.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "PASCO",
+            "aprobacion": 33.0,
+            "desaprobacion": 54.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "HUAMALIES",
+            "aprobacion": 33.0,
+            "desaprobacion": 54.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "BARRANCA",
+            "aprobacion": 33.0,
+            "desaprobacion": 54.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "ACOBAMBA",
+            "aprobacion": 33.0,
+            "desaprobacion": 54.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "CHURCAMPA",
+            "aprobacion": 33.0,
+            "desaprobacion": 54.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "LIMA METROPOLITANA",
+            "prov": "LIMA",
+            "aprobacion": 19.0,
+            "desaprobacion": 71.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "LIMA METROPOLITANA",
+            "prov": "CALLAO",
+            "aprobacion": 19.0,
+            "desaprobacion": 71.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "MARISCAL CACERES",
+            "aprobacion": 40.0,
+            "desaprobacion": 47.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "SAN MARTIN",
+            "aprobacion": 40.0,
+            "desaprobacion": 47.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "BAGUA",
+            "aprobacion": 40.0,
+            "desaprobacion": 47.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "JAEN",
+            "aprobacion": 40.0,
+            "desaprobacion": 47.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "CORONEL PORTILLO",
+            "aprobacion": 40.0,
+            "desaprobacion": 47.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "EL DORADO",
+            "aprobacion": 40.0,
+            "desaprobacion": 47.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "TAMBOPATA",
+            "aprobacion": 40.0,
+            "desaprobacion": 47.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "LEONCIO PRADO",
+            "aprobacion": 40.0,
+            "desaprobacion": 47.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "SATIPO",
+            "aprobacion": 40.0,
+            "desaprobacion": 47.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "RIOJA",
+            "aprobacion": 40.0,
+            "desaprobacion": 47.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "SAN IGNACIO",
+            "aprobacion": 40.0,
+            "desaprobacion": 47.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "PICOTA",
+            "aprobacion": 40.0,
+            "desaprobacion": 47,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "DATEM DEL MARAÑON",
+            "aprobacion": 40.0,
+            "desaprobacion": 47.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "LA CONVENCION",
+            "aprobacion": 40.0,
+            "desaprobacion": 47.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "MAYNAS",
+            "aprobacion": 40.0,
+            "desaprobacion": 47.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "MOYOBAMBA",
+            "aprobacion": 40.0,
+            "desaprobacion": 47.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "LORETO",
+            "aprobacion": 40.0,
+            "desaprobacion": 47.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "PADRE ABAD",
+            "aprobacion": 40.0,
+            "desaprobacion": 47.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "BELLAVISTA",
+            "aprobacion": 40.0,
+            "desaprobacion": 47.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "TAHUAMANU",
+            "aprobacion": 40.0,
+            "desaprobacion": 47.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "SANTA",
+            "aprobacion": 25.0,
+            "desaprobacion": 64.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "ZARUMILLA",
+            "aprobacion": 25.0,
+            "desaprobacion": 64.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "SAN MARCOS",
+            "aprobacion": 25.0,
+            "desaprobacion": 64.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "PAITA",
+            "aprobacion": 25.0,
+            "desaprobacion": 64.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "SANTA CRUZ",
+            "aprobacion": 25.0,
+            "desaprobacion": 64.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "CHEPEN",
+            "aprobacion": 25.0,
+            "desaprobacion": 64.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "CELENDIN",
+            "aprobacion": 25.0,
+            "desaprobacion": 64.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "TALARA",
+            "aprobacion": 25.0,
+            "desaprobacion": 64.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "TUMBES",
+            "aprobacion": 25.0,
+            "desaprobacion": 64.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "CHICLAYO",
+            "aprobacion": 25.0,
+            "desaprobacion": 64.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "SULLANA",
+            "aprobacion": 25.0,
+            "desaprobacion": 64.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "CUTERVO",
+            "aprobacion": 25.0,
+            "desaprobacion": 64.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "CAJAMARCA",
+            "aprobacion": 25.0,
+            "desaprobacion": 64.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "HUARI",
+            "aprobacion": 25.0,
+            "desaprobacion": 64.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "HUANCABAMBA",
+            "aprobacion": 25.0,
+            "desaprobacion": 64.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "VIRU",
+            "aprobacion": 25.0,
+            "desaprobacion": 64.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "CHACHAPOYAS",
+            "aprobacion": 25.0,
+            "desaprobacion": 64.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "SECHURA",
+            "aprobacion": 25.0,
+            "desaprobacion": 64.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "YUNGAY",
+            "aprobacion": 25.0,
+            "desaprobacion": 64.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "SANCHEZ CARRION",
+            "aprobacion": 25.0,
+            "desaprobacion": 64.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "TRUJILLO",
+            "aprobacion": 25.0,
+            "desaprobacion": 64.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "CARHUAZ",
+            "aprobacion": 25.0,
+            "desaprobacion": 64.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "HUARAZ",
+            "aprobacion": 25.0,
+            "desaprobacion": 64.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "PIURA",
+            "aprobacion": 25.0,
+            "desaprobacion": 64.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "AYABACA",
+            "aprobacion": 25.0,
+            "desaprobacion": 64.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "CHOTA",
+            "aprobacion": 25.0,
+            "desaprobacion": 64.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "CUSCO",
+            "aprobacion": 40.0,
+            "desaprobacion": 48.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "CARAVELI",
+            "aprobacion": 40.0,
+            "desaprobacion": 48.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "ABANCAY",
+            "aprobacion": 40.0,
+            "desaprobacion": 48.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "PUNO",
+            "aprobacion": 40.0,
+            "desaprobacion": 48.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "AREQUIPA",
+            "aprobacion": 40.0,
+            "desaprobacion": 48.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "ANTABAMBA",
+            "aprobacion": 40.0,
+            "desaprobacion": 48.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "SAN ANTONIO DE PUTINA",
+            "aprobacion": 40.0,
+            "desaprobacion": 48.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "MELGAR",
+            "aprobacion": 40.0,
+            "desaprobacion": 48.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "ILO",
+            "aprobacion": 40.0,
+            "desaprobacion": 48.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "URUBAMBA",
+            "aprobacion": 40.0,
+            "desaprobacion": 48.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "ANDAHUAYLAS",
+            "aprobacion": 40.0,
+            "desaprobacion": 48.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "SAN ROMAN",
+            "aprobacion": 40.0,
+            "desaprobacion": 48.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "CANDARAVE",
+            "aprobacion": 40.0,
+            "desaprobacion": 48.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "AZANGARO",
+            "aprobacion": 40.0,
+            "desaprobacion": 48.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "HUAMANGA",
+            "aprobacion": 40.0,
+            "desaprobacion": 48.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "CARABAYA",
+            "aprobacion": 40.0,
+            "desaprobacion": 48.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "CHUCUITO",
+            "aprobacion": 40.0,
+            "desaprobacion": 48.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "LAMPA",
+            "aprobacion": 40.0,
+            "desaprobacion": 48.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "CANCHIS",
+            "aprobacion": 40.0,
+            "desaprobacion": 48.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "MARISCAL NIETO",
+            "aprobacion": 40.0,
+            "desaprobacion": 48.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "PAUCARTAMBO",
+            "aprobacion": 40.0,
+            "desaprobacion": 48.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "LA MAR",
+            "aprobacion": 40.0,
+            "desaprobacion": 48.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "ISLAY",
+            "aprobacion": 40.0,
+            "desaprobacion": 48.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "ICA",
+            "aprobacion": 40.0,
+            "desaprobacion": 48.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "CHINCHEROS",
+            "aprobacion": 40.0,
+            "desaprobacion": 48.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "TACNA",
+            "aprobacion": 40.0,
+            "desaprobacion": 48.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "AYMARAES",
+            "aprobacion": 40.0,
+            "desaprobacion": 48.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "PAUCAR DEL SARA SARA",
+            "aprobacion": 40.0,
+            "desaprobacion": 48.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "CASTILLA",
+            "aprobacion": 40.0,
+            "desaprobacion": 48.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "EL COLLAO",
+            "aprobacion": 40.0,
+            "desaprobacion": 48.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "JORGE BASADRE",
+            "aprobacion": 40.0,
+            "desaprobacion": 48.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "CHINCHA",
+            "aprobacion": 40.0,
+            "desaprobacion": 48.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "SUR",
+            "prov": "PISCO",
+            "aprobacion": 40.0,
+            "desaprobacion": 48.0,
+            "periodo": "DICIEMBRE 2021"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "HUANCAYO",
+            "aprobacion": 32.8,
+            "desaprobacion": 54.8,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "HUANUCO",
+            "aprobacion": 32.8,
+            "desaprobacion": 54.8,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "JUNIN",
+            "aprobacion": 32.8,
+            "desaprobacion": 54.8,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "HUANCAVELICA",
+            "aprobacion": 32.8,
+            "desaprobacion": 54.8,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "HUAMALIES",
+            "aprobacion": 32.8,
+            "desaprobacion": 54.8,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "LAURICOCHA",
+            "aprobacion": 32.8,
+            "desaprobacion": 54.8,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "CHURCAMPA",
+            "aprobacion": 32.8,
+            "desaprobacion": 54.8,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "HUARAL",
+            "aprobacion": 32.8,
+            "desaprobacion": 54.8,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "DANIEL ALCIDES CARRION",
+            "aprobacion": 32.8,
+            "desaprobacion": 54.8,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "ANGARAES",
+            "aprobacion": 32.8,
+            "desaprobacion": 54.8,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "PASCO",
+            "aprobacion": 32.8,
+            "desaprobacion": 54.8,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "TARMA",
+            "aprobacion": 32.8,
+            "desaprobacion": 54.8,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "TAYACAJA",
+            "aprobacion": 32.8,
+            "desaprobacion": 54.8,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "CAÑETE",
+            "aprobacion": 32.8,
+            "desaprobacion": 54.8,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "DOS DE MAYO",
+            "aprobacion": 32.8,
+            "desaprobacion": 54.8,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "HUAROCHIRI",
+            "aprobacion": 32.8,
+            "desaprobacion": 54.8,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "HUAURA",
+            "aprobacion": 32.8,
+            "desaprobacion": 54.8,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "JAUJA",
+            "aprobacion": 32.8,
+            "desaprobacion": 54.8,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "OYON",
+            "aprobacion": 32.8,
+            "desaprobacion": 54.8,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "YAULI",
+            "aprobacion": 32.8,
+            "desaprobacion": 54.8,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "CONCEPCION",
+            "aprobacion": 32.8,
+            "desaprobacion": 54.8,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "LIMA METROPOLITANA",
+            "prov": "LIMA",
+            "aprobacion": 18.2,
+            "desaprobacion": 74.7,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "LIMA METROPOLITANA",
+            "prov": "CALLAO",
+            "aprobacion": 18.2,
+            "desaprobacion": 74.7,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "MOYOBAMBA",
+            "aprobacion": 38.8,
+            "desaprobacion": 45.6,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "TOCACHE",
+            "aprobacion": 38.8,
+            "desaprobacion": 45.6,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "UTCUBAMBA",
+            "aprobacion": 38.8,
+            "desaprobacion": 45.6,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "LA CONVENCION",
+            "aprobacion": 38.8,
+            "desaprobacion": 45.6,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "BAGUA",
+            "aprobacion": 38.8,
+            "desaprobacion": 45.6,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "JAEN",
+            "aprobacion": 38.8,
+            "desaprobacion": 45.6,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "CHANCHAMAYO",
+            "aprobacion": 38.8,
+            "desaprobacion": 45.6,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "SAN MARTIN",
+            "aprobacion": 38.8,
+            "desaprobacion": 45.6,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "LAMAS",
+            "aprobacion": 38.8,
+            "desaprobacion": 45.6,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "TAHUAMANU",
+            "aprobacion": 38.8,
+            "desaprobacion": 45.6,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "SAN IGNACIO",
+            "aprobacion": 38.8,
+            "desaprobacion": 45.6,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "MARISCAL RAMON CASTILLA",
+            "aprobacion": 38.8,
+            "desaprobacion": 45.6,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "LEONCIO PRADO",
+            "aprobacion": 38.8,
+            "desaprobacion": 45.6,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "MARISCAL CACERES",
+            "aprobacion": 38.8,
+            "desaprobacion": 45.6,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "TAMBOPATA",
+            "aprobacion": 38.8,
+            "desaprobacion": 45.6,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "MANU",
+            "aprobacion": 38.8,
+            "desaprobacion": 45.6,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "CORONEL PORTILLO",
+            "aprobacion": 38.8,
+            "desaprobacion": 45.6,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "MAYNAS",
+            "aprobacion": 38.8,
+            "desaprobacion": 45.6,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "MARAÑON",
+            "aprobacion": 38.8,
+            "desaprobacion": 45.6,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "PUERTO INCA",
+            "aprobacion": 38.8,
+            "desaprobacion": 45.6,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "ALTO AMAZONAS",
+            "aprobacion": 38.8,
+            "desaprobacion": 45.6,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "RIOJA",
+            "aprobacion": 38.8,
+            "desaprobacion": 45.6,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "RODRIGUEZ DE MENDOZA",
+            "aprobacion": 38.8,
+            "desaprobacion": 45.6,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "EL DORADO",
+            "aprobacion": 38.8,
+            "desaprobacion": 45.6,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "UCAYALI",
+            "aprobacion": 38.8,
+            "desaprobacion": 45.6,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "PIURA",
+            "aprobacion": 28.7,
+            "desaprobacion": 62,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "PAITA",
+            "aprobacion": 28.7,
+            "desaprobacion": 62,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "SULLANA",
+            "aprobacion": 28.7,
+            "desaprobacion": 62,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "CHICLAYO",
+            "aprobacion": 28.7,
+            "desaprobacion": 62,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "CAJAMARCA",
+            "aprobacion": 28.7,
+            "desaprobacion": 62,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "HUARAZ",
+            "aprobacion": 28.7,
+            "desaprobacion": 62,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "CELENDIN",
+            "aprobacion": 28.7,
+            "desaprobacion": 62,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "RECUAY",
+            "aprobacion": 28.7,
+            "desaprobacion": 62,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "CHOTA",
+            "aprobacion": 28.7,
+            "desaprobacion": 62,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "ASCOPE",
+            "aprobacion": 28.7,
+            "desaprobacion": 62,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "AYABACA",
+            "aprobacion": 28.7,
+            "desaprobacion": 62,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "TRUJILLO",
+            "aprobacion": 28.7,
+            "desaprobacion": 62,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "LUYA",
+            "aprobacion": 28.7,
+            "desaprobacion": 62,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "HUALGAYOC",
+            "aprobacion": 28.7,
+            "desaprobacion": 62,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "SECHURA",
+            "aprobacion": 28.7,
+            "desaprobacion": 62,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "MORROPON",
+            "aprobacion": 28.7,
+            "desaprobacion": 62,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "OTUZCO",
+            "aprobacion": 28.7,
+            "desaprobacion": 62,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "CASMA",
+            "aprobacion": 28.7,
+            "desaprobacion": 62,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "TUMBES",
+            "aprobacion": 28.7,
+            "desaprobacion": 62,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "HUANCABAMBA",
+            "aprobacion": 28.7,
+            "desaprobacion": 62,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "BOLIVAR",
+            "aprobacion": 28.7,
+            "desaprobacion": 62,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "FERREÑAFE",
+            "aprobacion": 28.7,
+            "desaprobacion": 62,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "HUAYLAS",
+            "aprobacion": 28.7,
+            "desaprobacion": 62,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "CHEPEN",
+            "aprobacion": 28.7,
+            "desaprobacion": 62,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "PACASMAYO",
+            "aprobacion": 28.7,
+            "desaprobacion": 62,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "HUARI",
+            "aprobacion": 28.7,
+            "desaprobacion": 62,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "SANTA",
+            "aprobacion": 28.7,
+            "desaprobacion": 62,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "LAMBAYEQUE",
+            "aprobacion": 28.7,
+            "desaprobacion": 62,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "SANCHEZ CARRION",
+            "aprobacion": 28.7,
+            "desaprobacion": 62,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "YUNGAY",
+            "aprobacion": 28.7,
+            "desaprobacion": 62,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "QUISPICANCHI",
+            "aprobacion": 39.8,
+            "desaprobacion": 50.5,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "URUBAMBA",
+            "aprobacion": 39.8,
+            "desaprobacion": 50.5,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "CUSCO",
+            "aprobacion": 39.8,
+            "desaprobacion": 50.5,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "AYMARAES",
+            "aprobacion": 39.8,
+            "desaprobacion": 50.5,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "MARISCAL NIETO",
+            "aprobacion": 39.8,
+            "desaprobacion": 50.5,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "HUAMANGA",
+            "aprobacion": 39.8,
+            "desaprobacion": 50.5,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "PUNO",
+            "aprobacion": 39.8,
+            "desaprobacion": 50.5,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "AREQUIPA",
+            "aprobacion": 39.8,
+            "desaprobacion": 50.5,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "ANTA",
+            "aprobacion": 39.8,
+            "desaprobacion": 50.5,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "COTABAMBAS",
+            "aprobacion": 39.8,
+            "desaprobacion": 50.5,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "TACNA",
+            "aprobacion": 39.8,
+            "desaprobacion": 50.5,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "HUANCA SANCOS",
+            "aprobacion": 39.8,
+            "desaprobacion": 50.5,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "AZANGARO",
+            "aprobacion": 39.8,
+            "desaprobacion": 50.5,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "CARAVELI",
+            "aprobacion": 39.8,
+            "desaprobacion": 50.5,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "CAMANA",
+            "aprobacion": 39.8,
+            "desaprobacion": 50.5,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "ACOMAYO",
+            "aprobacion": 39.8,
+            "desaprobacion": 50.5,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "PISCO",
+            "aprobacion": 39.8,
+            "desaprobacion": 50.5,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "ICA",
+            "aprobacion": 39.8,
+            "desaprobacion": 50.5,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "NAZCA",
+            "aprobacion": 39.8,
+            "desaprobacion": 50.5,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "YUNGUYO",
+            "aprobacion": 39.8,
+            "desaprobacion": 50.5,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "CARABAYA",
+            "aprobacion": 39.8,
+            "desaprobacion": 50.5,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "PARINACOCHAS",
+            "aprobacion": 39.8,
+            "desaprobacion": 50.5,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "LA MAR",
+            "aprobacion": 39.8,
+            "desaprobacion": 50.5,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "CALCA",
+            "aprobacion": 39.8,
+            "desaprobacion": 50.5,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "PAUCAR DEL SARA SARA",
+            "aprobacion": 39.8,
+            "desaprobacion": 50.5,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "EL COLLAO",
+            "aprobacion": 39.8,
+            "desaprobacion": 50.5,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "SAN ROMAN",
+            "aprobacion": 39.8,
+            "desaprobacion": 50.5,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "ESPINAR",
+            "aprobacion": 39.8,
+            "desaprobacion": 50.5,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "ISLAY",
+            "aprobacion": 39.8,
+            "desaprobacion": 50.5,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "CHINCHEROS",
+            "aprobacion": 39.8,
+            "desaprobacion": 50.5,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "LUCANAS",
+            "aprobacion": 39.8,
+            "desaprobacion": 50.5,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "CANGALLO",
+            "aprobacion": 39.8,
+            "desaprobacion": 50.5,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "VILCAS HUAMAN",
+            "aprobacion": 39.8,
+            "desaprobacion": 50.5,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "LAMPA",
+            "aprobacion": 39.8,
+            "desaprobacion": 50.5,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "GRAU",
+            "aprobacion": 39.8,
+            "desaprobacion": 50.5,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "CHUCUITO",
+            "aprobacion": 39.8,
+            "desaprobacion": 50.5,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "CHINCHA",
+            "aprobacion": 39.8,
+            "desaprobacion": 50.5,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "MELGAR",
+            "aprobacion": 39.8,
+            "desaprobacion": 50.5,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "ANDAHUAYLAS",
+            "aprobacion": 39.8,
+            "desaprobacion": 50.5,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "PAUCARTAMBO",
+            "aprobacion": 39.8,
+            "desaprobacion": 50.5,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "CHUMBIVILCAS",
+            "aprobacion": 39.8,
+            "desaprobacion": 50.5,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "HUANTA",
+            "aprobacion": 39.8,
+            "desaprobacion": 50.5,
+            "periodo": "ENERO 2022"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "HUANCAYO",
+            "aprobacion": 25,
+            "desaprobacion": 62,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "HUANUCO",
+            "aprobacion": 25,
+            "desaprobacion": 62,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "JUNIN",
+            "aprobacion": 25,
+            "desaprobacion": 62,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "HUANCAVELICA",
+            "aprobacion": 25,
+            "desaprobacion": 62,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "HUAMALIES",
+            "aprobacion": 25,
+            "desaprobacion": 62,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "LAURICOCHA",
+            "aprobacion": 25,
+            "desaprobacion": 62,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "CHURCAMPA",
+            "aprobacion": 25,
+            "desaprobacion": 62,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "HUARAL",
+            "aprobacion": 25,
+            "desaprobacion": 62,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "DANIEL ALCIDES CARRION",
+            "aprobacion": 25,
+            "desaprobacion": 62,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "ANGARAES",
+            "aprobacion": 25,
+            "desaprobacion": 62,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "PASCO",
+            "aprobacion": 25,
+            "desaprobacion": 62,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "TARMA",
+            "aprobacion": 25,
+            "desaprobacion": 62,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "TAYACAJA",
+            "aprobacion": 25,
+            "desaprobacion": 62,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "CAÑETE",
+            "aprobacion": 25,
+            "desaprobacion": 62,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "DOS DE MAYO",
+            "aprobacion": 25,
+            "desaprobacion": 62,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "HUAROCHIRI",
+            "aprobacion": 25,
+            "desaprobacion": 62,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "HUAURA",
+            "aprobacion": 25,
+            "desaprobacion": 62,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "JAUJA",
+            "aprobacion": 25,
+            "desaprobacion": 62,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "OYON",
+            "aprobacion": 25,
+            "desaprobacion": 62,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "YAULI",
+            "aprobacion": 25,
+            "desaprobacion": 62,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "CONCEPCION",
+            "aprobacion": 25,
+            "desaprobacion": 62,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "LIMA METROPOLITANA",
+            "prov": "LIMA",
+            "aprobacion": 17,
+            "desaprobacion": 77,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "LIMA METROPOLITANA",
+            "prov": "CALLAO",
+            "aprobacion": 17,
+            "desaprobacion": 77,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "MOYOBAMBA",
+            "aprobacion": 27,
+            "desaprobacion": 62,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "TOCACHE",
+            "aprobacion": 27,
+            "desaprobacion": 62,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "UTCUBAMBA",
+            "aprobacion": 27,
+            "desaprobacion": 62,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "LA CONVENCION",
+            "aprobacion": 27,
+            "desaprobacion": 62,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "BAGUA",
+            "aprobacion": 27,
+            "desaprobacion": 62,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "JAEN",
+            "aprobacion": 27,
+            "desaprobacion": 62,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "CHANCHAMAYO",
+            "aprobacion": 27,
+            "desaprobacion": 62,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "SAN MARTIN",
+            "aprobacion": 27,
+            "desaprobacion": 62,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "LAMAS",
+            "aprobacion": 27,
+            "desaprobacion": 62,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "TAHUAMANU",
+            "aprobacion": 27,
+            "desaprobacion": 62,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "SAN IGNACIO",
+            "aprobacion": 27,
+            "desaprobacion": 62,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "MARISCAL RAMON CASTILLA",
+            "aprobacion": 27,
+            "desaprobacion": 62,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "LEONCIO PRADO",
+            "aprobacion": 27,
+            "desaprobacion": 62,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "MARISCAL CACERES",
+            "aprobacion": 27,
+            "desaprobacion": 62,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "TAMBOPATA",
+            "aprobacion": 27,
+            "desaprobacion": 62,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "MANU",
+            "aprobacion": 27,
+            "desaprobacion": 62,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "CORONEL PORTILLO",
+            "aprobacion": 27,
+            "desaprobacion": 62,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "MAYNAS",
+            "aprobacion": 27,
+            "desaprobacion": 62,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "MARAÑON",
+            "aprobacion": 27,
+            "desaprobacion": 62,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "PUERTO INCA",
+            "aprobacion": 27,
+            "desaprobacion": 62,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "ALTO AMAZONAS",
+            "aprobacion": 27,
+            "desaprobacion": 62,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "RIOJA",
+            "aprobacion": 27,
+            "desaprobacion": 62,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "RODRIGUEZ DE MENDOZA",
+            "aprobacion": 27,
+            "desaprobacion": 62,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "EL DORADO",
+            "aprobacion": 27,
+            "desaprobacion": 62,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "UCAYALI",
+            "aprobacion": 27,
+            "desaprobacion": 62,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "PIURA",
+            "aprobacion": 33,
+            "desaprobacion": 57,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "PAITA",
+            "aprobacion": 33,
+            "desaprobacion": 57,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "SULLANA",
+            "aprobacion": 33,
+            "desaprobacion": 57,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "CHICLAYO",
+            "aprobacion": 33,
+            "desaprobacion": 57,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "CAJAMARCA",
+            "aprobacion": 33,
+            "desaprobacion": 57,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "HUARAZ",
+            "aprobacion": 33,
+            "desaprobacion": 57,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "CELENDIN",
+            "aprobacion": 33,
+            "desaprobacion": 57,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "RECUAY",
+            "aprobacion": 33,
+            "desaprobacion": 57,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "CHOTA",
+            "aprobacion": 33,
+            "desaprobacion": 57,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "ASCOPE",
+            "aprobacion": 33,
+            "desaprobacion": 57,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "AYABACA",
+            "aprobacion": 33,
+            "desaprobacion": 57,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "TRUJILLO",
+            "aprobacion": 33,
+            "desaprobacion": 57,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "LUYA",
+            "aprobacion": 33,
+            "desaprobacion": 57,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "HUALGAYOC",
+            "aprobacion": 33,
+            "desaprobacion": 57,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "SECHURA",
+            "aprobacion": 33,
+            "desaprobacion": 57,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "MORROPON",
+            "aprobacion": 33,
+            "desaprobacion": 57,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "OTUZCO",
+            "aprobacion": 33,
+            "desaprobacion": 57,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "CASMA",
+            "aprobacion": 33,
+            "desaprobacion": 57,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "TUMBES",
+            "aprobacion": 33,
+            "desaprobacion": 57,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "HUANCABAMBA",
+            "aprobacion": 33,
+            "desaprobacion": 57,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "BOLIVAR",
+            "aprobacion": 33,
+            "desaprobacion": 57,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "FERREÑAFE",
+            "aprobacion": 33,
+            "desaprobacion": 57,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "HUAYLAS",
+            "aprobacion": 33,
+            "desaprobacion": 57,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "CHEPEN",
+            "aprobacion": 33,
+            "desaprobacion": 57,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "PACASMAYO",
+            "aprobacion": 33,
+            "desaprobacion": 57,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "HUARI",
+            "aprobacion": 33,
+            "desaprobacion": 57,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "SANTA",
+            "aprobacion": 33,
+            "desaprobacion": 57,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "LAMBAYEQUE",
+            "aprobacion": 33,
+            "desaprobacion": 57,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "SANCHEZ CARRION",
+            "aprobacion": 33,
+            "desaprobacion": 57,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "YUNGAY",
+            "aprobacion": 33,
+            "desaprobacion": 57,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "QUISPICANCHI",
+            "aprobacion": 45,
+            "desaprobacion": 48,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "URUBAMBA",
+            "aprobacion": 45,
+            "desaprobacion": 48,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "CUSCO",
+            "aprobacion": 45,
+            "desaprobacion": 48,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "AYMARAES",
+            "aprobacion": 45,
+            "desaprobacion": 48,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "MARISCAL NIETO",
+            "aprobacion": 45,
+            "desaprobacion": 48,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "HUAMANGA",
+            "aprobacion": 45,
+            "desaprobacion": 48,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "PUNO",
+            "aprobacion": 45,
+            "desaprobacion": 48,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "AREQUIPA",
+            "aprobacion": 45,
+            "desaprobacion": 48,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "ANTA",
+            "aprobacion": 45,
+            "desaprobacion": 48,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "COTABAMBAS",
+            "aprobacion": 45,
+            "desaprobacion": 48,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "TACNA",
+            "aprobacion": 45,
+            "desaprobacion": 48,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "HUANCA SANCOS",
+            "aprobacion": 45,
+            "desaprobacion": 48,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "AZANGARO",
+            "aprobacion": 45,
+            "desaprobacion": 48,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "CARAVELI",
+            "aprobacion": 45,
+            "desaprobacion": 48,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "CAMANA",
+            "aprobacion": 45,
+            "desaprobacion": 48,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "ACOMAYO",
+            "aprobacion": 45,
+            "desaprobacion": 48,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "PISCO",
+            "aprobacion": 45,
+            "desaprobacion": 48,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "ICA",
+            "aprobacion": 45,
+            "desaprobacion": 48,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "NAZCA",
+            "aprobacion": 45,
+            "desaprobacion": 48,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "YUNGUYO",
+            "aprobacion": 45,
+            "desaprobacion": 48,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "CARABAYA",
+            "aprobacion": 45,
+            "desaprobacion": 48,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "PARINACOCHAS",
+            "aprobacion": 45,
+            "desaprobacion": 48,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "LA MAR",
+            "aprobacion": 45,
+            "desaprobacion": 48,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "CALCA",
+            "aprobacion": 45,
+            "desaprobacion": 48,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "PAUCAR DEL SARA SARA",
+            "aprobacion": 45,
+            "desaprobacion": 48,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "EL COLLAO",
+            "aprobacion": 45,
+            "desaprobacion": 48,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "SAN ROMAN",
+            "aprobacion": 45,
+            "desaprobacion": 48,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "ESPINAR",
+            "aprobacion": 45,
+            "desaprobacion": 48,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "ISLAY",
+            "aprobacion": 45,
+            "desaprobacion": 48,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "CHINCHEROS",
+            "aprobacion": 45,
+            "desaprobacion": 48,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "LUCANAS",
+            "aprobacion": 45,
+            "desaprobacion": 48,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "CANGALLO",
+            "aprobacion": 45,
+            "desaprobacion": 48,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "VILCAS HUAMAN",
+            "aprobacion": 45,
+            "desaprobacion": 48,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "LAMPA",
+            "aprobacion": 45,
+            "desaprobacion": 48,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "GRAU",
+            "aprobacion": 45,
+            "desaprobacion": 48,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "CHUCUITO",
+            "aprobacion": 45,
+            "desaprobacion": 48,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "CHINCHA",
+            "aprobacion": 45,
+            "desaprobacion": 48,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "MELGAR",
+            "aprobacion": 45,
+            "desaprobacion": 48,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "ANDAHUAYLAS",
+            "aprobacion": 45,
+            "desaprobacion": 48,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "PAUCARTAMBO",
+            "aprobacion": 45,
+            "desaprobacion": 48,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "CHUMBIVILCAS",
+            "aprobacion": 45,
+            "desaprobacion": 48,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "HUANTA",
+            "aprobacion": 45,
+            "desaprobacion": 48,
+            "periodo": "FEBRERO 2022"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "HUANCAYO",
+            "aprobacion": 27,
+            "desaprobacion": 67,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "HUANUCO",
+            "aprobacion": 27,
+            "desaprobacion": 67,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "JUNIN",
+            "aprobacion": 27,
+            "desaprobacion": 67,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "HUANCAVELICA",
+            "aprobacion": 27,
+            "desaprobacion": 67,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "HUAMALIES",
+            "aprobacion": 27,
+            "desaprobacion": 67,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "LAURICOCHA",
+            "aprobacion": 27,
+            "desaprobacion": 67,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "CHURCAMPA",
+            "aprobacion": 27,
+            "desaprobacion": 67,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "HUARAL",
+            "aprobacion": 27,
+            "desaprobacion": 67,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "DANIEL ALCIDES CARRION",
+            "aprobacion": 27,
+            "desaprobacion": 67,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "ANGARAES",
+            "aprobacion": 27,
+            "desaprobacion": 67,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "PASCO",
+            "aprobacion": 27,
+            "desaprobacion": 67,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "TARMA",
+            "aprobacion": 27,
+            "desaprobacion": 67,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "TAYACAJA",
+            "aprobacion": 27,
+            "desaprobacion": 67,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "CAÑETE",
+            "aprobacion": 27,
+            "desaprobacion": 67,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "DOS DE MAYO",
+            "aprobacion": 27,
+            "desaprobacion": 67,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "HUAROCHIRI",
+            "aprobacion": 27,
+            "desaprobacion": 67,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "HUAURA",
+            "aprobacion": 27,
+            "desaprobacion": 67,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "JAUJA",
+            "aprobacion": 27,
+            "desaprobacion": 67,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "OYON",
+            "aprobacion": 27,
+            "desaprobacion": 67,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "YAULI",
+            "aprobacion": 27,
+            "desaprobacion": 67,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "CENTRO",
+            "prov": "CONCEPCION",
+            "aprobacion": 27,
+            "desaprobacion": 67,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "LIMA METROPOLITANA",
+            "prov": "LIMA",
+            "aprobacion": 17,
+            "desaprobacion": 76,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "LIMA METROPOLITANA",
+            "prov": "CALLAO",
+            "aprobacion": 17,
+            "desaprobacion": 76,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "MOYOBAMBA",
+            "aprobacion": 29,
+            "desaprobacion": 59,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "TOCACHE",
+            "aprobacion": 29,
+            "desaprobacion": 59,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "UTCUBAMBA",
+            "aprobacion": 29,
+            "desaprobacion": 59,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "LA CONVENCION",
+            "aprobacion": 29,
+            "desaprobacion": 59,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "BAGUA",
+            "aprobacion": 29,
+            "desaprobacion": 59,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "JAEN",
+            "aprobacion": 29,
+            "desaprobacion": 59,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "CHANCHAMAYO",
+            "aprobacion": 29,
+            "desaprobacion": 59,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "SAN MARTIN",
+            "aprobacion": 29,
+            "desaprobacion": 59,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "LAMAS",
+            "aprobacion": 29,
+            "desaprobacion": 59,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "TAHUAMANU",
+            "aprobacion": 29,
+            "desaprobacion": 59,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "SAN IGNACIO",
+            "aprobacion": 29,
+            "desaprobacion": 59,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "MARISCAL RAMON CASTILLA",
+            "aprobacion": 29,
+            "desaprobacion": 59,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "LEONCIO PRADO",
+            "aprobacion": 29,
+            "desaprobacion": 59,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "MARISCAL CACERES",
+            "aprobacion": 29,
+            "desaprobacion": 59,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "TAMBOPATA",
+            "aprobacion": 29,
+            "desaprobacion": 59,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "MANU",
+            "aprobacion": 29,
+            "desaprobacion": 59,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "CORONEL PORTILLO",
+            "aprobacion": 29,
+            "desaprobacion": 59,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "MAYNAS",
+            "aprobacion": 29,
+            "desaprobacion": 59,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "MARAÑON",
+            "aprobacion": 29,
+            "desaprobacion": 59,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "PUERTO INCA",
+            "aprobacion": 29,
+            "desaprobacion": 59,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "ALTO AMAZONAS",
+            "aprobacion": 29,
+            "desaprobacion": 59,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "RIOJA",
+            "aprobacion": 29,
+            "desaprobacion": 59,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "RODRIGUEZ DE MENDOZA",
+            "aprobacion": 29,
+            "desaprobacion": 59,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "EL DORADO",
+            "aprobacion": 29,
+            "desaprobacion": 59,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "ORIENTE",
+            "prov": "UCAYALI",
+            "aprobacion": 29,
+            "desaprobacion": 59,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "PIURA",
+            "aprobacion": 23,
+            "desaprobacion": 68,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "PAITA",
+            "aprobacion": 23,
+            "desaprobacion": 68,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "SULLANA",
+            "aprobacion": 23,
+            "desaprobacion": 68,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "CHICLAYO",
+            "aprobacion": 23,
+            "desaprobacion": 68,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "CAJAMARCA",
+            "aprobacion": 23,
+            "desaprobacion": 68,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "HUARAZ",
+            "aprobacion": 23,
+            "desaprobacion": 68,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "CELENDIN",
+            "aprobacion": 23,
+            "desaprobacion": 68,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "RECUAY",
+            "aprobacion": 23,
+            "desaprobacion": 68,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "CHOTA",
+            "aprobacion": 23,
+            "desaprobacion": 68,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "ASCOPE",
+            "aprobacion": 23,
+            "desaprobacion": 68,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "AYABACA",
+            "aprobacion": 23,
+            "desaprobacion": 68,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "TRUJILLO",
+            "aprobacion": 23,
+            "desaprobacion": 68,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "LUYA",
+            "aprobacion": 23,
+            "desaprobacion": 68,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "HUALGAYOC",
+            "aprobacion": 23,
+            "desaprobacion": 68,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "SECHURA",
+            "aprobacion": 23,
+            "desaprobacion": 68,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "MORROPON",
+            "aprobacion": 23,
+            "desaprobacion": 68,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "OTUZCO",
+            "aprobacion": 23,
+            "desaprobacion": 68,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "CASMA",
+            "aprobacion": 23,
+            "desaprobacion": 68,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "TUMBES",
+            "aprobacion": 23,
+            "desaprobacion": 68,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "HUANCABAMBA",
+            "aprobacion": 23,
+            "desaprobacion": 68,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "BOLIVAR",
+            "aprobacion": 23,
+            "desaprobacion": 68,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "FERREÑAFE",
+            "aprobacion": 23,
+            "desaprobacion": 68,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "HUAYLAS",
+            "aprobacion": 23,
+            "desaprobacion": 68,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "CHEPEN",
+            "aprobacion": 23,
+            "desaprobacion": 68,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "PACASMAYO",
+            "aprobacion": 23,
+            "desaprobacion": 68,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "HUARI",
+            "aprobacion": 23,
+            "desaprobacion": 68,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "SANTA",
+            "aprobacion": 23,
+            "desaprobacion": 68,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "LAMBAYEQUE",
+            "aprobacion": 23,
+            "desaprobacion": 68,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "SANCHEZ CARRION",
+            "aprobacion": 23,
+            "desaprobacion": 68,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "NORTE",
+            "prov": "YUNGAY",
+            "aprobacion": 23,
+            "desaprobacion": 68,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "QUISPICANCHI",
+            "aprobacion": 34,
+            "desaprobacion": 58,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "URUBAMBA",
+            "aprobacion": 34,
+            "desaprobacion": 58,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "CUSCO",
+            "aprobacion": 34,
+            "desaprobacion": 58,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "AYMARAES",
+            "aprobacion": 34,
+            "desaprobacion": 58,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "MARISCAL NIETO",
+            "aprobacion": 34,
+            "desaprobacion": 58,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "HUAMANGA",
+            "aprobacion": 34,
+            "desaprobacion": 58,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "PUNO",
+            "aprobacion": 34,
+            "desaprobacion": 58,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "AREQUIPA",
+            "aprobacion": 34,
+            "desaprobacion": 58,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "ANTA",
+            "aprobacion": 34,
+            "desaprobacion": 58,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "COTABAMBAS",
+            "aprobacion": 34,
+            "desaprobacion": 58,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "TACNA",
+            "aprobacion": 34,
+            "desaprobacion": 58,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "HUANCA SANCOS",
+            "aprobacion": 34,
+            "desaprobacion": 58,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "AZANGARO",
+            "aprobacion": 34,
+            "desaprobacion": 58,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "CARAVELI",
+            "aprobacion": 34,
+            "desaprobacion": 58,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "CAMANA",
+            "aprobacion": 34,
+            "desaprobacion": 58,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "ACOMAYO",
+            "aprobacion": 34,
+            "desaprobacion": 58,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "PISCO",
+            "aprobacion": 34,
+            "desaprobacion": 58,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "ICA",
+            "aprobacion": 34,
+            "desaprobacion": 58,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "NAZCA",
+            "aprobacion": 34,
+            "desaprobacion": 58,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "YUNGUYO",
+            "aprobacion": 34,
+            "desaprobacion": 58,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "CARABAYA",
+            "aprobacion": 34,
+            "desaprobacion": 58,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "PARINACOCHAS",
+            "aprobacion": 34,
+            "desaprobacion": 58,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "LA MAR",
+            "aprobacion": 34,
+            "desaprobacion": 58,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "CALCA",
+            "aprobacion": 34,
+            "desaprobacion": 58,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "PAUCAR DEL SARA SARA",
+            "aprobacion": 34,
+            "desaprobacion": 58,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "EL COLLAO",
+            "aprobacion": 34,
+            "desaprobacion": 58,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "SAN ROMAN",
+            "aprobacion": 34,
+            "desaprobacion": 58,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "ESPINAR",
+            "aprobacion": 34,
+            "desaprobacion": 58,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "ISLAY",
+            "aprobacion": 34,
+            "desaprobacion": 58,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "CHINCHEROS",
+            "aprobacion": 34,
+            "desaprobacion": 58,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "LUCANAS",
+            "aprobacion": 34,
+            "desaprobacion": 58,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "CANGALLO",
+            "aprobacion": 34,
+            "desaprobacion": 58,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "VILCAS HUAMAN",
+            "aprobacion": 34,
+            "desaprobacion": 58,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "LAMPA",
+            "aprobacion": 34,
+            "desaprobacion": 58,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "GRAU",
+            "aprobacion": 34,
+            "desaprobacion": 58,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "CHUCUITO",
+            "aprobacion": 34,
+            "desaprobacion": 58,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "CHINCHA",
+            "aprobacion": 34,
+            "desaprobacion": 58,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "MELGAR",
+            "aprobacion": 34,
+            "desaprobacion": 58,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "ANDAHUAYLAS",
+            "aprobacion": 34,
+            "desaprobacion": 58,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "PAUCARTAMBO",
+            "aprobacion": 34,
+            "desaprobacion": 58,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "CHUMBIVILCAS",
+            "aprobacion": 34,
+            "desaprobacion": 58,
+            "periodo": "MARZO 2022"
+        },
+        {
+            "zona": "SUR",
+            "prov": "HUANTA",
+            "aprobacion": 34,
+            "desaprobacion": 58,
+            "periodo": "MARZO 2022"
+        }
+    ]
+}

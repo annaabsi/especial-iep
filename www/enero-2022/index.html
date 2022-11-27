@@ -1,0 +1,2107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1" />
+    <meta name="theme-color" content="#FFF" />
+    <link rel="canonical" href="https://data.larepublica.pe/encuesta-iep-aprobacion-desaprobacion-peru-presidente-congreso-de-la-republica" />
+    <meta name="robots" content="index,follow" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="description" content="El presidente mantiene su percepción en la última encuesta IEP. Solo un 28.9% aprueba su accionar como jefe de Estado, mientras que el 61.5% lo desaprueba. El sondeo revela además que el mandatario pierde el paso en la evaluación sobre el manejo de temas centrales. Por otro lado, el Congreso y su presidenta alcanzan altos niveles de desaprobación."
+    />
+    <meta property="og:url" content="https://data.larepublica.pe/encuesta-iep-aprobacion-desaprobacion-peru-presidente-congreso-de-la-republica" />
+    <meta property="og:title" content="Pedro Castillo: sin cambios en su aprobación, pero con retroceso en la gestión de temas centrales" />
+    <meta property="og:image" content="https://cdn.glitch.me/09ad6912-77fe-457b-af64-54b232bf7e67/ss.jpg" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta property="fb:pages" content="94604237016" />
+    <meta property="fb:app_id" content="489210501129201" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@larepublica_pe" />
+    <meta name="twitter:title" content="Pedro Castillo: sin cambios en su aprobación, pero con retroceso en la gestión de temas centrales" />
+    <meta name="twitter:description" content="El presidente mantiene su percepción en la última encuesta IEP. Solo un 28.9% aprueba su accionar como jefe de Estado, mientras que el 61.5% lo desaprueba. El sondeo revela además que el mandatario pierde el paso en la evaluación sobre el manejo de temas centrales. Por otro lado, el Congreso y su presidenta alcanzan altos niveles de desaprobación."
+    />
+    <meta name="twitter:image" content="https://cdn.glitch.me/09ad6912-77fe-457b-af64-54b232bf7e67/ss.jpg" />
+    <meta name="distribution" content="global" />
+    <meta name="rating" content="general" />
+    <meta name="lang" content="es_PE" />
+    <meta name="author" content="Redacción LR" />
+    <meta name="keywords" content="Encuesta, Castillo, congreso, Maria del Carmen Alva, IEP, Enero 2022, política" />
+    <title>
+        Encuesta IEP: aprobación y percepción del presidente, Congreso y la realidad peruana.
+    </title>
+    <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.larepublica.pe/favicon-32x32.png" />
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/billboard.js/2.1.4/billboard.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/billboard.js/2.1.4/billboard.min.css" />
+    <link rel="stylesheet" href="https://naver.github.io/billboard.js/release/latest/dist/theme/graph.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.css" rel="stylesheet" />
+    <!-- Import the webpage's stylesheet -->
+    <!-- <link rel="stylesheet" href="/style.css" /> -->
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=Newsreader:wght@500&display=swap");
+        body {
+            background: #f1f1f0;
+            font-family: "Mukta", serif;
+        }
+        
+        h1 {
+            font-family: "Newsreader", sans-serif;
+            font-size: 2.5rem;
+            text-align: center;
+            margin-top: 2rem;
+        }
+        
+        .mt-x {
+            margin-top: 5rem;
+        }
+        
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 2;
+            transition: all 0.5s ease;
+            padding: 15px 42px;
+            background: lightgrey;
+            border-bottom: 4px solid #fe0404;
+        }
+        
+        header span {
+            font-size: 0;
+        }
+        
+        header img {
+            width: 140px;
+        }
+        
+        span [class*="btn-"] {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            margin-left: 10px;
+        }
+        
+        span a.btn-fb {
+            margin-left: 0;
+        }
+        
+        span a.btn-fb,
+        span a.btn-twt,
+        span a.btn-wsp {
+            background-image: url(https://files.larepublica.pe/Larepublica/2020/11/09/iconos-redes-sociales-blanco-1604962294.svg);
+            background-position: 0 0;
+            background-repeat: no-repeat;
+            background-size: 30px;
+        }
+        
+        span a.btn-twt {
+            background-position: 0 -40px;
+            background-repeat: no-repeat;
+        }
+        
+        span a.btn-wsp {
+            background-position: 0 -80px;
+            background-repeat: no-repeat;
+        }
+        
+        .menu__left {
+            display: inline-block;
+            vertical-align: middle;
+            width: calc(100% - 38px);
+            /*width: 160px;*/
+        }
+        
+        .menu__right {
+            display: none;
+            /*display: inline-block;*/
+            text-align: right;
+            vertical-align: middle;
+            width: calc(100% - 198px);
+        }
+        
+        .container__menu {
+            font-size: 0;
+        }
+        
+        h2 {
+            margin-bottom: 21px;
+            margin-top: 35px;
+            font-size: 1.8rem;
+            font-family: "Newsreader", sans-serif;
+        }
+        
+        #map,
+        #aprobacion_congreso,
+        #aprobacion_castillo,
+        #aprobacion_nse {
+            width: 100%;
+            max-width: 700px;
+            margin: auto;
+            min-height: 400px;
+        }
+        
+        #map {
+            min-height: 500px;
+        }
+        
+        #aprobacion_nse .bb-axis-y text {
+            fill: #555;
+        }
+        
+        #aprobacion_ambito .bb-axis-y text {
+            fill: #555;
+        }
+        
+        #week_a_week {
+            display: block;
+        }
+        
+        .mapboxgl-popup-content {
+            min-width: 120px;
+            padding: 7px 7px 4px 7px;
+            text-align: center;
+            font-family: "Mukta", serif;
+        }
+        
+        .mapboxgl-popup-content .provincia {
+            margin: 7px 7px 0px 7px;
+        }
+        
+        .mapboxgl-popup-content .totales {
+            margin: 1px 7px 0px 7px;
+        }
+        
+        .bb-line {
+            stroke-width: 2px;
+        }
+        
+        path.bb-bar {
+            opacity: 0.8 !important;
+        }
+        
+        .macro_zona {
+            margin-bottom: 0;
+        }
+        
+        footer {
+            padding: 42px;
+            font-family: sans-serif;
+        }
+        
+        footer span {
+            display: block;
+            text-align: center;
+            color: #545b6a;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        
+        .w-1000 {
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        dl {
+            display: flex;
+            background-color: white;
+            flex-direction: column;
+            width: 100%;
+            max-width: 700px;
+            position: relative;
+            padding: 20px;
+        }
+        
+        dt {
+            align-self: flex-start;
+            width: 100%;
+            font-weight: 700;
+            display: block;
+            text-align: center;
+            font-size: 1.2em;
+            font-weight: 700;
+            margin-bottom: 20px;
+            margin-left: 130px;
+        }
+        
+        .text {
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            height: 40px;
+            width: 100px;
+            /*         background-color: white; */
+            position: absolute;
+            left: 10px;
+            justify-content: flex-start;
+        }
+        
+        .percentage {
+            font-size: 0.8em;
+            line-height: 1;
+            text-transform: uppercase;
+            width: 70%;
+            height: 20px;
+            margin-left: 102px;
+            background: repeating-linear-gradient( to right, #ddd, #ddd 1px, #fff 1px, #fff 5%);
+        }
+        
+        .percentage:after {
+            content: "";
+            display: block;
+            background-color: #bb6336;
+            opacity: 0.6;
+            /*         width: 50px; */
+            margin-bottom: 10px;
+            height: 90%;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .historico {
+            padding: 0;
+            text-align: center;
+        }
+        
+        .historico span {
+            margin-right: 14px;
+        }
+        
+        .percentage:hover:after,
+        .percentage:focus:after {
+            background-color: #aaa;
+        }
+        
+        .percentage-1:after {
+            width: 1%;
+        }
+        
+        .percentage-2:after {
+            width: 2%;
+        }
+        
+        .percentage-3:after {
+            width: 3%;
+        }
+        
+        .percentage-4:after {
+            width: 4%;
+        }
+        
+        .percentage-5:after {
+            width: 5%;
+        }
+        
+        .percentage-6:after {
+            width: 6%;
+        }
+        
+        .percentage-7:after {
+            width: 7%;
+        }
+        
+        .percentage-8:after {
+            width: 8%;
+        }
+        
+        .percentage-9:after {
+            width: 9%;
+        }
+        
+        .percentage-10:after {
+            width: 10%;
+        }
+        
+        .percentage-11:after {
+            width: 11%;
+        }
+        
+        .percentage-12:after {
+            width: 12%;
+        }
+        
+        .percentage-13:after {
+            width: 13%;
+        }
+        
+        .percentage-14:after {
+            width: 14%;
+        }
+        
+        .percentage-15:after {
+            width: 15%;
+        }
+        
+        .percentage-16:after {
+            width: 16%;
+        }
+        
+        .percentage-17:after {
+            width: 17%;
+        }
+        
+        .percentage-18:after {
+            width: 18%;
+        }
+        
+        .percentage-19:after {
+            width: 19%;
+        }
+        
+        .percentage-20:after {
+            width: 20%;
+        }
+        
+        .percentage-21:after {
+            width: 21%;
+        }
+        
+        .percentage-22:after {
+            width: 22%;
+        }
+        
+        .percentage-23:after {
+            width: 23%;
+        }
+        
+        .percentage-24:after {
+            width: 24%;
+        }
+        
+        .percentage-25:after {
+            width: 25%;
+        }
+        
+        .percentage-26:after {
+            width: 26%;
+        }
+        
+        .percentage-27:after {
+            width: 27%;
+        }
+        
+        .percentage-28:after {
+            width: 28%;
+        }
+        
+        .percentage-29:after {
+            width: 29%;
+        }
+        
+        .percentage-30:after {
+            width: 30%;
+        }
+        
+        .percentage-31:after {
+            width: 31%;
+        }
+        
+        .percentage-32:after {
+            width: 32%;
+        }
+        
+        .percentage-33:after {
+            width: 33%;
+        }
+        
+        .percentage-34:after {
+            width: 34%;
+        }
+        
+        .percentage-35:after {
+            width: 35%;
+        }
+        
+        .percentage-36:after {
+            width: 36%;
+        }
+        
+        .percentage-37:after {
+            width: 37%;
+        }
+        
+        .percentage-38:after {
+            width: 38%;
+        }
+        
+        .percentage-39:after {
+            width: 39%;
+        }
+        
+        .percentage-40:after {
+            width: 40%;
+        }
+        
+        .percentage-41:after {
+            width: 41%;
+        }
+        
+        .percentage-42:after {
+            width: 42%;
+        }
+        
+        .percentage-43:after {
+            width: 43%;
+        }
+        
+        .percentage-44:after {
+            width: 44%;
+        }
+        
+        .percentage-45:after {
+            width: 45%;
+        }
+        
+        .percentage-46:after {
+            width: 46%;
+        }
+        
+        .percentage-47:after {
+            width: 47%;
+        }
+        
+        .percentage-48:after {
+            width: 48%;
+        }
+        
+        .percentage-49:after {
+            width: 49%;
+        }
+        
+        .percentage-50:after {
+            width: 50%;
+        }
+        
+        .percentage-51:after {
+            width: 51%;
+        }
+        
+        .percentage-52:after {
+            width: 52%;
+        }
+        
+        .percentage-53:after {
+            width: 53%;
+        }
+        
+        .percentage-54:after {
+            width: 54%;
+        }
+        
+        .percentage-55:after {
+            width: 55%;
+        }
+        
+        .percentage-56:after {
+            width: 56%;
+        }
+        
+        .percentage-57:after {
+            width: 57%;
+        }
+        
+        .percentage-58:after {
+            width: 58%;
+        }
+        
+        .percentage-59:after {
+            width: 59%;
+        }
+        
+        .percentage-60:after {
+            width: 60%;
+        }
+        
+        .percentage-61:after {
+            width: 61%;
+        }
+        
+        .percentage-62:after {
+            width: 62%;
+        }
+        
+        .percentage-63:after {
+            width: 63%;
+        }
+        
+        .percentage-64:after {
+            width: 64%;
+        }
+        
+        .percentage-65:after {
+            width: 65%;
+        }
+        
+        .percentage-66:after {
+            width: 66%;
+        }
+        
+        .percentage-67:after {
+            width: 67%;
+        }
+        
+        .percentage-68:after {
+            width: 68%;
+        }
+        
+        .percentage-69:after {
+            width: 69%;
+        }
+        
+        .percentage-70:after {
+            width: 70%;
+        }
+        
+        .percentage-71:after {
+            width: 71%;
+        }
+        
+        .percentage-72:after {
+            width: 72%;
+        }
+        
+        .percentage-73:after {
+            width: 73%;
+        }
+        
+        .percentage-74:after {
+            width: 74%;
+        }
+        
+        .percentage-75:after {
+            width: 75%;
+        }
+        
+        .percentage-76:after {
+            width: 76%;
+        }
+        
+        .percentage-77:after {
+            width: 77%;
+        }
+        
+        .percentage-78:after {
+            width: 78%;
+        }
+        
+        .percentage-79:after {
+            width: 79%;
+        }
+        
+        .percentage-80:after {
+            width: 80%;
+        }
+        
+        .percentage-81:after {
+            width: 81%;
+        }
+        
+        .percentage-82:after {
+            width: 82%;
+        }
+        
+        .percentage-83:after {
+            width: 83%;
+        }
+        
+        .percentage-84:after {
+            width: 84%;
+        }
+        
+        .percentage-85:after {
+            width: 85%;
+        }
+        
+        .percentage-86:after {
+            width: 86%;
+        }
+        
+        .percentage-87:after {
+            width: 87%;
+        }
+        
+        .percentage-88:after {
+            width: 88%;
+        }
+        
+        .percentage-89:after {
+            width: 89%;
+        }
+        
+        .percentage-90:after {
+            width: 90%;
+        }
+        
+        .percentage-91:after {
+            width: 91%;
+        }
+        
+        .percentage-92:after {
+            width: 92%;
+        }
+        
+        .percentage-93:after {
+            width: 93%;
+        }
+        
+        .percentage-94:after {
+            width: 94%;
+        }
+        
+        .percentage-95:after {
+            width: 95%;
+        }
+        
+        .percentage-96:after {
+            width: 96%;
+        }
+        
+        .percentage-97:after {
+            width: 97%;
+        }
+        
+        .percentage-98:after {
+            width: 98%;
+        }
+        
+        .percentage-99:after {
+            width: 99%;
+        }
+        
+        .percentage-100:after {
+            width: 100%;
+        }
+        
+        .durara p,
+        .no_durara p {}
+        /*       .durara{
+                    max-width: 80%;
+                  } */
+        
+        .horizontal-bar {
+            max-width: 400px;
+            margin: auto;
+        }
+        
+        .horizontal-bar p {
+            text-align: center;
+            margin-bottom: 0;
+            margin-top: 30px;
+            font-weight: 600;
+            font-size: 14px;
+            margin-left: 49px;
+        }
+        
+        .helicopter {
+            border: none;
+            margin-bottom: 14px;
+        }
+        
+        .preferencia {
+            text-align: center;
+        }
+        
+        .resultados {
+            margin: 7px 0 21px 7px;
+            font-size: 2rem;
+            font-weight: 700;
+        }
+        
+        .number_1,
+        .number_2 {
+            display: inline-block;
+        }
+        
+        .preferencia img {
+            width: 130px;
+            height: 130px;
+            display: block;
+            margin: auto;
+        }
+        
+        .question {
+            font-size: 14px;
+            font-weight: 700;
+            text-align: center;
+        }
+        
+        .mt-21 {
+            margin-top: 21px;
+        }
+        
+        .iframe_yt {
+            max-width: 700px;
+            margin: 42px auto 21px auto;
+            display: block;
+        }
+        
+        .ficha_tecnica {
+            font-size: 13px;
+            color: #555;
+        }
+        
+        .btn-outline-danger {
+            color: #de425b;
+            border-color: #de425b;
+        }
+        
+        .btn-outline-danger:hover {
+            color: #fff;
+            background-color: #de425b;
+            border-color: #de425b;
+        }
+        
+        @media (min-width: 768px) {
+            h1 {
+                font-size: 3rem;
+            }
+            p {
+                font-size: 18px;
+            }
+            h2 {
+                font-size: 2rem;
+            }
+            .historico {
+                padding: 14px 7px;
+            }
+            .text {
+                left: 180px;
+                width: 130px;
+            }
+            header img {
+                width: 160px;
+            }
+            span [class*="btn-"] {
+                display: inline-block;
+                width: 40px;
+                height: 40px;
+                margin-left: 10px;
+            }
+            span a.btn-fb,
+            span a.btn-twt,
+            span a.btn-wsp {
+                background-size: cover;
+                background-color: #fff;
+                border-radius: 50%;
+            }
+            span a.btn-twt {
+                background-position: 0 -40px;
+                background-repeat: no-repeat;
+            }
+            span a.btn-wsp {
+                background-position: 0 -80px;
+                background-repeat: no-repeat;
+            }
+            .menu__button {
+                display: none;
+            }
+            .menu__left {
+                width: 300px;
+            }
+            .menu__right {
+                display: inline-block;
+                width: calc(100% - 300px);
+            }
+            .content__menu-mobile {
+                display: none;
+            }
+            .items__menu {
+                display: block;
+            }
+            .percentage {
+                width: 100%;
+                margin-left: 110px;
+            }
+            .helicopter {
+                border-bottom: none;
+                border-right: 1px solid #8c8c8c;
+                margin-bottom: 0px;
+            }
+            .intertitulado {
+                border-bottom: 1px solid #8c8c8c;
+                line-height: 35px;
+            }
+        }
+        
+        @media (min-width: 993px) {
+            .percentage {
+                width: 100%;
+                margin-left: 21px;
+            }
+        }
+        
+        @media (max-width: 767px) {
+            header {
+                padding: 7px 20px;
+            }
+            footer {
+                padding: 27.9px 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header id="w-header">
+        <div class="container__menu">
+            <!-- <div class="menu__button">                <div class="menu"> <button id="menuMobile"> <span></span> <span></span> <span></span> </button> </div>            </div> -->
+            <div class="menu__left">
+                <a href="https://data.larepublica.pe/" rel="noopener" style="display: inline-block" target="_blank">
+                    <picture>
+                        <source id="w-sourceLogoDesktop" media="(min-width: 768px)" srcset="
+                  https://larepublica.cronosmedia.glr.pe/data/2121/10/05/logo.png
+                " />
+                        <img id="w-sourceLogoMobile" src="https://larepublica.cronosmedia.glr.pe/data/2121/10/05/logo.png" />
+                    </picture>
+                </a>
+            </div>
+            <div class="menu__right">
+                <span class="items_shared">
+            <a
+              class="btn-fb btn-Social"
+              data-social="facebook"
+              href="https://www.facebook.com/sharer/sharer.php?u=https://data.larepublica.pe/encuesta-iep-aprobacion-desaprobacion-peru-presidente-congreso-de-la-republica"
+              id="id-btn-fb"
+              rel="noopener"
+            >
+            </a>
+            <a
+              class="btn-twt btn-Social"
+              data-social="twitter"
+              href="https://twitter.com/share?url=https://data.larepublica.pe/encuesta-iep-aprobacion-desaprobacion-peru-presidente-congreso-de-la-republica&via=LRData"
+              id="id-btn-twt"
+              rel="noopener"
+            >
+            </a>
+            <a
+              class="btn-wsp"
+              href="https://api.whatsapp.com/send?text=https://data.larepublica.pe/encuesta-iep-aprobacion-desaprobacion-peru-presidente-congreso-de-la-republica"
+              id="id-btn-wsp"
+              rel="noopener"
+              target="_blank"
+            >
+            </a>
+          </span>
+            </div>
+        </div>
+    </header>
+    <div class="container mt-x">
+        <div class="row">
+            <div class="col">
+                <h1 class="font-weight-bold">
+                    Pedro Castillo: sin cambios en su aprobación, pero con retroceso en la gestión de temas centrales
+                </h1>
+                <p>
+                    El presidente mantiene su percepción en la última encuesta IEP. Solo un 28.9% aprueba su accionar como jefe de Estado, mientras que el 61.5% lo desaprueba. El sondeo revela además que el mandatario pierde el paso en la evaluación sobre el manejo de temas
+                    centrales. Por otro lado, el Congreso y su presidenta alcanzan altos niveles de desaprobación.
+                </p>
+
+                <h2 class="font-weight-bold">
+                    Pedro Castillo mantiene su desaprobación
+                </h2>
+                <p>
+                    La última encuesta de IEP, publicada en enero de 2022, indica que el presidente mantiene su desaprobación respecto a diciembre de 2021. Un 61.5% desaprueba su mandato, mientras que un 28.9% lo aprueba.
+                </p>
+                <p class="question">
+                    ¿Usted aprueba o desaprueba la forma como Pedro Castillo está conduciendo su gobierno?
+                </p>
+                <div id="aprobacion_castillo"></div>
+                <h2 class="font-weight-bold">
+                    Disminuye aprobación sobre manejo de temas sectoriales
+                </h2>
+                <p>
+                    Las valoraciones en distintos temas de gestión como la vacunación contra el Covid-19, los servicios de salud y la educación disminuyeron respecto a la última medición de IEP. La percepción de las acciones que toma Pedro Castillo y su equipo sobre ciertos
+                    temas caen en 9 puntos porcentuales a más.
+                </p>
+                <p class="question">
+                    ¿Cómo evalúa usted la forma como PEDRO CASTILLO Y SU EQUIPO DE GOBIERNO vienen manejando…?
+                </p>
+                <div id="durara_o_no" class="row">
+                    <div class="col-sm">
+                        <div>
+                            <div class="horizontal-bar">
+                                <p>La vacunación contra el COVID-19</p>
+                                <dd class="percentage percentage-58">
+                                    <span class="text">SET-21: 58%</span>
+                                </dd>
+                                <dd class="percentage percentage-49">
+                                    <span class="text">ENE-22: 49%</span>
+                                </dd>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="horizontal-bar">
+                                <p>Los servicios de salud en postas y hospitales</p>
+                                <dd class="percentage percentage-27">
+                                    <span class="text">SET-21: 27%</span>
+                                </dd>
+                                <dd class="percentage percentage-17">
+                                    <span class="text">ENE-22: 17%</span>
+                                </dd>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="horizontal-bar">
+                                <p>La educación</p>
+                                <dd class="percentage percentage-21">
+                                    <span class="text">SET-21: 21%</span>
+                                </dd>
+                                <dd class="percentage percentage-12">
+                                    <span class="text">ENE-22: 12%</span>
+                                </dd>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="horizontal-bar">
+                                <p>La lucha contra la corrupción en el Estado</p>
+                                <dd class="percentage percentage-27">
+                                    <span class="text">SET-21: 27%</span>
+                                </dd>
+                                <dd class="percentage percentage-11">
+                                    <span class="text">ENE-22: 11%</span>
+                                </dd>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="horizontal-bar">
+                                <p>La lucha contra la pobreza</p>
+                                <dd class="percentage percentage-23">
+                                    <span class="text">SET-21: 23%</span>
+                                </dd>
+                                <dd class="percentage percentage-11">
+                                    <span class="text">ENE-22: 11%</span>
+                                </dd>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="horizontal-bar">
+                                <p>La economía</p>
+                                <dd class="percentage percentage-20">
+                                    <span class="text">SET-21: 20%</span>
+                                </dd>
+                                <dd class="percentage percentage-10">
+                                    <span class="text">ENE-22: 10%</span>
+                                </dd>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="horizontal-bar">
+                                <p>La lucha contra la delincuencia</p>
+                                <dd class="percentage percentage-6">
+                                    <span class="text">ENE-22: 6%</span>
+                                </dd>
+                                <small style="padding-left: 20px">*La lucha contra la delincuencia no se preguntó en
+                    septiembre 2021</small
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <h2 class="font-weight-bold">
+            Desaprobación del Congreso se mantiene alta
+          </h2>
+          <p>
+            La percepción que tiene la ciudadanía sobre el Parlamento, desde que
+            inició su gestión en julio de 2021, se mantiene en valores altos de
+            desaprobación. A enero de 2022, un 77% rechaza su accionar y apenas
+            un 20% aprueba su desempeño.
+          </p>
+          <p class="question">
+            ¿Usted aprueba o desaprueba el desempeño del Congreso de la
+            República?
+          </p>
+          <div id="aprobacion_congreso"></div>
+          <h2 class="font-weight-bold">
+            Desaprobación de María del Carmen Alva se mantiene
+          </h2>
+          <p>
+            Al igual que ocurre con el Parlamento, su presidenta María del
+            Carmen Alva también tiene altos niveles de desaprobación. Entre
+            enero de 2022 y diciembre de 2021, la percepción de su desempeño
+            varió en un 3%. La última encuesta IEP indica que un 65% desaprueba
+            su trabajo y solo un 26% lo aprueba.
+          </p>
+          <p class="question">
+            ¿Usted aprueba o desaprueba el desempeño de la presidenta del
+            Congreso, María del Carmen Alva?
+          </p>
+          <div id="aprobacion_mca"></div>
+          <h2 class="font-weight-bold">
+            Aprobación de Castillo por nivel socioeconómico
+          </h2>
+          <p>
+            Luego de la caída de su aprobación en los niveles socioeconómicos D
+            y E, que representaban el respaldo a inicios de su gestión, el
+            presidente Pedro Castillo sube ligeramente dos puntos porcentuales
+            en este grupo. En el sector A/B también incrementa las cifras
+            respecto al mes anterior, aunque este no es estadísticamente
+            significativo.
+          </p>
+          <p class="question">
+            ¿Usted aprueba o desaprueba la forma como Pedro Castillo está
+            conduciendo su gobierno?
+          </p>
+          <div id="aprobacion_nse"></div>
+          <h2 class="font-weight-bold">
+            Aprobación de Castillo por cada ámbito
+          </h2>
+          <p>
+            De acuerdo con la encuesta IEP, el mandatario registra un ligero
+            aumento de su aprobación en la zona denominada Perú rural. Logra un
+            2.7% más respecto al mes de diciembre. En Lima Metropolitana y la
+            zona Perú urbano mantiene su aprobación.
+          </p>
+          <p class="question">
+            ¿Usted aprueba o desaprueba la forma como Pedro Castillo está
+            conduciendo su gobierno?
+          </p>
+          <div id="aprobacion_ambito"></div>
+          <!--           <h2 class="font-weight-bold">
+            ¿Con qué corriente ideológica se identifican más los peruanos?
+          </h2>
+          <div id="aprobacion_ideologia"></div> -->
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <h2 class="font-weight-bold">Aprobación de Castillo por macrozonas</h2>
+      <div class="row">
+        <div class="col-12">
+          <p>
+            La macrozona norte es la que registra una mayor variación, aunque
+            ligera, entre diciembre de 2021 y enero de 2022. La aprobación en
+            esta zona aumenta un 3.7% más y se ubica con 28.7%. La macrozona sur
+            y oriente sigue siendo el área con mayor aceptación de su mandato,
+            aunque en ambos casos con un mínimo retroceso.
+          </p>
+          <label id="week_a_week"></label>
+          <input id="slider" type="range" min="1" max="6" step="1" value="6" />
+          <p class="question">
+            ¿Usted aprueba o desaprueba la forma como Pedro Castillo está
+            conduciendo su gobierno?
+          </p>
+        </div>
+        <div id="map"></div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h2 class="font-weight-bold">
+            ¿Usted aprueba o desaprueba el desempeño de los ministros?
+          </h2>
+          <p>
+            Los constantes cuestionamientos que afrontan distintos ministerios
+            también se reflejan en la percepción general del desempeño
+            ministerial, de acuerdo con la encuesta IEP. La desaprobación
+            aumenta un 2%, logrando un 69%, y su aprobación disminuye también en
+            un 2%, llegando a 23%.
+          </p>
+          <div id="aprobacion_ministros"></div>
+        </div>
+      </div>
+      <div class="row mt-21">
+        <div class="col-12">
+          <p class="question text-left">FICHA TÉCNICA:</p>
+          <p class="ficha_tecnica">
+            Encuestadora: Instituto de Estudios Peruanos (IEP). Registro:
+            0393-REE/JNE – 281-2021-DCGI/JNE. Financiación del estudio: Diario
+            La República y recursos propios del IEP. Tamaño de la población
+            objeto de estudio: Población de 18 años a más con DNI: 24,290,921
+            personas (RENIEC, Padrón Electoral de las Elecciones Generales
+            2021). Tamaño y distribución de la muestra: 1210 entrevistados
+            distribuidos en 24 departamentos, 151 provincias y 408 distritos.
+            Margen de error: ± 2.8 pts. para los resultados a nivel nacional.
+            Nivel de confianza: 95% considerando una varianza máxima en las
+            proporciones poblacionales (p=q=0.5). Representatividad provincial:
+            95.7%. Fuente de marco muestral: Relación de cabeceras de operadores
+            de móviles, Ministerio de Transportes y Comunicaciones (2019). Tipo
+            de muestreo aplicado: Muestreo probabilístico, con método de
+            selección aleatoria de números de celular, encuesta telefónica.
+            Puntos de muestreo: Lima Metropolitana, Perú urbano, Perú rural.
+            Fecha de campo: del 24 al 27 de enero de 2022. Página web:
+            www.iep.org.pe
+          </p>
+        </div>
+        <div class="col-12">
+          <iframe
+            class="iframe_yt"
+            width="100%"
+            height="420"
+            src="https://www.youtube.com/embed/4HWIIytosag"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+      <div class="historico">
+        <span>Última encuesta publicada:</span>
+        <a
+          role="button"
+          class="btn btn-outline-secondary btn-lg"
+          href="https://data.larepublica.pe/encuesta-iep-aprobacion-desaprobacion-peru-presidente-congreso-de-la-republica/"
+        >
+          Febrero 2022
+        </a>
+      </div>
+    </div>
+    <footer style="background-color: #f0f0f0">
+      <div class="w-1000">
+        <span><strong>Redacción:</strong> Milagros Requena</span>
+        <span><strong>Desarrollo Web:</strong> Anna Absi</span>
+        <br />
+        <span>© Grupo La República </span>
+        <span>Todos los derechos reservados.</span>
+      </div>
+    </footer>
+    <script
+      defer
+      src="https://www.googletagmanager.com/gtag/js?id=UA-6536106-1"
+    ></script>
+    <script type="text/javascript" defer>
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      (window.dataLayer = window.dataLayer || []),
+        gtag("js", new Date()),
+        gtag("config", "UA-6536106-1");
+    </script>
+    <script>
+      //         colores:["#de425b",
+      // "#7580d8",
+      // "#60af64",
+      // "#bb6336",
+      // "#ab9a3e",
+      // "#48b1c4",
+      // "#c05eab"]
+      $(".percentage").mouseover(function () {
+        console.log(this, "this");
+        $(".text").css("text-decoration", "none");
+        $(this).children().css("text-decoration", "underline");
+      });
+
+      mapboxgl.accessToken =
+        "pk.eyJ1IjoiZ2VueWxlb25nIiwiYSI6ImNqeTdrMWQweDAwYWUzZXM2ZHUxN3lxcWMifQ.taFCKYjv4VSHhWN86P8N1Q";
+
+      var map = new mapboxgl.Map({
+        container: "map",
+        center: [-75.178, -9.184],
+        minZoom: 3,
+        zoom: 3.8,
+        style: "mapbox://styles/mapbox/light-v10",
+      });
+
+      var array = [];
+      //var n = 0
+      function getColor(n) {
+        var inputEl = document.getElementById("slider");
+
+        inputEl.onchange = function (event) {
+          //console.log(event.isTrusted);
+          array = [];
+        };
+
+        array.push(n);
+        array = _.uniq(array, true);
+
+        array = array.sort(function (a, b) {
+          return a - b;
+        });
+
+        // console.log(array);
+        //var element = 0
+        //array.forEach;
+        for (let i = 0; i < array.length && array.length > 3; i++) {
+          // console.log(array[i]);
+
+          if (array.length == 4) {
+            return n >= array[3]
+              ? "#800026"
+              : n >= array[2]
+              ? "#bd0026"
+              : n >= array[1]
+              ? "#e31a1c"
+              : n >= array[0]
+              ? "#fc4e2a"
+              : n >= 0
+              ? "#fd8d3c"
+              : "#ffffcc";
+          }
+
+          if (array.length == 5) {
+            return n >= array[4]
+              ? "#800026"
+              : n >= array[3]
+              ? "#bd0026"
+              : n >= array[2]
+              ? "#e31a1c"
+              : n >= array[1]
+              ? "#fc4e2a"
+              : n >= array[0]
+              ? "#fd8d3c"
+              : "#ffffcc";
+          }
+        }
+      }
+
+      function filterBy(data, covid_filter, week) {
+        array = [];
+        features = data.features.map((d, b) => {
+          var popup = new mapboxgl.Popup();
+          var layerID = d.properties.MACRO_ZONA;
+
+          //console.log(layerID);
+
+          // if (week == "8") {
+          //console.log(week, casos);
+
+          provincia = _.chain(casos[week].users)
+            .keyBy("zona")
+            .mapValues("aprobacion")
+            .value();
+
+          document.getElementById("week_a_week").textContent =
+            casos[week]["periodo"];
+
+          //console.log(provincia, layerID);
+
+          if (provincia[layerID] !== "") {
+            //array = []
+
+            //console.log(array, provincia[layerID]);
+
+            map.setPaintProperty(
+              layerID,
+              "fill-color",
+              getColor(provincia[layerID])
+            );
+
+            function _isContains(json, value) {
+              let contains = false;
+              Object.keys(json).some((key) => {
+                contains =
+                  typeof json[key] === "object"
+                    ? _isContains(json[key], value)
+                    : json[key] === value;
+                return contains;
+              });
+              return contains;
+            }
+
+            map.on("click", layerID, function (e) {
+              total_provincia = casos[week].users;
+
+              for (prov in total_provincia) {
+                //console.log(total_provincia)
+                getProv = e.features[0].properties.MACRO_ZONA;
+                // getDep = e.features[0].properties.MACRO_ZONA;
+
+                getProvName = total_provincia[prov]["zona"];
+
+                checkValue = _isContains(total_provincia, getProv);
+                //console.log(getProvName, getProv, prov);
+                if (getProv == getProvName && checkValue == true) {
+                  casos_aprobacion = total_provincia[prov]["aprobacion"];
+
+                  casos_desaprobacion = total_provincia[prov]["desaprobacion"];
+                  // casos_mujeres = total_provincia[prov]["FEMENINO"];
+                  // casos_hombres = total_provincia[prov]["MASCULINO"];
+                }
+              }
+
+              var x, i;
+              x = document.querySelectorAll(".mapboxgl-popup");
+              for (i = 0; i < x.length; i++) {
+                x[i].remove();
+              }
+              //$(".mapboxgl-popup").remove();
+              popup
+                .setLngLat(e.lngLat)
+                .setHTML(
+                  "<p class='macro_zona'>Macrozona: " +
+                    getProv +
+                    "</p><p class='provincia'>" +
+                    d3.format(",")(Math.round(casos_aprobacion)) +
+                    " % de aprobación.</p><p class='provincia'>" +
+                    d3.format(",")(Math.round(casos_desaprobacion)) +
+                    "% de desaprobación. </p>"
+                )
+                .addTo(map);
+            });
+          }
+
+          map.on("mouseenter", layerID, function () {
+            map.getCanvas().style.cursor = "pointer";
+          });
+
+          // Change it back to a pointer when it leaves.
+          map.on("mouseleave", layerID, function () {
+            map.getCanvas().style.cursor = "";
+          });
+
+          map.setFilter(layerID, ["==", ["get", "MACRO_ZONA"], layerID]);
+        });
+      }
+
+      map.on("load", async function () {
+        //var result = [];
+        var files = [" geojson.json", "aprob_zonas.json"];
+
+        const data = await d3.json(files[0]);
+        const data_covid = await d3.json(files[1]);
+        const covid_filter = data_covid["data"];
+        var array = [];
+
+        map["dragPan"].disable();
+
+        map.addSource("data", {
+          type: "geojson",
+          data: data,
+        });
+
+        data.features.forEach(function (d, b) {
+          var layerID = d.properties.MACRO_ZONA;
+
+          //console.log(layerID) zona
+          casos = _.chain(covid_filter)
+            .groupBy("periodo")
+            .toPairs()
+            .map(function (currentData) {
+              return _.zipObject(["periodo", "users"], currentData);
+            })
+            .value();
+
+          // console.log(casos);
+
+          provincia = _.chain(casos[4].users)
+            .keyBy("zona")
+            .mapValues("aprobacion")
+            .value();
+
+          // console.log(provincia);
+
+          if (!map.getLayer(layerID) && provincia[layerID] !== "") {
+            //array = []
+            //             array.push(provincia[layerID]);
+            //           array = _.uniq(array, true);
+
+            //           array = array.sort(function(a, b){return a-b});
+
+            //console.log(array);
+
+            map.addLayer({
+              id: layerID,
+              type: "fill",
+              source: "data",
+              layout: {},
+              paint: {
+                "fill-color": getColor(provincia[layerID]),
+                "fill-opacity": 0.6,
+              },
+            });
+          }
+        });
+
+        filterBy(data, covid_filter, 5);
+
+        document
+          .getElementById("slider")
+          .addEventListener("input", function (e) {
+            var week = parseInt(e.target.value - 1);
+            console.log(e.target.value);
+            filterBy(data, covid_filter, week);
+          });
+      });
+
+      var firstTime = 0;
+
+      $(window).on("scroll", function () {
+        centerDiv("#congreso_castillo");
+      });
+
+      $.when($.getJSON("data-iep.json")).then(function (data) {
+        var castillo_nsnp = data["castillo_nsnp"];
+        var castillo_aprueba = data["castillo_aprueba"];
+        var castillo_desaprueba = data["castillo_desaprueba"];
+
+        var congreso_nsnp = data["congreso_nsnp"];
+        var congreso_aprueba = data["congreso_aprueba"];
+        var congreso_desaprueba = data["congreso_desaprueba"];
+
+        var nse_a = data["nse_a"];
+        var nse_b = data["nse_b"];
+        var nse_c = data["nse_c"];
+        var nse_d = data["nse_d"];
+        var nse_e = data["nse_e"];
+
+        var ambito_lima = data["ambito_lima"];
+        var ambito_rural = data["ambito_rural"];
+        var ambito_urbano = data["ambito_urbano"];
+
+        var aprobacion_ideologia_agosto = data["aprobacion_ideologia_agosto"];
+        var aprobacion_ideologia_setiembre =
+          data["aprobacion_ideologia_setiembre"];
+        var aprobacion_ideologia_octubre = data["aprobacion_ideologia_octubre"];
+
+        var mca_aprueba = data["mca_aprueba"];
+        var mca_desaprueba = data["mca_desaprueba"];
+        var mca_nsnp = data["mca_nsnp"];
+
+        function filter_datita(data, filteredValue) {
+          //console.log(data, filteredValue);
+          if (
+            data == castillo_nsnp ||
+            data == castillo_aprueba ||
+            data == castillo_desaprueba
+          ) {
+            return _.filter(
+              data,
+              (e) => e["p01"].toLowerCase() === filteredValue
+            );
+          }
+
+          if (
+            data == congreso_nsnp ||
+            data == congreso_aprueba ||
+            data == congreso_desaprueba
+          ) {
+            return _.filter(
+              data,
+              (e) => e["p05_3"].toLowerCase() === filteredValue
+            );
+          }
+
+          if (
+            data == nse_a ||
+            data == nse_b ||
+            data == nse_c ||
+            data == nse_d ||
+            data == nse_e
+          ) {
+            return _.filter(
+              data,
+              (e) => e["p01"].toLowerCase() === filteredValue
+            );
+          }
+
+          if (
+            data == ambito_lima ||
+            data == ambito_rural ||
+            data == ambito_urbano
+          ) {
+            return _.filter(
+              data,
+              (e) => e["p01"].toLowerCase() === filteredValue
+            );
+          }
+
+          // if (
+          //   data == aprobacion_ideologia_agosto ||
+          //   data == aprobacion_ideologia_setiembre ||
+          //   data == aprobacion_ideologia_octubre
+          // ) {
+          //   return _.filter(
+          //     data,
+          //     e => e["periodo"].toLowerCase() === filteredValue
+          //   );
+          // }
+
+          if (
+            data == mca_aprueba ||
+            data == mca_desaprueba ||
+            data == mca_nsnp
+          ) {
+            return _.filter(
+              data,
+              (e) => e["p01"].toLowerCase() === filteredValue
+            );
+          }
+        }
+
+        var aprobacion_castillo = bb.generate({
+          data: {
+            columns: [
+              [
+                "data1",
+                ...filter_datita(castillo_nsnp, "ns/np").map(
+                  (o) => o.PERCENTAGE
+                ),
+              ],
+              [
+                "data2",
+                ...filter_datita(castillo_aprueba, "aprueba").map(
+                  (o) => o.PERCENTAGE
+                ),
+              ],
+              [
+                "data3",
+                ...filter_datita(castillo_desaprueba, "desaprueba").map(
+                  (o) => o.PERCENTAGE
+                ),
+              ],
+            ],
+            types: {
+              data1: "line", // for ESM specify as: D()
+              data2: "line",
+              data3: "line",
+            },
+            names: {
+              data1: "No contesta",
+              data2: "Aprueba",
+              data3: "Desaprueba",
+            },
+            colors: {
+              data1: "#c6c6c6",
+              data2: "#5d8f53",
+              data3: "#de425b",
+            },
+            labels: false,
+            // labels :{
+            //   colors: "#FFF"
+            // }
+          },
+          axis: {
+            x: {
+              type: "category",
+              categories: [
+                "Ago-21",
+                "Set-21",
+                "Oct-21",
+                "Nov-21",
+                "Dic-21",
+                "Ene-22",
+              ],
+            },
+          },
+          tooltip: {
+            format: {
+              value: function (value, ratio, id) {
+                return d3.format(",")(value.toFixed(1)) + "%";
+              },
+            },
+          },
+          bindto: "#aprobacion_castillo",
+        });
+
+        var aprobacion_congreso = bb.generate({
+          data: {
+            columns: [
+              [
+                "data1",
+                ...filter_datita(congreso_nsnp, "ns/np").map(
+                  (o) => o.PERCENTAGE
+                ),
+              ],
+              [
+                "data2",
+                ...filter_datita(congreso_aprueba, "aprueba").map(
+                  (o) => o.PERCENTAGE
+                ),
+              ],
+              [
+                "data3",
+                ...filter_datita(congreso_desaprueba, "desaprueba").map(
+                  (o) => o.PERCENTAGE
+                ),
+              ],
+            ],
+            types: {
+              data1: "line", // for ESM specify as: step()
+              data2: "line",
+              data3: "line",
+            },
+            names: {
+              data1: "No contesta",
+              data2: "Aprueba",
+              data3: "Desaprueba",
+            },
+            colors: {
+              data1: "#c6c6c6",
+              data2: "#5d8f53",
+              data3: "#de425b",
+            },
+            labels: false,
+            // labels :{
+            //   colors: "#FFF"
+            // }
+          },
+          axis: {
+            x: {
+              type: "category",
+              categories: [
+                "Ago-21",
+                "Set-21",
+                "Oct-21",
+                "Nov-21",
+                "Dic-21",
+                "Ene-22",
+              ],
+            },
+          },
+          tooltip: {
+            format: {
+              value: function (value, ratio, id) {
+                return d3.format(",")(Math.round(value)) + "%";
+              },
+            },
+          },
+          bindto: "#aprobacion_congreso",
+        });
+
+        var aprobacion_ministros = bb.generate({
+          data: {
+            columns: [
+              ["data1", 8, 7, 8, 8],
+              ["data2", 43, 25, 25, 23],
+              ["data3", 49, 68, 67, 69],
+            ],
+            types: {
+              data1: "spline", // for ESM specify as: D()
+              data2: "spline",
+              data3: "spline",
+            },
+            names: {
+              data1: "No contesta",
+              data2: "Aprueba",
+              data3: "Desaprueba",
+            },
+            colors: {
+              data1: "#c6c6c6",
+              data2: "#5d8f53",
+              data3: "#de425b",
+            },
+            labels: false,
+            // labels :{
+            //   colors: "#FFF"
+            // }
+          },
+          axis: {
+            x: {
+              type: "category",
+              categories: ["Oct-21", "Nov-21", "Dic-21", "Ene-22"],
+            },
+          },
+          tooltip: {
+            format: {
+              value: function (value, ratio, id) {
+                return d3.format(",")(Math.round(value)) + "%";
+              },
+            },
+          },
+          bindto: "#aprobacion_ministros",
+        });
+
+        var nse_aprobacion = bb.generate({
+          data: {
+            columns: [
+              [
+                "data1",
+                ...filter_datita(nse_a, "aprueba").map((o) => o.PERCENTAGE),
+              ],
+              [
+                "data2",
+                ...filter_datita(nse_c, "aprueba").map((o) => o.PERCENTAGE),
+              ],
+              [
+                "data3",
+                ...filter_datita(nse_d, "aprueba").map((o) => o.PERCENTAGE),
+              ],
+              // [
+              //   "data4",
+              //   ...filter_datita(nse_d, "aprueba").map(o => o.PERCENTAGE)
+              // ],
+              // [
+              //   "data5",
+              //   ...filter_datita(nse_e, "aprueba").map(o => o.PERCENTAGE)
+              // ]
+            ],
+            type: "bubble", // for ESM specify as: bubble()
+            names: {
+              data1: "NSE A/B",
+              data2: "NSE C",
+              data3: "NSE D/E",
+            },
+            colors: {
+              data1: "#7580d8",
+              data2: "#60af64",
+              data3: "#bb6336",
+            },
+            labels: false,
+          },
+          bubble: {
+            maxR: 30,
+          },
+          axis: {
+            x: {
+              type: "category",
+              categories: [
+                "Ago-21",
+                "Set-21",
+                "Oct-21",
+                "Nov-21",
+                "Dic-21",
+                "Ene-22",
+              ],
+            },
+            y: {
+              label: "Aprobación (%)",
+              max: 100,
+            },
+          },
+          tooltip: {
+            grouped: true,
+            format: {
+              value: function (value, ratio, id) {
+                return d3.format(",")(Math.round(value)) + "%";
+              },
+            },
+          },
+          legend: {
+            position: "bottom", // bottom, right, inset
+            padding: 10,
+            inset: {
+              anchor: "bottom-right", // top-left, top-right, bottom-left, bottom-right
+              x: 20,
+              y: -10,
+            },
+          },
+          bindto: "#aprobacion_nse",
+        });
+
+        var aprobacion_ambito = bb.generate({
+          data: {
+            columns: [
+              [
+                "data1",
+                ...filter_datita(ambito_lima, "aprueba").map(
+                  (o) => o.PERCENTAGE
+                ),
+              ],
+              [
+                "data2",
+                ...filter_datita(ambito_rural, "aprueba").map(
+                  (o) => o.PERCENTAGE
+                ),
+              ],
+              [
+                "data3",
+                ...filter_datita(ambito_urbano, "aprueba").map(
+                  (o) => o.PERCENTAGE
+                ),
+              ],
+            ],
+            type: "bar", // for ESM specify as: bubble()
+            names: {
+              data1: "Lima Metropolitana",
+              data2: "Perú rural",
+              data3: "Perú urbano",
+            },
+            colors: {
+              data1: "#7580d8",
+              data2: "#60af64",
+              data3: "#bb6336",
+            },
+            labels: false,
+          },
+          axis: {
+            x: {
+              type: "category",
+              categories: [
+                "Ago-21",
+                "Set-21",
+                "Oct-21",
+                "Nov-21",
+                "Dic-21",
+                "Ene-22",
+              ],
+            },
+            y: {
+              label: "Aprobación (%)",
+              max: 95,
+            },
+          },
+          tooltip: {
+            format: {
+              value: function (value, ratio, id) {
+                return d3.format(",")(value.toFixed(1)) + "%";
+              },
+            },
+          },
+          bindto: "#aprobacion_ambito",
+        });
+
+        // var aprobacion_ideologia = bb.generate({
+        //   data: {
+        //     x: "x",
+        //     columns: [
+        //       ["x", "Centro", "Izquierda", "Derecha"],
+        //       [
+        //         "data1",
+        //         ...filter_datita(
+        //           aprobacion_ideologia_agosto,
+        //           "agosto 2021"
+        //         ).map(o => o.aprobacion)
+        //       ],
+        //       [
+        //         "data2",
+        //         ...filter_datita(
+        //           aprobacion_ideologia_setiembre,
+        //           "setiembre 2021"
+        //         ).map(o => o.aprobacion)
+        //       ],
+        //       [
+        //         "data3",
+        //         ...filter_datita(
+        //           aprobacion_ideologia_octubre,
+        //           "octubre 2021"
+        //         ).map(o => o.aprobacion)
+        //       ]
+        //     ],
+        //     type: "radar", // for ESM specify as: radar()
+        //     labels: false,
+        //     names: {
+        //       data1: "Agosto 2021",
+        //       data2: "Setiembre 2021",
+        //       data3: "Octubre 2021"
+        //     }
+        //   },
+        //   radar: {
+        //     axis: {
+        //       max: 100
+        //     },
+        //     level: {
+        //       depth: 1
+        //     },
+        //     direction: {
+        //       clockwise: false
+        //     }
+        //   },
+        //   tooltip: {
+        //     format: {
+        //       value: function(value, ratio, id) {
+        //         return d3.format(",")(Math.round(value)) + "%";
+        //       }
+        //     }
+        //   },
+        //   bindto: "#aprobacion_ideologia"
+        // });
+
+        var aprobacion_mca = bb.generate({
+          data: {
+            x: "x",
+            columns: [
+              ["x", "Ago-21", "Set-21", "Oct-21", "Nov-21", "Dic-21", "Ene-22"],
+              [
+                "data1",
+                ...filter_datita(mca_nsnp, "ns/np").map((o) => o.PERCENTAGE),
+              ],
+              [
+                "data2",
+                ...filter_datita(mca_aprueba, "aprueba").map(
+                  (o) => o.PERCENTAGE
+                ),
+              ],
+              [
+                "data3",
+                ...filter_datita(mca_desaprueba, "desaprueba").map(
+                  (o) => o.PERCENTAGE
+                ),
+              ],
+            ],
+            types: {
+              data1: "line", // for ESM specify as: step()
+              data2: "line",
+              data3: "line",
+            },
+            names: {
+              data1: "No contesta",
+              data2: "Aprueba",
+              data3: "Desaprueba",
+            },
+            colors: {
+              data1: "#c6c6c6",
+              data2: "#5d8f53",
+              data3: "#de425b",
+            },
+            labels: false,
+            // labels :{
+            //   colors: "#FFF"
+            // }
+          },
+          axis: {
+            x: {
+              type: "category",
+            },
+          },
+          // axis: {
+          //   x: {
+          //     // type: "category",
+          //     categories: [
+          //       "Agosto",
+          //       "Setiembre",
+          //       "Octubre",
+          //       "Noviembre",
+          //       "Diciembre"
+          //     ]
+          //   }
+          // },
+          tooltip: {
+            format: {
+              value: function (value, ratio, id) {
+                return d3.format(",")(Math.round(value)) + "%";
+              },
+            },
+          },
+          bindto: "#aprobacion_mca",
+        });
+
+        /* var corrupto_castillo = bb.generate({
+        data: {
+          columns: [["data1", 39, 33, 21, 7]],
+          type: "bar", // for ESM specify as: bar()
+          names: {
+            data1: "Porcentaje "
+          }
+        },
+        axis: {
+          x: {
+            type: "category",
+            categories: [
+              "Menos corrupto",
+              "Igual de corrupto",
+              "Más corrupto",
+              "No contesta"
+            ]
+          }
+        },
+        bar: 10,
+        tooltip: {
+          format: {
+            value: function(value, ratio, id) {
+              return d3.format(",")(Math.round(value)) + "%";
+            }
+          }
+        },
+        bindto: "#corrupto_castillo"
+      });
+
+      var enfrentamiento_castillo = bb.generate({
+        data: {
+          columns: [
+            ["data1", 70, 12, 10, 6, 2],
+            ["data2", 48, 20, 15, 15, 2]
+          ],
+          type: "bar", // for ESM specify as: bar()
+          names: {
+            data1: "Al país en general ",
+            data2: "A usted personalmente "
+          }
+        },
+        axis: {
+          x: {
+            type: "category",
+            categories: ["Mucho", "Algo", "Poco", "Nada", "No contesta"]
+          }
+        },
+        bar: {
+          width: {
+            ratio: 0.5
+          }
+        },
+        tooltip: {
+          format: {
+            value: function(value, ratio, id) {
+              return d3.format(",")(Math.round(value)) + "%";
+            }
+          }
+        },
+        bindto: "#enfrentamiento_castillo"
+      }); */
+      });
+
+      function centerDiv(that_element) {
+        var element = document.querySelector(that_element);
+        var position = element.getBoundingClientRect();
+
+        // checking whether fully visible
+        if (position.top >= 0 && position.bottom <= window.innerHeight) {
+          //  set your counter to 1
+
+          // (function(valor1, valor2) {
+          console.log("entro");
+          if (firstTime == 0) {
+            var format = d3.format(",d");
+
+            var valor1 = 43;
+            var valor2 = 31;
+
+            let number_1 = d3.select(".number_1");
+
+            let number_2 = d3.select(".number_2");
+
+            number_1
+              .transition()
+              .duration(8500)
+              .on("start", function repeat() {
+                d3.active(this)
+                  .tween("text", function () {
+                    var that = d3.select(this),
+                      i = d3.interpolateNumber(
+                        that.text().replace(/,/g, ""),
+                        valor1
+                      );
+
+                    return function (t) {
+                      that.text(format(i(t)));
+                      // that2.text(format(i(t)));
+                    };
+                  })
+                  .transition()
+                  // .delay(500)
+                  .on("start", repeat);
+              });
+
+            number_2
+              .transition()
+              .duration(8000)
+              .on("start", function repeat() {
+                d3.active(this)
+                  .tween("text", function () {
+                    var that = d3.select(this),
+                      i = d3.interpolateNumber(
+                        that.text().replace(/,/g, ""),
+                        valor2
+                      );
+
+                    return function (t) {
+                      that.text(format(i(t)));
+                      // that2.text(format(i(t)));
+                    };
+                  })
+                  .transition()
+                  // .delay(500)
+                  .on("start", repeat);
+              });
+          }
+          firstTime = 1;
+          // })(43, 31);
+        }
+
+        // firstTime=1
+        // checking for partial visibility
+        // if (position.top < window.innerHeight && position.bottom >= 0) {
+        // }
+      }
+    </script>
+    <!-- <script src="script.js" defer></script> -->
+  </body>
+</html>

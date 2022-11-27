@@ -1,0 +1,1000 @@
+{
+  "castillo_agosto": [
+    { "p01": "NS/NP", "periodo": "AGOSTO 2021", "PERCENTAGE": 17.0026616467 },
+    { "p01": "Aprueba", "periodo": "AGOSTO 2021", "PERCENTAGE": 37.5390632711 },
+    {
+      "p01": "Desaprueba",
+      "periodo": "AGOSTO 2021",
+      "PERCENTAGE": 45.4582750823
+    }
+  ],
+  "castillo_octubre": [
+    { "p01": "NS/NP", "periodo": "OCTUBRE 2021", "PERCENTAGE": 16.7020943961 },
+    { "p01": "Aprueba", "periodo": "OCTUBRE 2021", "PERCENTAGE": 35.375744589 },
+    {
+      "p01": "Desaprueba",
+      "periodo": "OCTUBRE 2021",
+      "PERCENTAGE": 47.922161015
+    }
+  ],
+  "castillo_setiembre": [
+    {
+      "p01": "Aprueba",
+      "periodo": "SETIEMBRE 2021",
+      "PERCENTAGE": 40.1488114908
+    },
+    {
+      "p01": "Desaprueba",
+      "periodo": "SETIEMBRE 2021",
+      "PERCENTAGE": 42.0414712439
+    },
+    { "p01": "NS/NP", "periodo": "SETIEMBRE 2021", "PERCENTAGE": 17.8097172653 }
+  ],
+  "castillo_noviembre": [
+    {
+      "p01": "Aprueba",
+      "periodo": "NOVIEMBRE 2021",
+      "PERCENTAGE": 24.6964759322
+    },
+    {
+      "p01": "Desaprueba",
+      "periodo": "NOVIEMBRE 2021",
+      "PERCENTAGE": 65.3282774227
+    },
+    { "p01": "NS/NP", "periodo": "NOVIEMBRE 2021", "PERCENTAGE": 9.9752466451 }
+  ],
+  "castillo_diciembre": [
+    {
+      "p01": "Aprueba",
+      "periodo": "DICIEMBRE 2021",
+      "PERCENTAGE": 24.6964759322
+    },
+    {
+      "p01": "Desaprueba",
+      "periodo": "DICIEMBRE 2021",
+      "PERCENTAGE": 65.3282774227
+    },
+    { "p01": "NS/NP", "periodo": "DICIEMBRE 2021", "PERCENTAGE": 9.9752466451 }
+  ],
+  "congreso_noviembre": [
+    {
+      "p05_3": "Aprueba",
+      "periodo": "NOVIEMBRE 2021",
+      "PERCENTAGE": 21.3235647806
+    },
+    {
+      "p05_3": "Desaprueba",
+      "periodo": "NOVIEMBRE 2021",
+      "PERCENTAGE": 74.9702753119
+    },
+    {
+      "p05_3": "NS/NP",
+      "periodo": "NOVIEMBRE 2021",
+      "PERCENTAGE": 3.7061599075
+    }
+  ],
+  "congreso_diciembre": [
+    {
+      "p05_3": "Aprueba",
+      "periodo": "DICIEMBRE 2021",
+      "PERCENTAGE": 21.3235647806
+    },
+    {
+      "p05_3": "Desaprueba",
+      "periodo": "DICIEMBRE 2021",
+      "PERCENTAGE": 74.9702753119
+    },
+    {
+      "p05_3": "NS/NP",
+      "periodo": "DICIEMBRE 2021",
+      "PERCENTAGE": 3.7061599075
+    }
+  ],
+  "congreso_agosto": [
+    { "p05_3": "NS/NP", "periodo": "AGOSTO 2021", "PERCENTAGE": 8.0546243255 },
+    {
+      "p05_3": "Aprueba",
+      "periodo": "AGOSTO 2021",
+      "PERCENTAGE": 31.0184588724
+    },
+    {
+      "p05_3": "Desaprueba",
+      "periodo": "AGOSTO 2021",
+      "PERCENTAGE": 60.9269168021
+    }
+  ],
+  "congreso_setiembre": [
+    {
+      "p05_3": "Aprueba",
+      "periodo": "SETIEMBRE 2021",
+      "PERCENTAGE": 32.1985668589
+    },
+    {
+      "p05_3": "Desaprueba",
+      "periodo": "SETIEMBRE 2021",
+      "PERCENTAGE": 61.138217986
+    },
+    { "p05_3": "NS/NP", "periodo": "SETIEMBRE 2021", "PERCENTAGE": 6.663215155 }
+  ],
+  "congreso_octubre": [
+    {
+      "p05_3": "Aprueba",
+      "periodo": "OCTUBRE 2021",
+      "PERCENTAGE": 20.6804771219
+    },
+    {
+      "p05_3": "Desaprueba",
+      "periodo": "OCTUBRE 2021",
+      "PERCENTAGE": 74.8773782788
+    },
+    { "p05_3": "NS/NP", "periodo": "OCTUBRE 2021", "PERCENTAGE": 4.4421445992 }
+  ],
+  "nse_octubre": [
+    {
+      "p01": "99",
+      "periodo": "OCTUBRE 2021",
+      "NSEv1": "NSE A",
+      "PERCENTAGE": 0.5046133121
+    },
+    {
+      "p01": "99",
+      "periodo": "OCTUBRE 2021",
+      "NSEv1": "NSE B",
+      "PERCENTAGE": 2.5829711104
+    },
+    {
+      "p01": "99",
+      "periodo": "OCTUBRE 2021",
+      "NSEv1": "NSE C",
+      "PERCENTAGE": 3.9796899719
+    },
+    {
+      "p01": "99",
+      "periodo": "OCTUBRE 2021",
+      "NSEv1": "NSE D",
+      "PERCENTAGE": 4.7232596899
+    },
+    {
+      "p01": "99",
+      "periodo": "OCTUBRE 2021",
+      "NSEv1": "NSE E",
+      "PERCENTAGE": 4.9115603117
+    },
+    {
+      "p01": "Aprueba",
+      "periodo": "OCTUBRE 2021",
+      "NSEv1": "NSE A",
+      "PERCENTAGE": 0.5243935788
+    },
+    {
+      "p01": "Aprueba",
+      "periodo": "OCTUBRE 2021",
+      "NSEv1": "NSE B",
+      "PERCENTAGE": 3.764043397
+    },
+    {
+      "p01": "Aprueba",
+      "periodo": "OCTUBRE 2021",
+      "NSEv1": "NSE C",
+      "PERCENTAGE": 11.0859448092
+    },
+    {
+      "p01": "Aprueba",
+      "periodo": "OCTUBRE 2021",
+      "NSEv1": "NSE D",
+      "PERCENTAGE": 9.0358316957
+    },
+    {
+      "p01": "Aprueba",
+      "periodo": "OCTUBRE 2021",
+      "NSEv1": "NSE E",
+      "PERCENTAGE": 10.9655311083
+    },
+    {
+      "p01": "Desaprueba",
+      "periodo": "OCTUBRE 2021",
+      "NSEv1": "NSE A",
+      "PERCENTAGE": 1.6297844899
+    },
+    {
+      "p01": "Desaprueba",
+      "periodo": "OCTUBRE 2021",
+      "NSEv1": "NSE B",
+      "PERCENTAGE": 8.7093388268
+    },
+    {
+      "p01": "Desaprueba",
+      "periodo": "OCTUBRE 2021",
+      "NSEv1": "NSE C",
+      "PERCENTAGE": 18.2446120425
+    },
+    {
+      "p01": "Desaprueba",
+      "periodo": "OCTUBRE 2021",
+      "NSEv1": "NSE D",
+      "PERCENTAGE": 10.5442792421
+    },
+    {
+      "p01": "Desaprueba",
+      "periodo": "OCTUBRE 2021",
+      "NSEv1": "NSE E",
+      "PERCENTAGE": 8.7941464137
+    }
+  ],
+  "nse_noviembre": [
+    {
+      "p02": "Aprueba",
+      "periodo": "NOVIEMBRE 2021",
+      "NSEv1": "NSE A",
+      "PERCENTAGE": 0.4044425454
+    },
+    {
+      "p02": "Aprueba",
+      "periodo": "NOVIEMBRE 2021",
+      "NSEv1": "NSE B",
+      "PERCENTAGE": 2.4162663015
+    },
+    {
+      "p02": "Aprueba",
+      "periodo": "NOVIEMBRE 2021",
+      "NSEv1": "NSE C",
+      "PERCENTAGE": 5.9693603882
+    },
+    {
+      "p02": "Aprueba",
+      "periodo": "NOVIEMBRE 2021",
+      "NSEv1": "NSE D",
+      "PERCENTAGE": 7.765205957
+    },
+    {
+      "p02": "Aprueba",
+      "periodo": "NOVIEMBRE 2021",
+      "NSEv1": "NSE E",
+      "PERCENTAGE": 8.1412007402
+    },
+    {
+      "p02": "Desaprueba",
+      "periodo": "NOVIEMBRE 2021",
+      "NSEv1": "NSE A",
+      "PERCENTAGE": 2.8840096633
+    },
+    {
+      "p02": "Desaprueba",
+      "periodo": "NOVIEMBRE 2021",
+      "NSEv1": "NSE B",
+      "PERCENTAGE": 14.2978022823
+    },
+    {
+      "p02": "Desaprueba",
+      "periodo": "NOVIEMBRE 2021",
+      "NSEv1": "NSE C",
+      "PERCENTAGE": 24.1234378319
+    },
+    {
+      "p02": "Desaprueba",
+      "periodo": "NOVIEMBRE 2021",
+      "NSEv1": "NSE D",
+      "PERCENTAGE": 13.781601852
+    },
+    {
+      "p02": "Desaprueba",
+      "periodo": "NOVIEMBRE 2021",
+      "NSEv1": "NSE E",
+      "PERCENTAGE": 10.2414257932
+    },
+    {
+      "p02": "NS/NP",
+      "periodo": "NOVIEMBRE 2021",
+      "NSEv1": "NSE A",
+      "PERCENTAGE": 0.0780701805
+    },
+    {
+      "p02": "NS/NP",
+      "periodo": "NOVIEMBRE 2021",
+      "NSEv1": "NSE B",
+      "PERCENTAGE": 1.4062054471
+    },
+    {
+      "p02": "NS/NP",
+      "periodo": "NOVIEMBRE 2021",
+      "NSEv1": "NSE C",
+      "PERCENTAGE": 3.5874512475
+    },
+    {
+      "p02": "NS/NP",
+      "periodo": "NOVIEMBRE 2021",
+      "NSEv1": "NSE D",
+      "PERCENTAGE": 2.2379016428
+    },
+    {
+      "p02": "NS/NP",
+      "periodo": "NOVIEMBRE 2021",
+      "NSEv1": "NSE E",
+      "PERCENTAGE": 2.6656181272
+    }
+  ],
+  "nse_agosto": [
+    {
+      "p01": "99",
+      "periodo": "AGOSTO 2021",
+      "NSEv1": "NSE A",
+      "PERCENTAGE": 0.2454019085
+    },
+    {
+      "p01": "99",
+      "periodo": "AGOSTO 2021",
+      "NSEv1": "NSE B",
+      "PERCENTAGE": 2.2257597635
+    },
+    {
+      "p01": "99",
+      "periodo": "AGOSTO 2021",
+      "NSEv1": "NSE C",
+      "PERCENTAGE": 4.888528546
+    },
+    {
+      "p01": "99",
+      "periodo": "AGOSTO 2021",
+      "NSEv1": "NSE D",
+      "PERCENTAGE": 4.1381533625
+    },
+    {
+      "p01": "99",
+      "periodo": "AGOSTO 2021",
+      "NSEv1": "NSE E",
+      "PERCENTAGE": 5.5048180662
+    },
+    {
+      "p01": "Aprueba",
+      "periodo": "AGOSTO 2021",
+      "NSEv1": "NSE A",
+      "PERCENTAGE": 0.7541182137
+    },
+    {
+      "p01": "Aprueba",
+      "periodo": "AGOSTO 2021",
+      "NSEv1": "NSE B",
+      "PERCENTAGE": 4.9356563272
+    },
+    {
+      "p01": "Aprueba",
+      "periodo": "AGOSTO 2021",
+      "NSEv1": "NSE C",
+      "PERCENTAGE": 10.7192687184
+    },
+    {
+      "p01": "Aprueba",
+      "periodo": "AGOSTO 2021",
+      "NSEv1": "NSE D",
+      "PERCENTAGE": 10.8146627517
+    },
+    {
+      "p01": "Aprueba",
+      "periodo": "AGOSTO 2021",
+      "NSEv1": "NSE E",
+      "PERCENTAGE": 10.31535726
+    },
+    {
+      "p01": "Desaprueba",
+      "periodo": "AGOSTO 2021",
+      "NSEv1": "NSE A",
+      "PERCENTAGE": 2.4649860816
+    },
+    {
+      "p01": "Desaprueba",
+      "periodo": "AGOSTO 2021",
+      "NSEv1": "NSE B",
+      "PERCENTAGE": 10.1379277978
+    },
+    {
+      "p01": "Desaprueba",
+      "periodo": "AGOSTO 2021",
+      "NSEv1": "NSE C",
+      "PERCENTAGE": 14.9425371144
+    },
+    {
+      "p01": "Desaprueba",
+      "periodo": "AGOSTO 2021",
+      "NSEv1": "NSE D",
+      "PERCENTAGE": 9.5685612979
+    },
+    {
+      "p01": "Desaprueba",
+      "periodo": "AGOSTO 2021",
+      "NSEv1": "NSE E",
+      "PERCENTAGE": 8.3442627905
+    }
+  ],
+  "nse_setiembre": [
+    {
+      "p01": "Aprueba",
+      "periodo": "SETIEMBRE 2021",
+      "NSEv1": "NSE A",
+      "PERCENTAGE": 0.3859913847
+    },
+    {
+      "p01": "Aprueba",
+      "periodo": "SETIEMBRE 2021",
+      "NSEv1": "NSE B",
+      "PERCENTAGE": 4.4596463891
+    },
+    {
+      "p01": "Aprueba",
+      "periodo": "SETIEMBRE 2021",
+      "NSEv1": "NSE C",
+      "PERCENTAGE": 10.2376058873
+    },
+    {
+      "p01": "Aprueba",
+      "periodo": "SETIEMBRE 2021",
+      "NSEv1": "NSE D",
+      "PERCENTAGE": 10.9255314723
+    },
+    {
+      "p01": "Aprueba",
+      "periodo": "SETIEMBRE 2021",
+      "NSEv1": "NSE E",
+      "PERCENTAGE": 14.1400363575
+    },
+    {
+      "p01": "Desaprueba",
+      "periodo": "SETIEMBRE 2021",
+      "NSEv1": "NSE A",
+      "PERCENTAGE": 1.6184027166
+    },
+    {
+      "p01": "Desaprueba",
+      "periodo": "SETIEMBRE 2021",
+      "NSEv1": "NSE B",
+      "PERCENTAGE": 9.5593333956
+    },
+    {
+      "p01": "Desaprueba",
+      "periodo": "SETIEMBRE 2021",
+      "NSEv1": "NSE C",
+      "PERCENTAGE": 14.1917014996
+    },
+    {
+      "p01": "Desaprueba",
+      "periodo": "SETIEMBRE 2021",
+      "NSEv1": "NSE D",
+      "PERCENTAGE": 9.7138490622
+    },
+    {
+      "p01": "Desaprueba",
+      "periodo": "SETIEMBRE 2021",
+      "NSEv1": "NSE E",
+      "PERCENTAGE": 6.95818457
+    },
+    {
+      "p01": "NS/NP",
+      "periodo": "SETIEMBRE 2021",
+      "NSEv1": "NSE A",
+      "PERCENTAGE": 0.3493394083
+    },
+    {
+      "p01": "NS/NP",
+      "periodo": "SETIEMBRE 2021",
+      "NSEv1": "NSE B",
+      "PERCENTAGE": 2.2129488926
+    },
+    {
+      "p01": "NS/NP",
+      "periodo": "SETIEMBRE 2021",
+      "NSEv1": "NSE C",
+      "PERCENTAGE": 5.7879517319
+    },
+    {
+      "p01": "NS/NP",
+      "periodo": "SETIEMBRE 2021",
+      "NSEv1": "NSE D",
+      "PERCENTAGE": 4.719849779
+    },
+    {
+      "p01": "NS/NP",
+      "periodo": "SETIEMBRE 2021",
+      "NSEv1": "NSE E",
+      "PERCENTAGE": 4.7396274535
+    }
+  ],
+  "ambito_agosto": [
+    {
+      "p01": "Aprueba",
+      "ambito": "Lima Metropolitana",
+      "periodo": "AGOSTO 2021",
+      "PERCENTAGE": 8.8019199042
+    },
+    {
+      "p01": "Aprueba",
+      "ambito": "Peru rural",
+      "periodo": "AGOSTO 2021",
+      "PERCENTAGE": 10.377547257
+    },
+    {
+      "p01": "Aprueba",
+      "ambito": "Peru urbano",
+      "periodo": "AGOSTO 2021",
+      "PERCENTAGE": 18.3595961098
+    },
+    {
+      "p01": "Desaprueba",
+      "ambito": "Lima Metropolitana",
+      "periodo": "AGOSTO 2021",
+      "PERCENTAGE": 21.1859607044
+    },
+    {
+      "p01": "Desaprueba",
+      "ambito": "Peru rural",
+      "periodo": "AGOSTO 2021",
+      "PERCENTAGE": 5.9141434043
+    },
+    {
+      "p01": "Desaprueba",
+      "ambito": "Peru urbano",
+      "periodo": "AGOSTO 2021",
+      "PERCENTAGE": 18.3581709736
+    },
+    {
+      "p01": "NS/NP",
+      "ambito": "Lima Metropolitana",
+      "periodo": "AGOSTO 2021",
+      "PERCENTAGE": 4.5743515282
+    },
+    {
+      "p01": "NS/NP",
+      "ambito": "Peru rural",
+      "periodo": "AGOSTO 2021",
+      "PERCENTAGE": 5.0848042063
+    },
+    {
+      "p01": "NS/NP",
+      "ambito": "Peru urbano",
+      "periodo": "AGOSTO 2021",
+      "PERCENTAGE": 7.3435059121
+    }
+  ],
+  "ambito_setiembre": [
+    {
+      "p01": "Aprueba",
+      "ambito": "Lima Metropolitana",
+      "periodo": "SETIEMBRE 2021",
+      "PERCENTAGE": 8.7749016927
+    },
+    {
+      "p01": "Aprueba",
+      "ambito": "Peru rural",
+      "periodo": "SETIEMBRE 2021",
+      "PERCENTAGE": 11.6826582386
+    },
+    {
+      "p01": "Aprueba",
+      "ambito": "Peru urbano",
+      "periodo": "SETIEMBRE 2021",
+      "PERCENTAGE": 19.6912515595
+    },
+    {
+      "p01": "Desaprueba",
+      "ambito": "Lima Metropolitana",
+      "periodo": "SETIEMBRE 2021",
+      "PERCENTAGE": 20.0193988298
+    },
+    {
+      "p01": "Desaprueba",
+      "ambito": "Peru rural",
+      "periodo": "SETIEMBRE 2021",
+      "PERCENTAGE": 6.2271716131
+    },
+    {
+      "p01": "Desaprueba",
+      "ambito": "Peru urbano",
+      "periodo": "SETIEMBRE 2021",
+      "PERCENTAGE": 15.794900801
+    },
+    {
+      "p01": "NS/NP",
+      "ambito": "Lima Metropolitana",
+      "periodo": "SETIEMBRE 2021",
+      "PERCENTAGE": 5.7800687859
+    },
+    {
+      "p01": "NS/NP",
+      "ambito": "Peru rural",
+      "periodo": "SETIEMBRE 2021",
+      "PERCENTAGE": 3.4302064397
+    },
+    {
+      "p01": "NS/NP",
+      "ambito": "Peru urbano",
+      "periodo": "SETIEMBRE 2021",
+      "PERCENTAGE": 8.5994420396
+    }
+  ],
+  "ambito_octubre": [
+    {
+      "p01": "99",
+      "ambito": "Lima Metropolitana",
+      "periodo": "OCTUBRE 2021",
+      "PERCENTAGE": 5.4040489168
+    },
+    {
+      "p01": "99",
+      "ambito": "Peru rural",
+      "periodo": "OCTUBRE 2021",
+      "PERCENTAGE": 4.2438680561
+    },
+    {
+      "p01": "99",
+      "ambito": "Peru urbano",
+      "periodo": "OCTUBRE 2021",
+      "PERCENTAGE": 7.0541774232
+    },
+    {
+      "p01": "Aprueba",
+      "ambito": "Lima Metropolitana",
+      "periodo": "OCTUBRE 2021",
+      "PERCENTAGE": 9.8966777241
+    },
+    {
+      "p01": "Aprueba",
+      "ambito": "Peru rural",
+      "periodo": "OCTUBRE 2021",
+      "PERCENTAGE": 8.7226972473
+    },
+    {
+      "p01": "Aprueba",
+      "ambito": "Peru urbano",
+      "periodo": "OCTUBRE 2021",
+      "PERCENTAGE": 16.7563696176
+    },
+    {
+      "p01": "Desaprueba",
+      "ambito": "Lima Metropolitana",
+      "periodo": "OCTUBRE 2021",
+      "PERCENTAGE": 19.1762454439
+    },
+    {
+      "p01": "Desaprueba",
+      "ambito": "Peru rural",
+      "periodo": "OCTUBRE 2021",
+      "PERCENTAGE": 8.5199188756
+    },
+    {
+      "p01": "Desaprueba",
+      "ambito": "Peru urbano",
+      "periodo": "OCTUBRE 2021",
+      "PERCENTAGE": 20.2259966954
+    }
+  ],
+  "ambito_noviembre": [
+    {
+      "p02": "Aprueba",
+      "ambito": "Lima Metropolitana",
+      "periodo": "NOVIEMBRE 2021",
+      "PERCENTAGE": 5.6282351891
+    },
+    {
+      "p02": "Aprueba",
+      "ambito": "Peru rural",
+      "periodo": "NOVIEMBRE 2021",
+      "PERCENTAGE": 8.5573298444
+    },
+    {
+      "p02": "Aprueba",
+      "ambito": "Peru urbano",
+      "periodo": "NOVIEMBRE 2021",
+      "PERCENTAGE": 10.5109108987
+    },
+    {
+      "p02": "Desaprueba",
+      "ambito": "Lima Metropolitana",
+      "periodo": "NOVIEMBRE 2021",
+      "PERCENTAGE": 26.3644801341
+    },
+    {
+      "p02": "Desaprueba",
+      "ambito": "Peru rural",
+      "periodo": "NOVIEMBRE 2021",
+      "PERCENTAGE": 10.2577158976
+    },
+    {
+      "p02": "Desaprueba",
+      "ambito": "Peru urbano",
+      "periodo": "NOVIEMBRE 2021",
+      "PERCENTAGE": 28.706081391
+    },
+    {
+      "p02": "NS/NP",
+      "ambito": "Lima Metropolitana",
+      "periodo": "NOVIEMBRE 2021",
+      "PERCENTAGE": 2.5531577264
+    },
+    {
+      "p02": "NS/NP",
+      "ambito": "Peru rural",
+      "periodo": "NOVIEMBRE 2021",
+      "PERCENTAGE": 2.6727342002
+    },
+    {
+      "p02": "NS/NP",
+      "ambito": "Peru urbano",
+      "periodo": "NOVIEMBRE 2021",
+      "PERCENTAGE": 4.7493547185
+    }
+  ],
+  "ambito_diciembre": [
+    {
+      "p02": "Aprueba",
+      "ambito": "Lima Metropolitana",
+      "periodo": "DICIEMBRE 2021",
+      "PERCENTAGE": 5.6282351891
+    },
+    {
+      "p02": "Aprueba",
+      "ambito": "Peru rural",
+      "periodo": "DICIEMBRE 2021",
+      "PERCENTAGE": 8.5573298444
+    },
+    {
+      "p02": "Aprueba",
+      "ambito": "Peru urbano",
+      "periodo": "DICIEMBRE 2021",
+      "PERCENTAGE": 10.5109108987
+    },
+    {
+      "p02": "Desaprueba",
+      "ambito": "Lima Metropolitana",
+      "periodo": "DICIEMBRE 2021",
+      "PERCENTAGE": 26.3644801341
+    },
+    {
+      "p02": "Desaprueba",
+      "ambito": "Peru rural",
+      "periodo": "DICIEMBRE 2021",
+      "PERCENTAGE": 10.2577158976
+    },
+    {
+      "p02": "Desaprueba",
+      "ambito": "Peru urbano",
+      "periodo": "DICIEMBRE 2021",
+      "PERCENTAGE": 28.706081391
+    },
+    {
+      "p02": "NS/NP",
+      "ambito": "Lima Metropolitana",
+      "periodo": "DICIEMBRE 2021",
+      "PERCENTAGE": 2.5531577264
+    },
+    {
+      "p02": "NS/NP",
+      "ambito": "Peru rural",
+      "periodo": "DICIEMBRE 2021",
+      "PERCENTAGE": 2.6727342002
+    },
+    {
+      "p02": "NS/NP",
+      "ambito": "Peru urbano",
+      "periodo": "DICIEMBRE 2021",
+      "PERCENTAGE": 4.7493547185
+    }
+  ],
+  "creeqcastillo_noviembre": [
+    {
+      "p04": "Durar\u00e1 cinco a\u00f1os como presidente",
+      "periodo": "NOVIEMBRE 2021",
+      "PERCENTAGE": 30.5834518657
+    },
+    { "p04": "NS/NP", "periodo": "NOVIEMBRE 2021", "PERCENTAGE": 6.9958766448 },
+    {
+      "p04": "No terminar\u00e1 su gobierno",
+      "periodo": "NOVIEMBRE 2021",
+      "PERCENTAGE": 62.4206714895
+    }
+  ],
+  "creeqcastillo_diciembre": [
+    {
+      "p04": "Durar\u00e1 cinco a\u00f1os como presidente",
+      "periodo": "DICIEMBRE 2021",
+      "PERCENTAGE": 30.5834518657
+    },
+    { "p04": "NS/NP", "periodo": "DICIEMBRE 2021", "PERCENTAGE": 6.9958766448 },
+    {
+      "p04": "No terminar\u00e1 su gobierno",
+      "periodo": "DICIEMBRE 2021",
+      "PERCENTAGE": 62.4206714895
+    }
+  ],
+  "aprobacion_MCA_agosto": [
+    {
+      "p02_3": "Aprueba",
+      "periodo": "AGOSTO 2021",
+      "PERCENTAGE": 34.0626481701
+    },
+    {
+      "p02_3": "Desaprueba",
+      "periodo": "AGOSTO 2021",
+      "PERCENTAGE": 54.3443189769
+    },
+    { "p02_3": "NS/NP", "periodo": "AGOSTO 2021", "PERCENTAGE": 11.5930328529 }
+  ],
+  "aprobacion_MCA_setiembre": [
+    {
+      "p02_4": "Aprueba",
+      "periodo": "SETIEMBRE 2021",
+      "PERCENTAGE": 34.1600307509
+    },
+    {
+      "p02_4": "Desaprueba",
+      "periodo": "SETIEMBRE 2021",
+      "PERCENTAGE": 56.4440518872
+    },
+    {
+      "p02_4": "NS/NP",
+      "periodo": "SETIEMBRE 2021",
+      "PERCENTAGE": 9.3959173619
+    }
+  ],
+  "aprobacion_MCA_octubre": [
+    {
+      "p05_2": "Aprueba",
+      "periodo": "OCTUBRE 2021",
+      "PERCENTAGE": 28.2669406219
+    },
+    {
+      "p05_2": "Desaprueba",
+      "periodo": "OCTUBRE 2021",
+      "PERCENTAGE": 58.1714111664
+    },
+    { "p05_2": "NS/NP", "periodo": "OCTUBRE 2021", "PERCENTAGE": 13.5616482118 }
+  ],
+  "aprobacion_MCA_noviembre": [
+    {
+      "p05_4": "Aprueba",
+      "periodo": "NOVIEMBRE 2021",
+      "PERCENTAGE": 30.6829529141
+    },
+    {
+      "p05_4": "Desaprueba",
+      "periodo": "NOVIEMBRE 2021",
+      "PERCENTAGE": 61.103743418
+    },
+    {
+      "p05_4": "NS/NP",
+      "periodo": "NOVIEMBRE 2021",
+      "PERCENTAGE": 8.2133036679
+    }
+  ],
+  "aprobacion_MCA_diciembre": [
+    {
+      "p05_4": "Aprueba",
+      "periodo": "NOVIEMBRE 2021",
+      "PERCENTAGE": 30.6829529141
+    },
+    {
+      "p05_4": "Desaprueba",
+      "periodo": "NOVIEMBRE 2021",
+      "PERCENTAGE": 61.103743418
+    },
+    {
+      "p05_4": "NS/NP",
+      "periodo": "NOVIEMBRE 2021",
+      "PERCENTAGE": 8.2133036679
+    }
+  ],
+  "aprobacion_ideologia_agosto": [
+    {
+      "p12": "Izquierda",
+      "aprobacion": 33.9470161048,
+      "periodo": "AGOSTO 2021"
+    },
+    { "p12": "Centro", "aprobacion": 44.6839887449, "periodo": "AGOSTO 2021" },
+    { "p12": "Derecha", "aprobacion": 56.7898014897, "periodo": "AGOSTO 2021" }
+  ],
+  "aprobacion_ideologia_setiembre": [
+    {
+      "p12": "Izquierda",
+      "aprobacion": 29.8142211579,
+      "periodo": "SETIEMBRE 2021"
+    },
+    {
+      "p12": "Centro",
+      "aprobacion": 41.0467394149,
+      "periodo": "SETIEMBRE 2021"
+    },
+    {
+      "p12": "Derecha",
+      "aprobacion": 52.8433183664,
+      "periodo": "SETIEMBRE 2021"
+    }
+  ],
+  "aprobacion_ideologia_octubre": [
+    {
+      "Identificacion_ideológica": "Izquierda",
+      "aprobacion": 37.8553748263,
+      "periodo": "OCTUBRE 2021"
+    },
+    {
+      "Identificacion_ideológica": "Centro",
+      "aprobacion": 50.2594545573,
+      "periodo": "OCTUBRE 2021"
+    },
+    {
+      "Identificacion_ideológica": "Derecha",
+      "aprobacion": 53.3900921021,
+      "periodo": "OCTUBRE 2021"
+    }
+  ],
+  "aprobacion_ideologia_noviembre": [
+    {
+      "p13": "Centro",
+      "p02": "Aprueba",
+      "periodo": "NOVIEMBRE 2021",
+      "PERCENTAGE": 8.0630644405
+    },
+    {
+      "p13": "Centro",
+      "p02": "Desaprueba",
+      "periodo": "NOVIEMBRE 2021",
+      "PERCENTAGE": 24.0508307457
+    },
+    {
+      "p13": "Centro",
+      "p02": "NS/NP",
+      "periodo": "NOVIEMBRE 2021",
+      "PERCENTAGE": 4.2492708298
+    },
+    {
+      "p13": "Derecha",
+      "p02": "Aprueba",
+      "periodo": "NOVIEMBRE 2021",
+      "PERCENTAGE": 6.7229781385
+    },
+    {
+      "p13": "Derecha",
+      "p02": "Desaprueba",
+      "periodo": "NOVIEMBRE 2021",
+      "PERCENTAGE": 29.0438510435
+    },
+    {
+      "p13": "Derecha",
+      "p02": "NS/NP",
+      "periodo": "NOVIEMBRE 2021",
+      "PERCENTAGE": 2.8281720453
+    },
+    {
+      "p13": "Izquierda",
+      "p02": "Aprueba",
+      "periodo": "NOVIEMBRE 2021",
+      "PERCENTAGE": 8.9408126208
+    },
+    {
+      "p13": "Izquierda",
+      "p02": "Desaprueba",
+      "periodo": "NOVIEMBRE 2021",
+      "PERCENTAGE": 10.2753449147
+    },
+    {
+      "p13": "Izquierda",
+      "p02": "NS/NP",
+      "periodo": "NOVIEMBRE 2021",
+      "PERCENTAGE": 2.0562392918
+    },
+    {
+      "p13": "NS/NP",
+      "p02": "Aprueba",
+      "periodo": "NOVIEMBRE 2021",
+      "PERCENTAGE": 0.9696207323
+    },
+    {
+      "p13": "NS/NP",
+      "p02": "Desaprueba",
+      "periodo": "NOVIEMBRE 2021",
+      "PERCENTAGE": 1.9582507188
+    },
+    {
+      "p13": "NS/NP",
+      "p02": "NS/NP",
+      "periodo": "NOVIEMBRE 2021",
+      "PERCENTAGE": 0.8415644782
+    }
+  ]
+}
