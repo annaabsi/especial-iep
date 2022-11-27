@@ -1,9 +1,5 @@
 {
-    "castillo_aprueba": [{
-            "p01": "Aprueba",
-            "periodo": "JUNIO 2022",
-            "PERCENTAGE": 19
-        },
+    "castillo_aprueba": [
         {
             "p01": "Aprueba",
             "periodo": "JULIO 2022",
@@ -28,13 +24,14 @@
             "p01": "Aprueba",
             "periodo": "OCTUBRE II 2022",
             "PERCENTAGE": 28
+        },
+        {
+            "p01": "Aprueba",
+            "periodo": "NOVIEMBRE 2022",
+            "PERCENTAGE": 31
         }
     ],
-    "castillo_desaprueba": [{
-            "p01": "Desaprueba",
-            "periodo": "JUNIO 2022",
-            "PERCENTAGE": 71
-        },
+    "castillo_desaprueba": [
         {
             "p01": "Desaprueba",
             "periodo": "JULIO 2022",
@@ -59,21 +56,22 @@
             "p01": "Desaprueba",
             "periodo": "OCTUBRE II 2022",
             "PERCENTAGE": 62
+        },
+        {
+            "p01": "Desaprueba",
+            "periodo": "NOVIEMBRE 2022",
+            "PERCENTAGE": 61
         }
     ],
     "castillo_nsnp": [
-        { "p01": "NS/NP", "periodo": "JUNIO 2022", "PERCENTAGE": 10 },
         { "p01": "NS/NP", "periodo": "JULIO 2022", "PERCENTAGE": 9 },
         { "p01": "NS/NP", "periodo": "AGOSTO 2022", "PERCENTAGE": 8 },
         { "p01": "NS/NP", "periodo": "SETIEMBRE 2022", "PERCENTAGE": 10 },
         { "p01": "NS/NP", "periodo": "OCTUBRE I 2022", "PERCENTAGE": 10 },
-        { "p01": "NS/NP", "periodo": "OCTUBRE II 2022", "PERCENTAGE": 10 }
+        { "p01": "NS/NP", "periodo": "OCTUBRE II 2022", "PERCENTAGE": 10 },
+        { "p01": "NS/NP", "periodo": "NOVIEMBRE 2022", "PERCENTAGE": 8 }
     ],
-    "congreso_nsnp": [{
-            "p05_3": "NS/NP",
-            "periodo": "JUNIO 2022",
-            "PERCENTAGE": 3
-        },
+    "congreso_nsnp": [
         {
             "p05_3": "NS/NP",
             "periodo": "JULIO 2022",
@@ -98,13 +96,14 @@
             "p05_3": "NS/NP",
             "periodo": "OCTUBRE II 2022",
             "PERCENTAGE": 6
+        },
+        {
+            "p05_3": "NS/NP",
+            "periodo": "NOVIEMBRE 2022",
+            "PERCENTAGE": 4
         }
     ],
-    "congreso_aprueba": [{
-            "p05_3": "Aprueba",
-            "periodo": "JUNIO 2022",
-            "PERCENTAGE": 12
-        },
+    "congreso_aprueba": [
         {
             "p05_3": "Aprueba",
             "periodo": "JULIO 2022",
@@ -129,13 +128,14 @@
             "p05_3": "Aprueba",
             "periodo": "OCTUBRE II 2022",
             "PERCENTAGE": 13
+        },
+        {
+            "p05_3": "Aprueba",
+            "periodo": "NOVIEMBRE 2022",
+            "PERCENTAGE": 10
         }
     ],
-    "congreso_desaprueba": [{
-            "p05_3": "Desaprueba",
-            "periodo": "JUNIO 2022",
-            "PERCENTAGE": 85
-        },
+    "congreso_desaprueba": [
         {
             "p05_3": "Desaprueba",
             "periodo": "JULIO 2022",
@@ -160,6 +160,11 @@
             "p05_3": "Desaprueba",
             "periodo": "OCTUBRE II 2022",
             "PERCENTAGE": 81
+        },
+        {
+            "p05_3": "Desaprueba",
+            "periodo": "NOVIEMBRE 2022",
+            "PERCENTAGE": 86
         }
     ],
     "anibal_desaprueba": [{
@@ -240,18 +245,7 @@
             "PERCENTAGE": 27
         }
     ],
-    "nse_a": [{
-            "p01": "Desaprueba",
-            "periodo": "JUNIO 2022",
-            "NSEv1": "NSE A",
-            "PERCENTAGE": 84
-        },
-        {
-            "p01": "Aprueba",
-            "periodo": "JUNIO 2022",
-            "NSEv1": "NSE A",
-            "PERCENTAGE": 11
-        },
+    "nse_a": [
         {
             "p01": "Desaprueba",
             "periodo": "JULIO 2022",
@@ -311,6 +305,18 @@
             "periodo": "OCTUBRE II 2022",
             "NSEv1": "NSE A",
             "PERCENTAGE": 76
+        },
+        {
+            "p01": "Aprueba",
+            "periodo": "NOVIEMBRE 2022",
+            "NSEv1": "NSE A",
+            "PERCENTAGE": 20
+        },
+        {
+            "p01": "Desaprueba",
+            "periodo": "OCTUBRE II 2022",
+            "NSEv1": "NSE A",
+            "PERCENTAGE": 73
         }
     ],
     "elecciones_nse_a": [{
@@ -344,18 +350,7 @@
             "PERCENTAGE": 1
         }
     ],
-    "nse_c": [{
-            "p01": "Desaprueba",
-            "periodo": "JUNIO 2022",
-            "NSEv1": "NSE C",
-            "PERCENTAGE": 73
-        },
-        {
-            "p01": "Aprueba",
-            "periodo": "JUNIO 2022",
-            "NSEv1": "NSE C",
-            "PERCENTAGE": 16
-        },
+    "nse_c": [
         {
             "p01": "Desaprueba",
             "periodo": "JULIO 2022",
@@ -415,6 +410,18 @@
             "periodo": "OCTUBRE II 2022",
             "NSEv1": "NSE C",
             "PERCENTAGE": 26
+        },
+        {
+            "p01": "Desaprueba",
+            "periodo": "NOVIEMBRE 2022",
+            "NSEv1": "NSE C",
+            "PERCENTAGE": 65
+        },
+        {
+            "p01": "Aprueba",
+            "periodo": "NOVIEMBRE 2022",
+            "NSEv1": "NSE C",
+            "PERCENTAGE": 26
         }
     ],
     "elecciones_nse_c": [{
@@ -448,18 +455,7 @@
             "PERCENTAGE": 7
         }
     ],
-    "nse_d": [{
-            "p01": "Aprueba",
-            "periodo": "JUNIO 2022",
-            "NSEv1": "NSE D",
-            "PERCENTAGE": 25
-        },
-        {
-            "p01": "Desaprueba",
-            "periodo": "JUNIO 2022",
-            "NSEv1": "NSE D",
-            "PERCENTAGE": 65
-        },
+    "nse_d": [
         {
             "p01": "Aprueba",
             "periodo": "JULIO 2022",
@@ -519,6 +515,18 @@
             "periodo": "OCTUBRE II 2022",
             "NSEv1": "NSE D",
             "PERCENTAGE": 34
+        },
+        {
+            "p01": "Desaprueba",
+            "periodo": "NOVIEMBRE 2022",
+            "NSEv1": "NSE D",
+            "PERCENTAGE": 53
+        },
+        {
+            "p01": "Aprueba",
+            "periodo": "NOVIEMBRE 2022",
+            "NSEv1": "NSE D",
+            "PERCENTAGE": 38
         }
     ],
     "elecciones_nse_d": [{
@@ -552,18 +560,7 @@
             "PERCENTAGE": 7
         }
     ],
-    "ambito_lima": [{
-            "p01": "Desaprueba",
-            "periodo": "JUNIO 2022",
-            "ambito": "Lima Metropolitana",
-            "PERCENTAGE": 85
-        },
-        {
-            "p01": "Aprueba",
-            "periodo": "JUNIO 2022",
-            "ambito": "Lima Metropolitana",
-            "PERCENTAGE": 8
-        },
+    "ambito_lima": [
         {
             "p01": "Desaprueba",
             "periodo": "JULIO 2022",
@@ -623,20 +620,21 @@
             "periodo": "OCTUBRE II 2022",
             "ambito": "Lima Metropolitana",
             "PERCENTAGE": 76
-        }
-    ],
-    "ambito_rural": [{
-            "p01": "Desaprueba",
-            "periodo": "JUNIO 2022",
-            "ambito": "Peru rural",
-            "PERCENTAGE": 57
         },
         {
             "p01": "Aprueba",
-            "periodo": "JUNIO 2022",
-            "ambito": "Peru rural",
-            "PERCENTAGE": 30
+            "periodo": "NOVIEMBRE 2022",
+            "ambito": "Lima Metropolitana",
+            "PERCENTAGE": 19
         },
+        {
+            "p01": "Desaprueba",
+            "periodo": "NOVIEMBRE 2022",
+            "ambito": "Lima Metropolitana",
+            "PERCENTAGE": 75
+        }
+    ],
+    "ambito_rural": [
         {
             "p01": "Desaprueba",
             "periodo": "JULIO 2022",
@@ -696,21 +694,22 @@
             "periodo": "OCTUBRE II 2022",
             "ambito": "Peru rural",
             "PERCENTAGE": 43
-        }
-    ],
-
-    "ambito_urbano": [{
+        },
+        {
             "p01": "Aprueba",
-            "periodo": "JUNIO 2022",
-            "ambito": "Peru urbano",
-            "PERCENTAGE": 23
+            "periodo": "NOVIEMBRE 2022",
+            "ambito": "Peru rural",
+            "PERCENTAGE": 45
         },
         {
             "p01": "Desaprueba",
-            "periodo": "JUNIO 2022",
-            "ambito": "Peru urbano",
-            "PERCENTAGE": 68
-        },
+            "periodo": "NOVIEMBRE 2022",
+            "ambito": "Peru rural",
+            "PERCENTAGE": 45
+        }
+    ],
+
+    "ambito_urbano": [
         {
             "p01": "Aprueba",
             "periodo": "JULIO 2022",
@@ -770,6 +769,18 @@
             "periodo": "OCTUBRE II 2022",
             "ambito": "Peru urbano",
             "PERCENTAGE": 30
+        },
+        {
+            "p01": "Desaprueba",
+            "periodo": "NOVIEMBRE 2022",
+            "ambito": "Peru urbano",
+            "PERCENTAGE": 58
+        },
+        {
+            "p01": "Aprueba",
+            "periodo": "NOVIEMBRE 2022",
+            "ambito": "Peru urbano",
+            "PERCENTAGE": 33
         }
     ],
 
