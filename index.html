@@ -2612,6 +2612,490 @@
                 bindto: "#aprobacion_macrozona_oriente",
             });
 
+            const aprobacion_nse_a_disolucion = bb.generate({
+                data: {
+                    columns: [
+                        ["data1", 2],
+                        ["data2", 29],
+                        ["data3", 69],
+                    ],
+                    type: "donut", // for ESM specify as: donut()
+                    names: {
+                        data1: "NS/NP",
+                        data2: "Aprueba",
+                        data3: "Desaprueba",
+                    },
+                    colors: {
+                        data1: "#ffe48f",
+                        data2: "#adcc76",
+                        data3: "#de425b",
+                    },
+                    onclick: function (d, i) {
+                        // console.log("onclick", d, i);
+                    },
+                    onover: function (d, i) {
+                        // console.log("onover", d, i);
+                    },
+                    onout: function (d, i) {
+                        // console.log("onout", d, i);
+                    },
+                },
+                donut: {
+                    title: "NSE A/B",
+                },
+                tooltip: {
+                    format: {
+                        title: function (id) {
+                            return id;
+                        },
+                        value: function (value, ratio, id) {
+                            return d3.format(",")(value.toFixed(1)) + "%";
+                        },
+                    },
+                },
+                bindto: "#aprobacion_nse_a_disolucion",
+            });
+
+            const aprobacion_nse_c_disolucion = bb.generate({
+                data: {
+                    columns: [
+                        ["data1", 2],
+                        ["data2", 41],
+                        ["data3", 57],
+                    ],
+                    type: "donut", // for ESM specify as: donut()
+                    names: {
+                        data1: "NS/NP",
+                        data2: "Aprueba",
+                        data3: "Desaprueba",
+                    },
+                    colors: {
+                        data1: "#ffe48f",
+                        data2: "#adcc76",
+                        data3: "#de425b",
+                    },
+                    onclick: function (d, i) {
+                        // console.log("onclick", d, i);
+                    },
+                    onover: function (d, i) {
+                        // console.log("onover", d, i);
+                    },
+                    onout: function (d, i) {
+                        // console.log("onout", d, i);
+                    },
+                },
+                donut: {
+                    title: "NSE C",
+                },
+                tooltip: {
+                    format: {
+                        title: function (id) {
+                            return id;
+                        },
+                        value: function (value, ratio, id) {
+                            return d3.format(",")(value.toFixed(1)) + "%";
+                        },
+                    },
+                },
+                bindto: "#aprobacion_nse_c_disolucion",
+            });
+
+            const aprobacion_nse_d_disolucion = bb.generate({
+                data: {
+                    columns: [
+                        ["data1", 4],
+                        ["data2", 52],
+                        ["data3", 44],
+                    ],
+                    type: "donut", // for ESM specify as: donut()
+                    names: {
+                        data1: "NS/NP",
+                        data2: "Aprueba",
+                        data3: "Desaprueba",
+                    },
+                    colors: {
+                        data1: "#ffe48f",
+                        data2: "#adcc76",
+                        data3: "#de425b",
+                    },
+                    onclick: function (d, i) {
+                        // console.log("onclick", d, i);
+                    },
+                    onover: function (d, i) {
+                        // console.log("onover", d, i);
+                    },
+                    onout: function (d, i) {
+                        // console.log("onout", d, i);
+                    },
+                },
+                donut: {
+                    title: "NSE D/E",
+                },
+                tooltip: {
+                    format: {
+                        title: function (id) {
+                            return id;
+                        },
+                        value: function (value, ratio, id) {
+                            return d3.format(",")(value.toFixed(1)) + "%";
+                        },
+                    },
+                },
+                bindto: "#aprobacion_nse_d_disolucion",
+            });
+
+            const aprobacion_ambito_lima_disolucion = bb.generate({
+                data: {
+                    columns: [
+                        ["data1", 3],
+                        ["data2", 34],
+                        ["data3", 63],
+                    ],
+                    type: "donut", // for ESM specify as: donut()
+                    names: {
+                        data1: "NS/NP",
+                        data2: "Aprueba",
+                        data3: "Desaprueba",
+                    },
+                    colors: {
+                        data1: "#ffe48f",
+                        data2: "#adcc76",
+                        data3: "#de425b",
+                    },
+                    onclick: function (d, i) {
+                        // console.log("onclick", d, i);
+                    },
+                    onover: function (d, i) {
+                        // console.log("onover", d, i);
+                    },
+                    onout: function (d, i) {
+                        // console.log("onout", d, i);
+                    },
+                },
+                donut: {
+                    title: "Lima Metropolitana",
+                },
+                tooltip: {
+                    format: {
+                        title: function (id) {
+                            return id;
+                        },
+                        value: function (value, ratio, id) {
+                            return d3.format(",")(value.toFixed(1)) + "%";
+                        },
+                    },
+                },
+                bindto: "#aprobacion_ambito_lima_disolucion",
+            });
+
+            const aprobacion_ambito_urbano_disolucion = bb.generate({
+                data: {
+                    columns: [
+                        ["data1", 2],
+                        ["data2", 48],
+                        ["data3", 50],
+                    ],
+                    type: "donut", // for ESM specify as: donut()
+                    names: {
+                        data1: "NS/NP",
+                        data2: "Aprueba",
+                        data3: "Desaprueba",
+                    },
+                    colors: {
+                        data1: "#ffe48f",
+                        data2: "#adcc76",
+                        data3: "#de425b",
+                    },
+                    onclick: function (d, i) {
+                        // console.log("onclick", d, i);
+                    },
+                    onover: function (d, i) {
+                        // console.log("onover", d, i);
+                    },
+                    onout: function (d, i) {
+                        // console.log("onout", d, i);
+                    },
+                },
+                donut: {
+                    title: "Perú urbano",
+                },
+                tooltip: {
+                    format: {
+                        title: function (id) {
+                            return id;
+                        },
+                        value: function (value, ratio, id) {
+                            return d3.format(",")(value.toFixed(1)) + "%";
+                        },
+                    },
+                },
+                bindto: "#aprobacion_ambito_urbano_disolucion",
+            });
+
+            const aprobacion_ambito_rural_disolucion = bb.generate({
+                data: {
+                    columns: [
+                        ["data1", 4],
+                        ["data2", 52],
+                        ["data3", 44],
+                    ],
+                    type: "donut", // for ESM specify as: donut()
+                    names: {
+                        data1: "NS/NP",
+                        data2: "Aprueba",
+                        data3: "Desaprueba",
+                    },
+                    colors: {
+                        data1: "#ffe48f",
+                        data2: "#adcc76",
+                        data3: "#de425b",
+                    },
+                    onclick: function (d, i) {
+                        // console.log("onclick", d, i);
+                    },
+                    onover: function (d, i) {
+                        // console.log("onover", d, i);
+                    },
+                    onout: function (d, i) {
+                        // console.log("onout", d, i);
+                    },
+                },
+                donut: {
+                    title: "Perú rural",
+                },
+                tooltip: {
+                    format: {
+                        title: function (id) {
+                            return id;
+                        },
+                        value: function (value, ratio, id) {
+                            return d3.format(",")(value.toFixed(1)) + "%";
+                        },
+                    },
+                },
+                bindto: "#aprobacion_ambito_rural_disolucion",
+            });
+
+            const aprobacion_macrozona_lima_disolucion = bb.generate({
+                data: {
+                    columns: [
+                        ["data1", 3],
+                        ["data2", 34],
+                        ["data3", 63],
+                    ],
+                    type: "donut", // for ESM specify as: donut()
+                    names: {
+                        data1: "NS/NP",
+                        data2: "Aprueba",
+                        data3: "Desaprueba",
+                    },
+                    colors: {
+                        data1: "#ffe48f",
+                        data2: "#adcc76",
+                        data3: "#de425b",
+                    },
+                    onclick: function (d, i) {
+                        // console.log("onclick", d, i);
+                    },
+                    onover: function (d, i) {
+                        // console.log("onover", d, i);
+                    },
+                    onout: function (d, i) {
+                        // console.log("onout", d, i);
+                    },
+                },
+                donut: {
+                    title: "Lima Metropolitana",
+                },
+                tooltip: {
+                    format: {
+                        title: function (id) {
+                            return id;
+                        },
+                        value: function (value, ratio, id) {
+                            return d3.format(",")(value.toFixed(1)) + "%";
+                        },
+                    },
+                },
+                bindto: "#aprobacion_macrozona_lima_disolucion",
+            });
+
+            const aprobacion_macrozona_norte_disolucion = bb.generate({
+                data: {
+                    columns: [
+                        ["data1", 3],
+                        ["data2", 42],
+                        ["data3", 55],
+                    ],
+                    type: "donut", // for ESM specify as: donut()
+                    names: {
+                        data1: "NS/NP",
+                        data2: "Aprueba",
+                        data3: "Desaprueba",
+                    },
+                    colors: {
+                        data1: "#ffe48f",
+                        data2: "#adcc76",
+                        data3: "#de425b",
+                    },
+                    onclick: function (d, i) {
+                        // console.log("onclick", d, i);
+                    },
+                    onover: function (d, i) {
+                        // console.log("onover", d, i);
+                    },
+                    onout: function (d, i) {
+                        // console.log("onout", d, i);
+                    },
+                },
+                donut: {
+                    title: "Norte",
+                },
+                tooltip: {
+                    format: {
+                        title: function (id) {
+                            return id;
+                        },
+                        value: function (value, ratio, id) {
+                            return d3.format(",")(value.toFixed(1)) + "%";
+                        },
+                    },
+                },
+                bindto: "#aprobacion_macrozona_norte_disolucion",
+            });
+
+            const aprobacion_macrozona_centro_disolucion = bb.generate({
+                data: {
+                    columns: [
+                        ["data1", 2],
+                        ["data2", 54],
+                        ["data3", 44],
+                    ],
+                    type: "donut", // for ESM specify as: donut()
+                    names: {
+                        data1: "NS/NP",
+                        data2: "Aprueba",
+                        data3: "Desaprueba",
+                    },
+                    colors: {
+                        data1: "#ffe48f",
+                        data2: "#adcc76",
+                        data3: "#de425b",
+                    },
+                    onclick: function (d, i) {
+                        // console.log("onclick", d, i);
+                    },
+                    onover: function (d, i) {
+                        // console.log("onover", d, i);
+                    },
+                    onout: function (d, i) {
+                        // console.log("onout", d, i);
+                    },
+                },
+                donut: {
+                    title: "Centro",
+                },
+                tooltip: {
+                    format: {
+                        title: function (id) {
+                            return id;
+                        },
+                        value: function (value, ratio, id) {
+                            return d3.format(",")(value.toFixed(1)) + "%";
+                        },
+                    },
+                },
+                bindto: "#aprobacion_macrozona_centro_disolucion",
+            });
+
+            const aprobacion_macrozona_sur_disolucion = bb.generate({
+                data: {
+                    columns: [
+                        ["data1", 4],
+                        ["data2", 58],
+                        ["data3", 38],
+                    ],
+                    type: "donut", // for ESM specify as: donut()
+                    names: {
+                        data1: "NS/NP",
+                        data2: "Aprueba",
+                        data3: "Desaprueba",
+                    },
+                    colors: {
+                        data1: "#ffe48f",
+                        data2: "#adcc76",
+                        data3: "#de425b",
+                    },
+                    onclick: function (d, i) {
+                        // console.log("onclick", d, i);
+                    },
+                    onover: function (d, i) {
+                        // console.log("onover", d, i);
+                    },
+                    onout: function (d, i) {
+                        // console.log("onout", d, i);
+                    },
+                },
+                donut: {
+                    title: "Sur",
+                },
+                tooltip: {
+                    format: {
+                        title: function (id) {
+                            return id;
+                        },
+                        value: function (value, ratio, id) {
+                            return d3.format(",")(value.toFixed(1)) + "%";
+                        },
+                    },
+                },
+                bindto: "#aprobacion_macrozona_sur_disolucion",
+            });
+
+            const aprobacion_macrozona_oriente_disolucion = bb.generate({
+                data: {
+                    columns: [
+                        ["data1", 1],
+                        ["data2", 45],
+                        ["data3", 54],
+                    ],
+                    type: "donut", // for ESM specify as: donut()
+                    names: {
+                        data1: "NS/NP",
+                        data2: "Aprueba",
+                        data3: "Desaprueba",
+                    },
+                    colors: {
+                        data1: "#ffe48f",
+                        data2: "#adcc76",
+                        data3: "#de425b",
+                    },
+                    onclick: function (d, i) {
+                        // console.log("onclick", d, i);
+                    },
+                    onover: function (d, i) {
+                        // console.log("onover", d, i);
+                    },
+                    onout: function (d, i) {
+                        // console.log("onout", d, i);
+                    },
+                },
+                donut: {
+                    title: "Oriente",
+                },
+                tooltip: {
+                    format: {
+                        title: function (id) {
+                            return id;
+                        },
+                        value: function (value, ratio, id) {
+                            return d3.format(",")(value.toFixed(1)) + "%";
+                        },
+                    },
+                },
+                bindto: "#aprobacion_macrozona_oriente_disolucion",
+            });
+
             // const aprobacion_congreso = bb.generate({
             //     data: {
             //         columns: [
