@@ -1342,7 +1342,7 @@
                     Asimismo, en la evaluación por macrozona, Boluarte obtiene un 33% de aprobación en el oriente y un 26% en el norte. Contrariamente, altos porcentajes de rechazo lo alcanza en el sur (86%), centro (79%) y también en el norte (71%).
                 </p>
                 <label id="week_a_week"></label>
-                <input id="slider" type="range" min="1" max="8" step="1" value="8" />
+                <input id="slider" type="range" min="1" max="2" step="1" value="2" />
                 <p class="question">
                     ¿Usted aprueba o desaprueba la forma como Dina Boluarte está
                     conduciendo su gobierno?
@@ -1362,7 +1362,7 @@
         <p class="question">
             ¿Aprueba o desaprueba que Pedro Castillo haya intentado disolver el Congreso?
         </p>
-        <select id="aprueba_desaprueba">
+        <select id="aprueba_desaprueba_disolucion">
             <option>Aprobación</option>
             <option>Desaprobación</option>
         </select>
@@ -1384,7 +1384,7 @@
                     Finalmente, por macrozona, un 58% del sur está de acuerdo con que se haya intentado disolver el Congreso, seguido de un 54% del centro. Por otro lado, un 55% del norte y un 54% oriente desaprueba el intento.
                 </p>
                 <label id="week_a_week"></label>
-                <input id="slider" type="range" min="1" max="8" step="1" value="8" />
+                <input id="slider" type="range" min="1" max="2" step="1" value="2" />
                 <p class="question">
                     ¿Aprueba o desaprueba que Pedro Castillo haya intentado disolver el Congreso?
                 </p>
@@ -1408,21 +1408,23 @@
 
             <div class="historico">
                 <span>Histórico de encuestas:</span>
+                <a role="button" class="btn btn-outline-danger" style="margin-right: 10px" href="noviembre-2022/">
+                    Nov 2022</a>
                 <a role="button" class="btn btn-outline-danger" style="margin-right: 10px" href="octubre-2-2022/">
-                    Octubre II 2022</a>
+                    Oct II 2022</a>
                 <a role="button" class="btn btn-outline-danger" style="margin-right: 10px" href="octubre-1-2022/">
-                    Octubre I 2022</a>
+                    Oct I 2022</a>
                 <a role="button" class="btn btn-outline-danger" style="margin-right: 10px" href="setiembre-2022/">
-                    Setiembre 2022
+                    Set 2022
                 </a>
                 <a role="button" class="btn btn-outline-danger" style="margin-right: 10px" href="julio-2022/">
-                    Julio 2022
+                    Jul 2022
                 </a>
                 <a role="button" class="btn btn-outline-danger" style="margin-right: 10px" href="junio-2022/">
-                    Junio 2022
+                    Jun 2022
                 </a>
                 <a role="button" class="btn btn-outline-danger" style="margin-right: 10px" href="mayo-2022/">
-                    Mayo 2022
+                    May 2022
                 </a>
 
                 <!-- <a role="button" class="btn btn-outline-danger" style="margin-right: 10px" href="enero-2022/">
@@ -2628,15 +2630,15 @@
                     columns: [
                         [
                             "data1",
-                            ...filter_datita(nse_a, "aprueba").map((o) => o.PERCENTAGE),
+                            ...filter_datita(nse_a_disolucion, "aprueba").map((o) => o.PERCENTAGE),
                         ],
                         [
                             "data2",
-                            ...filter_datita(nse_c, "aprueba").map((o) => o.PERCENTAGE),
+                            ...filter_datita(nse_c_disolucion, "aprueba").map((o) => o.PERCENTAGE),
                         ],
                         [
                             "data3",
-                            ...filter_datita(nse_d, "aprueba").map((o) => o.PERCENTAGE),
+                            ...filter_datita(nse_d_disolucion, "aprueba").map((o) => o.PERCENTAGE),
                         ],
                         // [
                         //   "data4",
@@ -2748,6 +2750,58 @@
                     }
                 });
 
+                document
+                .getElementById("aprueba_desaprueba_disolucion")
+                .addEventListener("change", function () {
+                    var obj = document.getElementById("aprueba_desaprueba_disolucion");
+                    obj_select = obj.options[obj.selectedIndex].text;
+                    console.log(obj_select);
+
+                    if (obj_select == "Aprobación") {
+                        nse_aprobacion.load({
+                            columns: [
+                                [
+                                    "data1",
+                                    ...filter_datita(nse_a_disolucion, "aprueba").map((o) => o.PERCENTAGE),
+                                ],
+                                [
+                                    "data2",
+                                    ...filter_datita(nse_c_disolucion, "aprueba").map((o) => o.PERCENTAGE),
+                                ],
+                                [
+                                    "data3",
+                                    ...filter_datita(nse_d_disolucion, "aprueba").map((o) => o.PERCENTAGE),
+                                ],
+                            ],
+                        });
+                    }
+
+                    if (obj_select == "Desaprobación") {
+                        nse_aprobacion.load({
+                            columns: [
+                                [
+                                    "data1",
+                                    ...filter_datita(nse_a_disolucion, "desaprueba").map(
+                                        (o) => o.PERCENTAGE
+                                    ),
+                                ],
+                                [
+                                    "data2",
+                                    ...filter_datita(nse_c_disolucion, "desaprueba").map(
+                                        (o) => o.PERCENTAGE
+                                    ),
+                                ],
+                                [
+                                    "data3",
+                                    ...filter_datita(nse_d_disolucion, "desaprueba").map(
+                                        (o) => o.PERCENTAGE
+                                    ),
+                                ],
+                            ],
+                        });
+                    }
+                });
+
             const aprobacion_ambito = bb.generate({
                 data: {
                     columns: [
@@ -2815,19 +2869,19 @@
                     columns: [
                         [
                             "data1",
-                            ...filter_datita(ambito_lima, "aprueba").map(
+                            ...filter_datita(ambito_lima_disolucion, "aprueba").map(
                                 (o) => o.PERCENTAGE
                             ),
                         ],
                         [
                             "data2",
-                            ...filter_datita(ambito_rural, "aprueba").map(
+                            ...filter_datita(ambito_rural_disolucion, "aprueba").map(
                                 (o) => o.PERCENTAGE
                             ),
                         ],
                         [
                             "data3",
-                            ...filter_datita(ambito_urbano, "aprueba").map(
+                            ...filter_datita(ambito_urbano_disolucion, "aprueba").map(
                                 (o) => o.PERCENTAGE
                             ),
                         ],
