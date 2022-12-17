@@ -155,7 +155,6 @@
         #map,
         #map_disolucion,
         #aprobacion_congreso,
-        #aprobacion_boluarte,
         #aprobacion_nse,
         #aprobacion_nse_disolucion,
         #aprobacion_ambito,
@@ -1319,11 +1318,9 @@
             ¿Usted aprueba o desaprueba la forma como Dina Boluarte está
             conduciendo su gobierno?
         </p>
-        <select id="aprueba_desaprueba">
-            <option>Aprobación</option>
-            <option>Desaprobación</option>
-        </select>
-        <div id="aprobacion_nse"></div>
+        <div id="aprobacion_nse_a"></div>
+        <div id="aprobacion_nse_c"></div>
+        <div id="aprobacion_nse_d"></div>
         <h2 class="font-weight-bold">
             Aprobación de Dina Boluarte en ámbitos urbano y rural
         </h2>
@@ -1334,22 +1331,23 @@
             ¿Usted aprueba la forma como Dina Boluarte está conduciendo su
             gobierno?
         </p>
-        <div id="aprobacion_ambito"></div>
+        <div id="aprobacion_ambito_lima"></div>
+        <div id="aprobacion_ambito_urbano"></div>
+        <div id="aprobacion_ambito_rural"></div>
         <h2 class="font-weight-bold">Aprobación de Dina Boluarte por macrozonas</h2>
-        <div class="row">
-            <div class="col-12">
-                <p>
-                    Asimismo, en la evaluación por macrozona, Boluarte obtiene un 33% de aprobación en el oriente y un 26% en el norte. Contrariamente, altos porcentajes de rechazo lo alcanza en el sur (86%), centro (79%) y también en el norte (71%).
-                </p>
-                <label id="week_a_week"></label>
-                <input id="slider" type="range" min="1" max="2" step="1" value="2" />
-                <p class="question">
-                    ¿Usted aprueba o desaprueba la forma como Dina Boluarte está
-                    conduciendo su gobierno?
-                </p>
-            </div>
-            <div id="map"></div>
-        </div>
+        <p>
+            Asimismo, en la evaluación por macrozona, Boluarte obtiene un 33% de aprobación en el oriente y un 26% en el norte. Contrariamente, altos porcentajes de rechazo lo alcanza en el sur (86%), centro (79%) y también en el norte (71%).
+        </p>
+        <p class="question">
+            ¿Usted aprueba o desaprueba la forma como Dina Boluarte está
+            conduciendo su gobierno?
+        </p>
+        <div id="aprobacion_macrozona_lima"></div>
+        <div id="aprobacion_macrozona_norte"></div>
+        <div id="aprobacion_macrozona_centro"></div>
+        <div id="aprobacion_macrozona_sur"></div>
+        <div id="aprobacion_macrozona_oriente"></div>
+
     </div>
     <div class="container" id="desagregado_2">
         <img src="hr.png" alt="" class="separador" />
@@ -1362,11 +1360,9 @@
         <p class="question">
             ¿Aprueba o desaprueba que Pedro Castillo haya intentado disolver el Congreso?
         </p>
-        <select id="aprueba_desaprueba_disolucion">
-            <option>Aprobación</option>
-            <option>Desaprobación</option>
-        </select>
-        <div id="aprobacion_nse_disolucion"></div>
+        <div id="aprobacion_nse_a_disolucion"></div>
+        <div id="aprobacion_nse_c_disolucion"></div>
+        <div id="aprobacion_nse_d_disolucion"></div>
         <h2 class="font-weight-bold">
             Intento de disolución del Congreso en ámbitos urbano y rural
         </h2>
@@ -1376,21 +1372,21 @@
         <p class="question">
             ¿Usted aprueba que Pedro Castillo haya intentado disolver el Congreso?
         </p>
-        <div id="aprobacion_ambito_disolucion"></div>
+        <div id="aprobacion_ambito_lima_disolucion"></div>
+        <div id="aprobacion_ambito_urbano_disolucion"></div>
+        <div id="aprobacion_ambito_rural_disolucion"></div>
         <h2 class="font-weight-bold">Intento de disolución del Congreso por macrozonas</h2>
-        <div class="row">
-            <div class="col-12">
-                <p>
-                    Finalmente, por macrozona, un 58% del sur está de acuerdo con que se haya intentado disolver el Congreso, seguido de un 54% del centro. Por otro lado, un 55% del norte y un 54% oriente desaprueba el intento.
-                </p>
-                <label id="week_a_week"></label>
-                <input id="slider" type="range" min="1" max="2" step="1" value="2" />
-                <p class="question">
-                    ¿Aprueba o desaprueba que Pedro Castillo haya intentado disolver el Congreso?
-                </p>
-            </div>
-            <div id="map_disolucion"></div>
-        </div>
+        <p>
+            Finalmente, por macrozona, un 58% del sur está de acuerdo con que se haya intentado disolver el Congreso, seguido de un 54% del centro. Por otro lado, un 55% del norte y un 54% oriente desaprueba el intento.
+        </p>
+        <p class="question">
+            ¿Aprueba o desaprueba que Pedro Castillo haya intentado disolver el Congreso?
+        </p>
+        <div id="aprobacion_macrozona_lima_disolucion"></div>
+        <div id="aprobacion_macrozona_norte_disolucion"></div>
+        <div id="aprobacion_macrozona_centro_disolucion"></div>
+        <div id="aprobacion_macrozona_sur_disolucion"></div>
+        <div id="aprobacion_macrozona_oriente_disolucion"></div>
     </div>
     <div class="container">
         <div class="row mt-21">
@@ -1452,346 +1448,6 @@
             gtag("config", "UA-6536106-1");
     </script>
     <script>
-        //         colores:["#de425b",
-        // "#7580d8",
-        // "#60af64",
-        // "#bb6336",
-        // "#ab9a3e",
-        // "#48b1c4",
-        // "#c05eab"]
-        // $(".percentage").mouseover(function() {
-        //     console.log(this, "this");
-        //     $(".text").css("text-decoration", "none");
-        //     $(this).children().css("text-decoration", "underline");
-        // });
-
-        mapboxgl.accessToken =
-            "pk.eyJ1IjoiZ2VueWxlb25nIiwiYSI6ImNsNGVodDUxdjAwMXEza2wwejF0NHFnNDMifQ.m8_ortP8i8q2ZhkBAeGm3w";
-
-        var map = new mapboxgl.Map({
-            container: "map",
-            center: [-75.178, -9.184],
-            minZoom: 3,
-            zoom: 3.8,
-            style: "mapbox://styles/mapbox/light-v10",
-        });
-
-        var map_disolucion = new mapboxgl.Map({
-            container: "map_disolucion",
-            center: [-75.178, -9.184],
-            minZoom: 3,
-            zoom: 3.8,
-            style: "mapbox://styles/mapbox/light-v10",
-        });
-
-        var array = [];
-        //var n = 0
-        function getColor(n) {
-            var inputEl = document.getElementById("slider");
-
-            inputEl.onchange = function (event) {
-                //console.log(event.isTrusted);
-                array = [];
-            };
-
-            array.push(n);
-            array = _.uniq(array, true);
-
-            array = array.sort(function (a, b) {
-                return a - b;
-            });
-
-            // console.log(array);
-            //var element = 0
-            //array.forEach;
-            for (let i = 0; i < array.length && array.length > 2; i++) {
-                // console.log(array[i]);
-
-                if (array.length == 4) {
-                    return n >= array[3] ?
-                        "#800026" :
-                        n >= array[2] ?
-                            "#bd0026" :
-                            n >= array[1] ?
-                                "#e31a1c" :
-                                n >= array[0] ?
-                                    "#fc4e2a" :
-                                    n >= 0 ?
-                                        "#fd8d3c" :
-                                        "#ffffcc";
-                }
-
-                if (array.length == 4) {
-                    return n >= array[3] ?
-                        "#800026" :
-                        n >= array[2] ?
-                            "#bd0026" :
-                            n >= array[1] ?
-                                "#e31a1c" :
-                                n >= array[0] ?
-                                    "#fc4e2a" :
-                                    n >= 0 ?
-                                        "#fd8d3c" :
-                                        "#ffffcc";
-                }
-
-                if (array.length == 5) {
-                    return n >= array[4] ?
-                        "#800026" :
-                        n >= array[3] ?
-                            "#bd0026" :
-                            n >= array[2] ?
-                                "#e31a1c" :
-                                n >= array[1] ?
-                                    "#fc4e2a" :
-                                    n >= array[0] ?
-                                        "#fd8d3c" :
-                                        "#ffffcc";
-                }
-            }
-        }
-
-        function filterBy(data, covid_filter, week) {
-            array = [];
-            //console.log(data, covid_filter, week);
-            features = data.features.map((d, b) => {
-                var popup = new mapboxgl.Popup();
-                var layerID = d.properties.MACRO_ZONA;
-
-                //console.log(layerID);
-
-                // if (week == "8") {
-                //console.log(week, casos);
-
-                provincia = _.chain(casos[week].users)
-                    .keyBy("zona")
-                    .mapValues("aprobacion")
-                    .value();
-
-                document.getElementById("week_a_week").textContent =
-                    casos[week]["periodo"];
-
-                //console.log(casos[week]["periodo"]);
-
-                if (provincia[layerID] !== "") {
-                    //array = []
-
-                    //console.log(array, provincia[layerID]);
-
-                    map.setPaintProperty(
-                        layerID,
-                        "fill-color",
-                        getColor(provincia[layerID])
-                    );
-
-                    function _isContains(json, value) {
-                        let contains = false;
-                        Object.keys(json).some((key) => {
-                            contains =
-                                typeof json[key] === "object" ?
-                                    _isContains(json[key], value) :
-                                    json[key] === value;
-                            return contains;
-                        });
-                        return contains;
-                    }
-
-                    map.on("click", layerID, function (e) {
-                        total_provincia = casos[week].users;
-
-                        for (prov in total_provincia) {
-                            //console.log(total_provincia)
-                            getProv = e.features[0].properties.MACRO_ZONA;
-                            // getDep = e.features[0].properties.MACRO_ZONA;
-
-                            getProvName = total_provincia[prov]["zona"];
-
-                            checkValue = _isContains(total_provincia, getProv);
-                            //console.log(getProvName, getProv, prov);
-                            if (getProv == getProvName && checkValue == true) {
-                                casos_aprobacion = total_provincia[prov]["aprobacion"];
-
-                                casos_desaprobacion = total_provincia[prov]["desaprobacion"];
-                                // casos_mujeres = total_provincia[prov]["FEMENINO"];
-                                // casos_hombres = total_provincia[prov]["MASCULINO"];
-                            }
-                        }
-
-                        var x, i;
-                        x = document.querySelectorAll(".mapboxgl-popup");
-                        for (i = 0; i < x.length; i++) {
-                            x[i].remove();
-                        }
-                        //$(".mapboxgl-popup").remove();
-                        popup
-                            .setLngLat(e.lngLat)
-                            .setHTML(
-                                "<p class='macro_zona'>Macrozona: " +
-                                getProv +
-                                "</p><p class='provincia'>" +
-                                d3.format(",")(Math.round(casos_aprobacion)) +
-                                " % de aprobación.</p><p class='provincia'>" +
-                                d3.format(",")(Math.round(casos_desaprobacion)) +
-                                "% de desaprobación. </p>"
-                            )
-                            .addTo(map);
-                    });
-                }
-
-                map.on("mouseenter", layerID, function () {
-                    map.getCanvas().style.cursor = "pointer";
-                });
-
-                // Change it back to a pointer when it leaves.
-                map.on("mouseleave", layerID, function () {
-                    map.getCanvas().style.cursor = "";
-                });
-
-                map.setFilter(layerID, ["==", ["get", "MACRO_ZONA"], layerID]);
-            });
-        }
-
-        map.on("load", async function () {
-            //var result = [];
-            var files = [" geojson.json", "aprob_zonas.json"];
-
-            const data = await d3.json(files[0]);
-            const data_covid = await d3.json(files[1]);
-            const covid_filter = data_covid["data"];
-            var array = [];
-
-            map["dragPan"].disable();
-
-            map.addSource("data", {
-                type: "geojson",
-                data: data,
-            });
-
-            data.features.forEach(function (d, b) {
-                var layerID = d.properties.MACRO_ZONA;
-
-                //console.log(layerID) zona
-                casos = _.chain(covid_filter)
-                    .groupBy("periodo")
-                    .toPairs()
-                    .map(function (currentData) {
-                        return _.zipObject(["periodo", "users"], currentData);
-                    })
-                    .value();
-
-                //console.log(casos);
-
-                provincia = _.chain(casos[7].users)
-                    .keyBy("zona")
-                    .mapValues("aprobacion")
-                    .value();
-
-                // console.log(provincia);
-
-                if (!map.getLayer(layerID) && provincia[layerID] !== "") {
-                    //array = []
-                    //             array.push(provincia[layerID]);
-                    //           array = _.uniq(array, true);
-
-                    //           array = array.sort(function(a, b){return a-b});
-
-                    //console.log(array);
-
-                    map.addLayer({
-                        id: layerID,
-                        type: "fill",
-                        source: "data",
-                        layout: {},
-                        paint: {
-                            "fill-color": getColor(provincia[layerID]),
-                            "fill-opacity": 0.6,
-                        },
-                    });
-                }
-            });
-
-            filterBy(data, covid_filter, 7);
-
-            document
-                .getElementById("slider")
-                .addEventListener("input", function (e) {
-                    var week = parseInt(e.target.value - 1);
-                    console.log(e.target.value);
-                    filterBy(data, covid_filter, week);
-                });
-        });
-
-        map_disolucion.on("load", async function () {
-            //var result = [];
-            var files = [" geojson.json", "aprob_zonas_disolucion.json"];
-
-            const data = await d3.json(files[0]);
-            const data_covid = await d3.json(files[1]);
-            const covid_filter = data_covid["data"];
-            var array = [];
-
-            map["dragPan"].disable();
-
-            map.addSource("data", {
-                type: "geojson",
-                data: data,
-            });
-
-            data.features.forEach(function (d, b) {
-                var layerID = d.properties.MACRO_ZONA;
-
-                //console.log(layerID) zona
-                casos = _.chain(covid_filter)
-                    .groupBy("periodo")
-                    .toPairs()
-                    .map(function (currentData) {
-                        return _.zipObject(["periodo", "users"], currentData);
-                    })
-                    .value();
-
-                //console.log(casos);
-
-                provincia = _.chain(casos[7].users)
-                    .keyBy("zona")
-                    .mapValues("aprobacion")
-                    .value();
-
-                // console.log(provincia);
-
-                if (!map.getLayer(layerID) && provincia[layerID] !== "") {
-                    //array = []
-                    //             array.push(provincia[layerID]);
-                    //           array = _.uniq(array, true);
-
-                    //           array = array.sort(function(a, b){return a-b});
-
-                    //console.log(array);
-
-                    map.addLayer({
-                        id: layerID,
-                        type: "fill",
-                        source: "data",
-                        layout: {},
-                        paint: {
-                            "fill-color": getColor(provincia[layerID]),
-                            "fill-opacity": 0.6,
-                        },
-                    });
-                }
-            });
-
-            filterBy(data, covid_filter, 7);
-
-            document
-                .getElementById("slider")
-                .addEventListener("input", function (e) {
-                    var week = parseInt(e.target.value - 1);
-                    console.log(e.target.value);
-                    filterBy(data, covid_filter, week);
-                });
-        });
-
-        var firstTime = 0;
 
         $(window).on("scroll", function () {
             //centerDiv("#congreso_castillo");
@@ -2325,7 +1981,7 @@
                     },
                 },
                 donut: {
-                    title: "Del expresidente Pedro Castillo",
+                    title: "De Pedro Castillo",
                 },
                 tooltip: {
                     format: {
@@ -2413,7 +2069,7 @@
                     },
                 },
                 donut: {
-                    title: "De la presidenta Dina Boluarte",
+                    title: "De Dina Boluarte",
                 },
                 tooltip: {
                     format: {
@@ -2458,7 +2114,7 @@
                     },
                 },
                 donut: {
-                    title: "Del expresidente Pedro Castillo",
+                    title: "Dina Boluarte",
                 },
                 tooltip: {
                     format: {
@@ -2471,6 +2127,490 @@
                     },
                 },
                 bindto: "#aprobacion_boluarte",
+            });
+
+            const aprobacion_nse_a = bb.generate({
+                data: {
+                    columns: [
+                        ["data1", 3],
+                        ["data2", 41],
+                        ["data3", 56],
+                    ],
+                    type: "donut", // for ESM specify as: donut()
+                    names: {
+                        data1: "NS/NP",
+                        data2: "De acuerdo",
+                        data3: "En desacuerdo",
+                    },
+                    colors: {
+                        data1: "#ffe48f",
+                        data2: "#adcc76",
+                        data3: "#de425b",
+                    },
+                    onclick: function (d, i) {
+                        // console.log("onclick", d, i);
+                    },
+                    onover: function (d, i) {
+                        // console.log("onover", d, i);
+                    },
+                    onout: function (d, i) {
+                        // console.log("onout", d, i);
+                    },
+                },
+                donut: {
+                    title: "NSE A/B",
+                },
+                tooltip: {
+                    format: {
+                        title: function (id) {
+                            return id;
+                        },
+                        value: function (value, ratio, id) {
+                            return d3.format(",")(value.toFixed(1)) + "%";
+                        },
+                    },
+                },
+                bindto: "#aprobacion_nse_a",
+            });
+
+            const aprobacion_nse_c = bb.generate({
+                data: {
+                    columns: [
+                        ["data1", 3],
+                        ["data2", 25],
+                        ["data3", 72],
+                    ],
+                    type: "donut", // for ESM specify as: donut()
+                    names: {
+                        data1: "NS/NP",
+                        data2: "De acuerdo",
+                        data3: "En desacuerdo",
+                    },
+                    colors: {
+                        data1: "#ffe48f",
+                        data2: "#adcc76",
+                        data3: "#de425b",
+                    },
+                    onclick: function (d, i) {
+                        // console.log("onclick", d, i);
+                    },
+                    onover: function (d, i) {
+                        // console.log("onover", d, i);
+                    },
+                    onout: function (d, i) {
+                        // console.log("onout", d, i);
+                    },
+                },
+                donut: {
+                    title: "NSE C",
+                },
+                tooltip: {
+                    format: {
+                        title: function (id) {
+                            return id;
+                        },
+                        value: function (value, ratio, id) {
+                            return d3.format(",")(value.toFixed(1)) + "%";
+                        },
+                    },
+                },
+                bindto: "#aprobacion_nse_c",
+            });
+
+            const aprobacion_nse_d = bb.generate({
+                data: {
+                    columns: [
+                        ["data1", 3],
+                        ["data2", 22],
+                        ["data3", 75],
+                    ],
+                    type: "donut", // for ESM specify as: donut()
+                    names: {
+                        data1: "NS/NP",
+                        data2: "De acuerdo",
+                        data3: "En desacuerdo",
+                    },
+                    colors: {
+                        data1: "#ffe48f",
+                        data2: "#adcc76",
+                        data3: "#de425b",
+                    },
+                    onclick: function (d, i) {
+                        // console.log("onclick", d, i);
+                    },
+                    onover: function (d, i) {
+                        // console.log("onover", d, i);
+                    },
+                    onout: function (d, i) {
+                        // console.log("onout", d, i);
+                    },
+                },
+                donut: {
+                    title: "NSE D/E",
+                },
+                tooltip: {
+                    format: {
+                        title: function (id) {
+                            return id;
+                        },
+                        value: function (value, ratio, id) {
+                            return d3.format(",")(value.toFixed(1)) + "%";
+                        },
+                    },
+                },
+                bindto: "#aprobacion_nse_d",
+            });
+
+            const aprobacion_ambito_lima = bb.generate({
+                data: {
+                    columns: [
+                        ["data1", 2],
+                        ["data2", 35],
+                        ["data3", 63],
+                    ],
+                    type: "donut", // for ESM specify as: donut()
+                    names: {
+                        data1: "NS/NP",
+                        data2: "De acuerdo",
+                        data3: "En desacuerdo",
+                    },
+                    colors: {
+                        data1: "#ffe48f",
+                        data2: "#adcc76",
+                        data3: "#de425b",
+                    },
+                    onclick: function (d, i) {
+                        // console.log("onclick", d, i);
+                    },
+                    onover: function (d, i) {
+                        // console.log("onover", d, i);
+                    },
+                    onout: function (d, i) {
+                        // console.log("onout", d, i);
+                    },
+                },
+                donut: {
+                    title: "Lima Metropolitana",
+                },
+                tooltip: {
+                    format: {
+                        title: function (id) {
+                            return id;
+                        },
+                        value: function (value, ratio, id) {
+                            return d3.format(",")(value.toFixed(1)) + "%";
+                        },
+                    },
+                },
+                bindto: "#aprobacion_ambito_lima",
+            });
+
+            const aprobacion_ambito_urbano = bb.generate({
+                data: {
+                    columns: [
+                        ["data1", 2],
+                        ["data2", 24],
+                        ["data3", 74],
+                    ],
+                    type: "donut", // for ESM specify as: donut()
+                    names: {
+                        data1: "NS/NP",
+                        data2: "De acuerdo",
+                        data3: "En desacuerdo",
+                    },
+                    colors: {
+                        data1: "#ffe48f",
+                        data2: "#adcc76",
+                        data3: "#de425b",
+                    },
+                    onclick: function (d, i) {
+                        // console.log("onclick", d, i);
+                    },
+                    onover: function (d, i) {
+                        // console.log("onover", d, i);
+                    },
+                    onout: function (d, i) {
+                        // console.log("onout", d, i);
+                    },
+                },
+                donut: {
+                    title: "Perú urbano",
+                },
+                tooltip: {
+                    format: {
+                        title: function (id) {
+                            return id;
+                        },
+                        value: function (value, ratio, id) {
+                            return d3.format(",")(value.toFixed(1)) + "%";
+                        },
+                    },
+                },
+                bindto: "#aprobacion_ambito_urbano",
+            });
+
+            const aprobacion_ambito_rural = bb.generate({
+                data: {
+                    columns: [
+                        ["data1", 3],
+                        ["data2", 20],
+                        ["data3", 77],
+                    ],
+                    type: "donut", // for ESM specify as: donut()
+                    names: {
+                        data1: "NS/NP",
+                        data2: "De acuerdo",
+                        data3: "En desacuerdo",
+                    },
+                    colors: {
+                        data1: "#ffe48f",
+                        data2: "#adcc76",
+                        data3: "#de425b",
+                    },
+                    onclick: function (d, i) {
+                        // console.log("onclick", d, i);
+                    },
+                    onover: function (d, i) {
+                        // console.log("onover", d, i);
+                    },
+                    onout: function (d, i) {
+                        // console.log("onout", d, i);
+                    },
+                },
+                donut: {
+                    title: "Perú rural",
+                },
+                tooltip: {
+                    format: {
+                        title: function (id) {
+                            return id;
+                        },
+                        value: function (value, ratio, id) {
+                            return d3.format(",")(value.toFixed(1)) + "%";
+                        },
+                    },
+                },
+                bindto: "#aprobacion_ambito_rural",
+            });
+
+            const aprobacion_macrozona_lima = bb.generate({
+                data: {
+                    columns: [
+                        ["data1", 2],
+                        ["data2", 35],
+                        ["data3", 63],
+                    ],
+                    type: "donut", // for ESM specify as: donut()
+                    names: {
+                        data1: "NS/NP",
+                        data2: "De acuerdo",
+                        data3: "En desacuerdo",
+                    },
+                    colors: {
+                        data1: "#ffe48f",
+                        data2: "#adcc76",
+                        data3: "#de425b",
+                    },
+                    onclick: function (d, i) {
+                        // console.log("onclick", d, i);
+                    },
+                    onover: function (d, i) {
+                        // console.log("onover", d, i);
+                    },
+                    onout: function (d, i) {
+                        // console.log("onout", d, i);
+                    },
+                },
+                donut: {
+                    title: "Lima Metropolitana",
+                },
+                tooltip: {
+                    format: {
+                        title: function (id) {
+                            return id;
+                        },
+                        value: function (value, ratio, id) {
+                            return d3.format(",")(value.toFixed(1)) + "%";
+                        },
+                    },
+                },
+                bindto: "#aprobacion_macrozona_lima",
+            });
+
+            const aprobacion_macrozona_norte = bb.generate({
+                data: {
+                    columns: [
+                        ["data1", 3],
+                        ["data2", 26],
+                        ["data3", 71],
+                    ],
+                    type: "donut", // for ESM specify as: donut()
+                    names: {
+                        data1: "NS/NP",
+                        data2: "De acuerdo",
+                        data3: "En desacuerdo",
+                    },
+                    colors: {
+                        data1: "#ffe48f",
+                        data2: "#adcc76",
+                        data3: "#de425b",
+                    },
+                    onclick: function (d, i) {
+                        // console.log("onclick", d, i);
+                    },
+                    onover: function (d, i) {
+                        // console.log("onover", d, i);
+                    },
+                    onout: function (d, i) {
+                        // console.log("onout", d, i);
+                    },
+                },
+                donut: {
+                    title: "Norte",
+                },
+                tooltip: {
+                    format: {
+                        title: function (id) {
+                            return id;
+                        },
+                        value: function (value, ratio, id) {
+                            return d3.format(",")(value.toFixed(1)) + "%";
+                        },
+                    },
+                },
+                bindto: "#aprobacion_macrozona_norte",
+            });
+
+            const aprobacion_macrozona_centro = bb.generate({
+                data: {
+                    columns: [
+                        ["data1", 1],
+                        ["data2", 20],
+                        ["data3", 79],
+                    ],
+                    type: "donut", // for ESM specify as: donut()
+                    names: {
+                        data1: "NS/NP",
+                        data2: "De acuerdo",
+                        data3: "En desacuerdo",
+                    },
+                    colors: {
+                        data1: "#ffe48f",
+                        data2: "#adcc76",
+                        data3: "#de425b",
+                    },
+                    onclick: function (d, i) {
+                        // console.log("onclick", d, i);
+                    },
+                    onover: function (d, i) {
+                        // console.log("onover", d, i);
+                    },
+                    onout: function (d, i) {
+                        // console.log("onout", d, i);
+                    },
+                },
+                donut: {
+                    title: "Centro",
+                },
+                tooltip: {
+                    format: {
+                        title: function (id) {
+                            return id;
+                        },
+                        value: function (value, ratio, id) {
+                            return d3.format(",")(value.toFixed(1)) + "%";
+                        },
+                    },
+                },
+                bindto: "#aprobacion_macrozona_centro",
+            });
+
+            const aprobacion_macrozona_sur = bb.generate({
+                data: {
+                    columns: [
+                        ["data1", 3],
+                        ["data2", 13],
+                        ["data3", 84],
+                    ],
+                    type: "donut", // for ESM specify as: donut()
+                    names: {
+                        data1: "NS/NP",
+                        data2: "De acuerdo",
+                        data3: "En desacuerdo",
+                    },
+                    colors: {
+                        data1: "#ffe48f",
+                        data2: "#adcc76",
+                        data3: "#de425b",
+                    },
+                    onclick: function (d, i) {
+                        // console.log("onclick", d, i);
+                    },
+                    onover: function (d, i) {
+                        // console.log("onover", d, i);
+                    },
+                    onout: function (d, i) {
+                        // console.log("onout", d, i);
+                    },
+                },
+                donut: {
+                    title: "Sur",
+                },
+                tooltip: {
+                    format: {
+                        title: function (id) {
+                            return id;
+                        },
+                        value: function (value, ratio, id) {
+                            return d3.format(",")(value.toFixed(1)) + "%";
+                        },
+                    },
+                },
+                bindto: "#aprobacion_macrozona_sur",
+            });
+
+            const aprobacion_macrozona_oriente = bb.generate({
+                data: {
+                    columns: [
+                        ["data1", 2],
+                        ["data2", 33],
+                        ["data3", 65],
+                    ],
+                    type: "donut", // for ESM specify as: donut()
+                    names: {
+                        data1: "NS/NP",
+                        data2: "De acuerdo",
+                        data3: "En desacuerdo",
+                    },
+                    colors: {
+                        data1: "#ffe48f",
+                        data2: "#adcc76",
+                        data3: "#de425b",
+                    },
+                    onclick: function (d, i) {
+                        // console.log("onclick", d, i);
+                    },
+                    onover: function (d, i) {
+                        // console.log("onover", d, i);
+                    },
+                    onout: function (d, i) {
+                        // console.log("onout", d, i);
+                    },
+                },
+                donut: {
+                    title: "Oriente",
+                },
+                tooltip: {
+                    format: {
+                        title: function (id) {
+                            return id;
+                        },
+                        value: function (value, ratio, id) {
+                            return d3.format(",")(value.toFixed(1)) + "%";
+                        },
+                    },
+                },
+                bindto: "#aprobacion_macrozona_oriente",
             });
 
             // const aprobacion_congreso = bb.generate({
