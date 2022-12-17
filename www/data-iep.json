@@ -1,75 +1,20 @@
 {
-    "castillo_aprueba": [
+    "boluarte_aprueba": [
         {
             "p01": "Aprueba",
-            "periodo": "JULIO 2022",
-            "PERCENTAGE": 24
-        },
-        {
-            "p01": "Aprueba",
-            "periodo": "AGOSTO 2022",
-            "PERCENTAGE": 29
-        },
-        {
-            "p01": "Aprueba",
-            "periodo": "SETIEMBRE 2022",
-            "PERCENTAGE": 25
-        },
-        {
-            "p01": "Aprueba",
-            "periodo": "OCTUBRE I 2022",
-            "PERCENTAGE": 25
-        },
-        {
-            "p01": "Aprueba",
-            "periodo": "OCTUBRE II 2022",
-            "PERCENTAGE": 28
-        },
-        {
-            "p01": "Aprueba",
-            "periodo": "NOVIEMBRE 2022",
-            "PERCENTAGE": 31
+            "periodo": "DICIEMBRE 2022",
+            "PERCENTAGE": 27
         }
     ],
-    "castillo_desaprueba": [
+    "boluarte_desaprueba": [
         {
             "p01": "Desaprueba",
-            "periodo": "JULIO 2022",
-            "PERCENTAGE": 67
-        },
-        {
-            "p01": "Desaprueba",
-            "periodo": "AGOSTO 2022",
-            "PERCENTAGE": 63
-        },
-        {
-            "p01": "Desaprueba",
-            "periodo": "SETIEMBRE 2022",
-            "PERCENTAGE": 65
-        },
-        {
-            "p01": "Desaprueba",
-            "periodo": "OCTUBRE I 2022",
-            "PERCENTAGE": 65
-        },
-        {
-            "p01": "Desaprueba",
-            "periodo": "OCTUBRE II 2022",
-            "PERCENTAGE": 62
-        },
-        {
-            "p01": "Desaprueba",
-            "periodo": "NOVIEMBRE 2022",
-            "PERCENTAGE": 61
+            "periodo": "DICIEMBRE 2022",
+            "PERCENTAGE": 71
         }
     ],
-    "castillo_nsnp": [
-        { "p01": "NS/NP", "periodo": "JULIO 2022", "PERCENTAGE": 9 },
-        { "p01": "NS/NP", "periodo": "AGOSTO 2022", "PERCENTAGE": 8 },
-        { "p01": "NS/NP", "periodo": "SETIEMBRE 2022", "PERCENTAGE": 10 },
-        { "p01": "NS/NP", "periodo": "OCTUBRE I 2022", "PERCENTAGE": 10 },
-        { "p01": "NS/NP", "periodo": "OCTUBRE II 2022", "PERCENTAGE": 10 },
-        { "p01": "NS/NP", "periodo": "NOVIEMBRE 2022", "PERCENTAGE": 8 }
+    "boluarte_nsnp": [
+        { "p01": "NS/NP", "periodo": "DICIEMBRE 2022", "PERCENTAGE": 2 }
     ],
     "congreso_nsnp": [
         {
