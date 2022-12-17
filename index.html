@@ -1877,6 +1877,17 @@
                 }
 
                 if (
+                    data == nse_a_disolucion ||
+                    data == nse_c_disolucion ||
+                    data == nse_d_disolucion
+                ) {
+                    return _.filter(
+                        data,
+                        (e) => e["p01"].toLowerCase() === filteredValue
+                    );
+                }
+
+                if (
                     data == ambito_lima ||
                     data == ambito_rural ||
                     data == ambito_urbano
@@ -1888,9 +1899,9 @@
                 }
 
                 if (
-                    data == ambito_lima_congreso ||
-                    data == ambito_rural_congreso ||
-                    data == ambito_urbano_congreso
+                    data == ambito_lima_disolucion ||
+                    data == ambito_rural_disolucion ||
+                    data == ambito_urbano_disolucion
                 ) {
                     return _.filter(
                         data,
@@ -2417,72 +2428,46 @@
                 bindto: "#intencion_protestas_boluarte",
             });
 
-            const aprobacion_boluarte = bb.generate({
+            
+            const aprobacion_boluarte= bb.generate({
                 data: {
                     columns: [
-                        [
-                            "data1",
-                            ...filter_datita(boluarte_nsnp, "ns/np").map(
-                                (o) => o.PERCENTAGE
-                            ),
-                        ],
-                        [
-                            "data2",
-                            ...filter_datita(boluarte_aprueba, "aprueba").map(
-                                (o) => o.PERCENTAGE
-                            ),
-                        ],
-                        [
-                            "data3",
-                            ...filter_datita(boluarte_desaprueba, "desaprueba").map(
-                                (o) => o.PERCENTAGE
-                            ),
-                        ],
+                        ["data1", 2],
+                        ["data2", 27],
+                        ["data3", 71],
                     ],
-                    types: {
-                        data1: "line", // for ESM specify as: D()
-                        data2: "line",
-                        data3: "line",
-                    },
+                    type: "donut", // for ESM specify as: donut()
                     names: {
-                        data1: "No contesta",
-                        data2: "Aprueba",
-                        data3: "Desaprueba",
+                        data1: "NS/NP",
+                        data2: "De acuerdo",
+                        data3: "En desacuerdo",
                     },
                     colors: {
                         data1: "#ffe48f",
                         data2: "#adcc76",
                         data3: "#de425b",
                     },
-                    labels: false,
-                    // labels :{
-                    //   colors: "#FFF"
-                    // }
-                },
-                axis: {
-                    x: {
-                        type: "category",
-                        categories: [
-                            "Dic-22"
-                        ],
+                    onclick: function (d, i) {
+                        // console.log("onclick", d, i);
                     },
+                    onover: function (d, i) {
+                        // console.log("onover", d, i);
+                    },
+                    onout: function (d, i) {
+                        // console.log("onout", d, i);
+                    },
+                },
+                donut: {
+                    title: "Del expresidente Pedro Castillo",
                 },
                 tooltip: {
                     format: {
+                        title: function (id) {
+                            return id;
+                        },
                         value: function (value, ratio, id) {
                             return d3.format(",")(value.toFixed(1)) + "%";
                         },
-                    },
-                },
-                legend: {
-                    show: true,
-                    position: "bottom", // bottom, right, inset
-                    padding: 0,
-                    inset: {
-                        anchor: "bottom-right", // top-left, top-right, bottom-left, bottom-right
-                        x: 20,
-                        y: 50,
-                        step: 2,
                     },
                 },
                 bindto: "#aprobacion_boluarte",
@@ -2758,7 +2743,7 @@
                     console.log(obj_select);
 
                     if (obj_select == "Aprobación") {
-                        nse_aprobacion.load({
+                        nse_aprobacion_disolucion.load({
                             columns: [
                                 [
                                     "data1",
@@ -2777,7 +2762,7 @@
                     }
 
                     if (obj_select == "Desaprobación") {
-                        nse_aprobacion.load({
+                        nse_aprobacion_disolucion.load({
                             columns: [
                                 [
                                     "data1",
@@ -2841,12 +2826,7 @@
                     x: {
                         type: "category",
                         categories: [
-                            "Jul-22",
-                            "Ago-22",
-                            "Set-22",
-                            "Oct I-22",
-                            "Oct II-22",
-                            "Nov-22"
+                            "Dic-22"
                         ],
                     },
                     y: {
@@ -2903,12 +2883,7 @@
                     x: {
                         type: "category",
                         categories: [
-                            "Jul-22",
-                            "Ago-22",
-                            "Set-22",
-                            "Oct I-22",
-                            "Oct II-22",
-                            "Nov-22"
+                            "Dic-22"
                         ],
                     },
                     y: {
