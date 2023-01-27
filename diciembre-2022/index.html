@@ -1,0 +1,3221 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1" />
+    <meta name="theme-color" content="#FFF" />
+    <link rel="canonical"
+        href="https://data.larepublica.pe/encuesta-iep-aprobacion-desaprobacion-peru-presidente-congreso-de-la-republica" />
+    <meta name="robots" content="index,follow" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="description"
+        content="La encuesta IEP de diciembre señala que 7 de cada 10 personas encuestadas están en desacuerdo con que Dina Boluarte haya asumido como jefa de Estado ante la vacancia de Pedro Castillo. Con ello, un 83% cree que es mejor adelantar las elecciones generales para salir de la actual crisis política." />
+    <meta property="og:url"
+        content="https://data.larepublica.pe/encuesta-iep-aprobacion-desaprobacion-peru-presidente-congreso-de-la-republica" />
+    <meta property="og:title"
+        content="Un 83% cree que se deben adelantar las elecciones generales" />
+    <meta property="og:image" content="https://cdn.glitch.me/09ad6912-77fe-457b-af64-54b232bf7e67/ss.jpg" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta property="fb:pages" content="94604237016" />
+    <meta property="fb:app_id" content="489210501129201" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@larepublica_pe" />
+    <meta name="twitter:title"
+        content="Un 83% cree que se deben adelantar las elecciones generales" />
+    <meta name="twitter:description"
+        content="La encuesta IEP de diciembre señala que 7 de cada 10 personas encuestadas están en desacuerdo con que Dina Boluarte haya asumido como jefa de Estado ante la vacancia de Pedro Castillo. Con ello, un 83% cree que es mejor adelantar las elecciones generales para salir de la actual crisis política." />
+    <meta name="twitter:image" content="https://cdn.glitch.me/09ad6912-77fe-457b-af64-54b232bf7e67/ss.jpg" />
+    <meta name="distribution" content="global" />
+    <meta name="rating" content="general" />
+    <meta name="lang" content="es_PE" />
+    <meta name="author" content="Redacción LR" />
+    <meta name="keywords" content="Encuesta, Castillo, congreso, Anibal Torres, IEP, Octubre 2022, política" />
+    <title>
+        Un 83% cree que se deben adelantar las elecciones generales
+    </title>
+    <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.larepublica.pe/favicon-32x32.png" />
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/billboard.js/2.1.4/billboard.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/billboard.js/2.1.4/billboard.min.css" />
+    <link rel="stylesheet" href="https://naver.github.io/billboard.js/release/latest/dist/theme/graph.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.css" rel="stylesheet" />
+    <!-- Import the webpage's stylesheet -->
+    <!-- <link rel="stylesheet" href="/style.css" /> -->
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=Newsreader:wght@500&display=swap");
+
+        body {
+            background: #f1f1f0;
+            font-family: "Mukta", serif;
+        }
+
+        h1 {
+            font-family: "Newsreader", sans-serif;
+            font-size: 2.5rem;
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .mt-x {
+            margin-top: 5rem;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 2;
+            transition: all 0.5s ease;
+            padding: 15px 42px;
+            background: lightgrey;
+            border-bottom: 4px solid #fe0404;
+        }
+
+        header span {
+            font-size: 0;
+        }
+
+        header img {
+            width: 140px;
+        }
+
+        span [class*="btn-"] {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            margin-left: 10px;
+        }
+
+        span a.btn-fb {
+            margin-left: 0;
+        }
+
+        span a.btn-fb,
+        span a.btn-twt,
+        span a.btn-wsp {
+            background-image: url(https://files.larepublica.pe/Larepublica/2020/11/09/iconos-redes-sociales-blanco-1604962294.svg);
+            background-position: 0 0;
+            background-repeat: no-repeat;
+            background-size: 30px;
+        }
+
+        span a.btn-twt {
+            background-position: 0 -40px;
+            background-repeat: no-repeat;
+        }
+
+        span a.btn-wsp {
+            background-position: 0 -80px;
+            background-repeat: no-repeat;
+        }
+
+        .menu__left {
+            display: inline-block;
+            vertical-align: middle;
+            width: calc(100% - 38px);
+            /*width: 160px;*/
+        }
+
+        .menu__right {
+            display: none;
+            /*display: inline-block;*/
+            text-align: right;
+            vertical-align: middle;
+            width: calc(100% - 198px);
+        }
+
+        .container__menu {
+            font-size: 0;
+        }
+
+        h2 {
+            margin-bottom: 21px;
+            margin-top: 35px;
+            font-size: 1.8rem;
+            font-family: "Newsreader", sans-serif;
+        }
+
+        a {
+            color: #000;
+            text-decoration: underline;
+        }
+
+        a:hover {
+            color: #000;
+            text-decoration: none;
+        }
+
+        #map,
+        #map_disolucion,
+        #aprobacion_congreso,
+        #aprobacion_nse,
+        #aprobacion_nse_disolucion,
+        #aprobacion_ambito,
+        #aprobacion_ambito_disolucion {
+            width: 100%;
+            max-width: 700px;
+            margin: auto;
+            min-height: 450px;
+        }
+
+        #aprueba_desaprueba,
+        #select_macrozonas {
+            text-align: center;
+            display: block;
+            margin: auto;
+        }
+
+        .special_box {
+            text-align: center;
+            display: block;
+            margin: auto;
+        }
+
+        .special_box p {
+            font-size: 15px;
+            margin-bottom: 4px;
+        }
+
+        #despues_vacancia,
+        #razones_castillo,
+        #corrupto_castillo,
+        #aprobacion_congreso,
+        #aprobacion_mca,
+        #ministro_salud {
+            min-height: 400px;
+        }
+
+        #defensa_castillo,
+        #aprobacion_anibal {
+            min-height: 300px;
+        }
+
+        text.bb-chart-arcs-gauge-title,
+        .bb-chart-arcs .bb-chart-arcs-title {
+            font-size: 13px !important;
+            fill: #8c8c8c;
+            font-style: italic;
+        }
+
+        #despues_vacancia .bb-tooltip-container {
+            max-width: 200px;
+        }
+
+        #aprobacion_boluarte .bb-axis-x .tick text {
+            font-size: 10px;
+            transform: translate(-4px, -4px);
+        }
+
+        /* 
+        #corrupcion_presidencial .bb-axis-x .tick text {
+            font-size: 10px;
+            transform: translate(-4px, -4px);
+        } */
+
+        #aprobacion_congreso .bb-axis-x .tick text {
+            font-size: 11px;
+            transform: translate(0px, -4px);
+            /* transform: rotate(338deg); */
+        }
+
+        #aprobacion_boluarte .bb-legend-item,
+        #razones_castillo .bb-legend-item,
+        #aprobacion_congreso .bb-legend-item,
+        #aprobacion_mca .bb-legend-item,
+        #corrupcion_generalizada .bb-legend-item,
+        #mca_castillo .bb-legend-item {
+            transform: translate(0px, 6px) !important;
+        }
+
+        #satisfaccion_democracia .bb-legend-item,
+        #tolerancia_cierre_congreso .bb-legend-item {
+            transform: translate(0px, 10px) !important;
+        }
+
+        #vacancia_castillo .bb-axis-x .tick text {
+            font-size: 11px;
+            transform: translate(0px, -4px);
+        }
+
+        #vacancia_castillo .bb-legend-item {
+            transform: translate(0px, 6px) !important;
+        }
+
+        #corrupto_castillo .bb-axis-x .tick text {
+            font-size: 11px;
+            transform: translate(0px, -4px);
+        }
+
+        #corrupto_castillo .bb-legend-item {
+            transform: translate(0px, 6px) !important;
+        }
+
+        #aprobacion_ambito .bb-axis-x .tick text {
+            font-size: 11px;
+            transform: translate(0px, -4px);
+        }
+
+        #aprobacion_ambito .bb-legend-item {
+            transform: translate(0px, 6px) !important;
+        }
+
+        #map, #map_disolucion {
+            min-height: 500px;
+        }
+
+        #aprobacion_nse .bb-axis-y text {
+            fill: #555;
+        }
+
+        #aprobacion_ambito .bb-axis-y text {
+            fill: #555;
+        }
+
+        #week_a_week {
+            display: block;
+        }
+
+        .mapboxgl-popup-content {
+            min-width: 120px;
+            padding: 7px 7px 4px 7px;
+            text-align: center;
+            font-family: "Mukta", serif;
+        }
+
+        .mapboxgl-popup-content .provincia {
+            margin: 7px 7px 0px 7px;
+        }
+
+        .mapboxgl-popup-content .totales {
+            margin: 1px 7px 0px 7px;
+        }
+
+        .bb-line {
+            stroke-width: 2px;
+        }
+
+        #aprobacion_ambito path.bb-bar,
+        #aprobacion_ambito_vacancia path.bb-bar {
+            opacity: 0.6 !important;
+        }
+
+        .macro_zona {
+            margin-bottom: 0;
+        }
+
+        footer {
+            padding: 42px;
+            font-family: sans-serif;
+        }
+
+        footer span {
+            display: block;
+            text-align: center;
+            color: #545b6a;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .w-1000 {
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        dl {
+            display: flex;
+            background-color: white;
+            flex-direction: column;
+            width: 100%;
+            max-width: 700px;
+            position: relative;
+            padding: 20px;
+        }
+
+        dt {
+            align-self: flex-start;
+            width: 100%;
+            font-weight: 700;
+            display: block;
+            text-align: center;
+            font-size: 1.2em;
+            font-weight: 700;
+            margin-bottom: 20px;
+            margin-left: 130px;
+        }
+
+        .text {
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            /* height: 40px; */
+            width: 100px;
+            /*         background-color: white; */
+            position: absolute;
+            left: 10px;
+            justify-content: flex-start;
+            line-height: 21px;
+        }
+
+        .percentage {
+            font-size: 0.8em;
+            line-height: 1;
+            text-transform: uppercase;
+            width: 70%;
+            height: 20px;
+            margin-left: 102px;
+            background: repeating-linear-gradient(to right, #ddd, #ddd 1px, #fff 1px, #fff 5%);
+        }
+
+        .percentage:after {
+            content: "";
+            display: block;
+            background-color: #e76c5d;
+            opacity: 1;
+            /*         width: 50px; */
+            margin-bottom: 10px;
+            height: 90%;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+        }
+
+        .historico {
+            padding: 0;
+            text-align: center;
+            margin: auto;
+        }
+
+        .historico a {
+            text-decoration: none;
+            margin: 3px 10px 3px 0px;
+        }
+
+        .historico span {
+            margin-right: 14px;
+        }
+
+        .percentage:hover:after,
+        .percentage:focus:after {
+            background-color: #aaa;
+        }
+
+        .percentage-1:after {
+            width: 1%;
+        }
+
+        .percentage-2:after {
+            width: 2%;
+        }
+
+        .percentage-3:after {
+            width: 3%;
+        }
+
+        .percentage-4:after {
+            width: 4%;
+        }
+
+        .percentage-5:after {
+            width: 5%;
+        }
+
+        .percentage-6:after {
+            width: 6%;
+        }
+
+        .percentage-7:after {
+            width: 7%;
+        }
+
+        .percentage-8:after {
+            width: 8%;
+        }
+
+        .percentage-9:after {
+            width: 9%;
+        }
+
+        .percentage-10:after {
+            width: 10%;
+        }
+
+        .percentage-11:after {
+            width: 11%;
+        }
+
+        .percentage-12:after {
+            width: 12%;
+        }
+
+        .percentage-13:after {
+            width: 13%;
+        }
+
+        .percentage-14:after {
+            width: 14%;
+        }
+
+        .percentage-15:after {
+            width: 15%;
+        }
+
+        .percentage-16:after {
+            width: 16%;
+        }
+
+        .percentage-17:after {
+            width: 17%;
+        }
+
+        .percentage-18:after {
+            width: 18%;
+        }
+
+        .percentage-19:after {
+            width: 19%;
+        }
+
+        .percentage-20:after {
+            width: 20%;
+        }
+
+        .percentage-21:after {
+            width: 21%;
+        }
+
+        .percentage-22:after {
+            width: 22%;
+        }
+
+        .percentage-23:after {
+            width: 23%;
+        }
+
+        .percentage-24:after {
+            width: 24%;
+        }
+
+        .percentage-25:after {
+            width: 25%;
+        }
+
+        .percentage-26:after {
+            width: 26%;
+        }
+
+        .percentage-27:after {
+            width: 27%;
+        }
+
+        .percentage-28:after {
+            width: 28%;
+        }
+
+        .percentage-29:after {
+            width: 29%;
+        }
+
+        .percentage-30:after {
+            width: 30%;
+        }
+
+        .percentage-31:after {
+            width: 31%;
+        }
+
+        .percentage-32:after {
+            width: 32%;
+        }
+
+        .percentage-33:after {
+            width: 33%;
+        }
+
+        .percentage-34:after {
+            width: 34%;
+        }
+
+        .percentage-35:after {
+            width: 35%;
+        }
+
+        .percentage-36:after {
+            width: 36%;
+        }
+
+        .percentage-37:after {
+            width: 37%;
+        }
+
+        .percentage-38:after {
+            width: 38%;
+        }
+
+        .percentage-39:after {
+            width: 39%;
+        }
+
+        .percentage-40:after {
+            width: 40%;
+        }
+
+        .percentage-41:after {
+            width: 41%;
+        }
+
+        .percentage-42:after {
+            width: 42%;
+        }
+
+        .percentage-43:after {
+            width: 43%;
+        }
+
+        .percentage-44:after {
+            width: 44%;
+        }
+
+        .percentage-45:after {
+            width: 45%;
+        }
+
+        .percentage-46:after {
+            width: 46%;
+        }
+
+        .percentage-47:after {
+            width: 47%;
+        }
+
+        .percentage-48:after {
+            width: 48%;
+        }
+
+        .percentage-49:after {
+            width: 49%;
+        }
+
+        .percentage-50:after {
+            width: 50%;
+        }
+
+        .percentage-51:after {
+            width: 51%;
+        }
+
+        .percentage-52:after {
+            width: 52%;
+        }
+
+        .percentage-53:after {
+            width: 53%;
+        }
+
+        .percentage-54:after {
+            width: 54%;
+        }
+
+        .percentage-55:after {
+            width: 55%;
+        }
+
+        .percentage-56:after {
+            width: 56%;
+        }
+
+        .percentage-57:after {
+            width: 57%;
+        }
+
+        .percentage-58:after {
+            width: 58%;
+        }
+
+        .percentage-59:after {
+            width: 59%;
+        }
+
+        .percentage-60:after {
+            width: 60%;
+        }
+
+        .percentage-61:after {
+            width: 61%;
+        }
+
+        .percentage-62:after {
+            width: 62%;
+        }
+
+        .percentage-63:after {
+            width: 63%;
+        }
+
+        .percentage-64:after {
+            width: 64%;
+        }
+
+        .percentage-65:after {
+            width: 65%;
+        }
+
+        .percentage-66:after {
+            width: 66%;
+        }
+
+        .percentage-67:after {
+            width: 67%;
+        }
+
+        .percentage-68:after {
+            width: 68%;
+        }
+
+        .percentage-69:after {
+            width: 69%;
+        }
+
+        .percentage-70:after {
+            width: 70%;
+        }
+
+        .percentage-71:after {
+            width: 71%;
+        }
+
+        .percentage-72:after {
+            width: 72%;
+        }
+
+        .percentage-73:after {
+            width: 73%;
+        }
+
+        .percentage-74:after {
+            width: 74%;
+        }
+
+        .percentage-75:after {
+            width: 75%;
+        }
+
+        .percentage-76:after {
+            width: 76%;
+        }
+
+        .percentage-77:after {
+            width: 77%;
+        }
+
+        .percentage-78:after {
+            width: 78%;
+        }
+
+        .percentage-79:after {
+            width: 79%;
+        }
+
+        .percentage-80:after {
+            width: 80%;
+        }
+
+        .percentage-81:after {
+            width: 81%;
+        }
+
+        .percentage-82:after {
+            width: 82%;
+        }
+
+        .percentage-83:after {
+            width: 83%;
+        }
+
+        .percentage-84:after {
+            width: 84%;
+        }
+
+        .percentage-85:after {
+            width: 85%;
+        }
+
+        .percentage-86:after {
+            width: 86%;
+        }
+
+        .percentage-87:after {
+            width: 87%;
+        }
+
+        .percentage-88:after {
+            width: 88%;
+        }
+
+        .percentage-89:after {
+            width: 89%;
+        }
+
+        .percentage-90:after {
+            width: 90%;
+        }
+
+        .percentage-91:after {
+            width: 91%;
+        }
+
+        .percentage-92:after {
+            width: 92%;
+        }
+
+        .percentage-93:after {
+            width: 93%;
+        }
+
+        .percentage-94:after {
+            width: 94%;
+        }
+
+        .percentage-95:after {
+            width: 95%;
+        }
+
+        .percentage-96:after {
+            width: 96%;
+        }
+
+        .percentage-97:after {
+            width: 97%;
+        }
+
+        .percentage-98:after {
+            width: 98%;
+        }
+
+        .percentage-99:after {
+            width: 99%;
+        }
+
+        .percentage-100:after {
+            width: 100%;
+        }
+
+        .separador {
+            display: block;
+            margin: auto;
+            max-width: 60px;
+            padding-top: 42px;
+        }
+
+        .horizontal-bar {
+            max-width: 400px;
+            margin: auto;
+        }
+
+        #desagregado_button {
+            text-align: center;
+            display: block;
+            margin: auto;
+            max-width: 100px;
+            text-decoration: none;
+        }
+
+        #desagregado_1,
+        #desagregado_2 {
+            padding-top: 42px;
+        }
+
+        .horizontal-bar p {
+            text-align: center;
+            margin-bottom: 0;
+            margin-top: 30px;
+            font-weight: 600;
+            font-size: 14px;
+            margin-left: 49px;
+        }
+
+        .helicopter {
+            border: none;
+            margin-bottom: 14px;
+        }
+
+        .preferencia {
+            text-align: center;
+        }
+
+        .resultados {
+            margin: 7px 0 21px 7px;
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        .number_1,
+        .number_2 {
+            display: inline-block;
+        }
+
+        .preferencia img {
+            width: 130px;
+            height: 130px;
+            display: block;
+            margin: auto;
+        }
+
+        .question {
+            font-size: 14px;
+            font-weight: 700;
+            text-align: center;
+            margin: 35px auto 21px auto;
+        }
+
+        .mt-21 {
+            margin-top: 21px;
+        }
+
+        .iframe_yt {
+            max-width: 700px;
+            margin: 42px auto 21px auto;
+            display: block;
+        }
+
+        .ficha_tecnica {
+            font-size: 13px;
+            color: #555;
+        }
+
+        .btn-outline-danger {
+            color: #de425b;
+            border-color: #de425b;
+        }
+
+        .btn-outline-danger:hover {
+            color: #fff;
+            background-color: #de425b;
+            border-color: #de425b;
+        }
+
+        #corrupcion_generalizada .bb-legend {
+            display: none;
+        }
+
+        @media (min-width: 768px) {
+            #corrupcion_generalizada .bb-legend {
+                display: block;
+            }
+
+            h1 {
+                font-size: 3rem;
+            }
+
+            p {
+                font-size: 18px;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            .historico {
+                padding: 14px 7px;
+            }
+
+            .text {
+                left: 180px;
+                width: 130px;
+            }
+
+            header img {
+                width: 160px;
+            }
+
+            span [class*="btn-"] {
+                display: inline-block;
+                width: 40px;
+                height: 40px;
+                margin-left: 10px;
+            }
+
+            span a.btn-fb,
+            span a.btn-twt,
+            span a.btn-wsp {
+                background-size: cover;
+                background-color: #fff;
+                border-radius: 50%;
+            }
+
+            span a.btn-twt {
+                background-position: 0 -40px;
+                background-repeat: no-repeat;
+            }
+
+            span a.btn-wsp {
+                background-position: 0 -80px;
+                background-repeat: no-repeat;
+            }
+
+            .menu__button {
+                display: none;
+            }
+
+            .menu__left {
+                width: 300px;
+            }
+
+            .menu__right {
+                display: inline-block;
+                width: calc(100% - 300px);
+            }
+
+            .content__menu-mobile {
+                display: none;
+            }
+
+            .items__menu {
+                display: block;
+            }
+
+            .percentage {
+                width: 100%;
+                margin-left: 110px;
+            }
+
+            .helicopter {
+                border-bottom: none;
+                border-right: 1px solid #8c8c8c;
+                margin-bottom: 0px;
+            }
+
+            .intertitulado {
+                border-bottom: 1px solid #8c8c8c;
+                line-height: 35px;
+            }
+        }
+
+        @media (min-width: 993px) {
+            .percentage {
+                width: 100%;
+                margin-left: 21px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            header {
+                padding: 7px 20px;
+            }
+
+            footer {
+                padding: 27.9px 30px;
+            }
+        }
+
+        .flourish-chart {
+            max-width: 400px;
+            margin: auto;
+        }
+
+        .flourish-credit {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="w-header">
+        <div class="container__menu">
+            <!-- <div class="menu__button">                <div class="menu"> <button id="menuMobile"> <span></span> <span></span> <span></span> </button> </div>            </div> -->
+            <div class="menu__left">
+                <a href="https://data.larepublica.pe/" rel="noopener" style="display: inline-block" target="_blank">
+                    <picture>
+                        <source id="w-sourceLogoDesktop" media="(min-width: 768px)" srcset="
+                  https://larepublica.cronosmedia.glr.pe/data/2121/10/05/logo.png
+                " />
+                        <img id="w-sourceLogoMobile"
+                            src="https://larepublica.cronosmedia.glr.pe/data/2121/10/05/logo.png" />
+                    </picture>
+                </a>
+            </div>
+            <div class="menu__right">
+                <span class="items_shared">
+                    <a class="btn-fb btn-Social" data-social="facebook"
+                        href="https://www.facebook.com/sharer/sharer.php?u=https://data.larepublica.pe/encuesta-iep-aprobacion-desaprobacion-peru-presidente-congreso-de-la-republica"
+                        id="id-btn-fb" rel="noopener">
+                    </a>
+                    <a class="btn-twt btn-Social" data-social="twitter"
+                        href="https://twitter.com/share?url=https://data.larepublica.pe/encuesta-iep-aprobacion-desaprobacion-peru-presidente-congreso-de-la-republica&via=LRData"
+                        id="id-btn-twt" rel="noopener">
+                    </a>
+                    <a class="btn-wsp"
+                        href="https://api.whatsapp.com/send?text=https://data.larepublica.pe/encuesta-iep-aprobacion-desaprobacion-peru-presidente-congreso-de-la-republica"
+                        id="id-btn-wsp" rel="noopener" target="_blank">
+                    </a>
+                </span>
+            </div>
+        </div>
+    </header>
+    <div class="container mt-x">
+        <div class="row">
+            <div class="col">
+                <h1 class="font-weight-bold">
+                    Un 83% cree que se deben adelantar las elecciones generales
+                </h1>
+                <p>
+                    <i>La encuesta IEP de diciembre señala que 7 de cada 10 personas encuestadas están en desacuerdo con que Dina Boluarte haya asumido como jefa de Estado ante la vacancia de Pedro Castillo. Con ello, un 83% cree que es mejor adelantar las elecciones generales para salir de la actual crisis política.</i>
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <h2 class="font-weight-bold">
+                    Lo mejor es adelantar las elecciones generales
+                </h2>
+                <p>
+                    Ante los últimos sucesos ocurridos en el país, un 83% de las personas encuestadas considera que lo más conveniente es adelantar las elecciones generales y renovar a las autoridades actuales, mientras que solo un 13% piensa que Dina Boluarte debe mantenerse y finalizar su gestión en el 2026.
+                    <br><br>
+                    <small>*El anuncio de adelanto de elecciones se dio el domingo 11 a la medianoche, cuando el trabajo de campo se encontraba a un poco más de la mitad de avance. Antes del mensaje presidencial se realizaron 715 encuestas y luego de este 501. Este último grupo respondió la pregunta pese a que ya se había anunciado que habría elecciones adelantadas.</small>
+                </p>
+                <p class="question">
+                    ¿Qué cree que sería lo más conveniente para el país?
+                </p>
+                <div class="special_box">
+                    <p>
+                        <b>Opción 1</b>: Que haya Elecciones Generales antes de 2026.
+                    </p>
+                    <p>
+                        <b>Opción 2</b>: Que Dina Boluarte se mantenga como presidenta hasta 2026.
+                    </p>
+                    <p><b>Opción 3</b>: NS/NP</p>
+                </div>
+                <div id="posible_salida_crisis"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h2 class="font-weight-bold">Gobierno de Dina Boluarte</h2>
+                <p>
+                    En tanto, sobre la llegada de Dina Boluarte a la presidencia del Perú, solo un 27% está de acuerdo que haya asumido ante la vacancia de Pedro Castillo. Sin embargo, un 71% está en desacuerdo que haya aceptado ser jefa del Estado.
+                </p>
+                <p class="question">
+                    ¿Usted está de acuerdo o en desacuerdo con que Dina Boluarte haya asumido la Presidencia del Perú?
+                </p>
+                <a href="#desagregado_1" type="button" class="btn btn-success btn-sm" id="desagregado_button">Ver
+                    detalle.</a>
+                <div id="aprobacion_boluarte"></div>
+            </div>
+        </div>
+        <!-- <div class="row">
+            <div class="col">
+                <h2 class="font-weight-bold">Continúa la desaprobación del Congreso</h2>
+                <p>
+                    Por su parte, el Congreso de la República aumenta su desaprobación en 5%. Con ello, pasa de un 81%,
+                    a finales de octubre, a un 86% de rechazo, a finales de noviembre. Tan solo un 10% de las personas
+                    encuestadas respaldan sus acciones.
+                </p>
+                <p class="question">
+                    ¿Usted aprueba o desaprueba el desempeño del Congreso de la
+                    República?
+                </p>
+                <div id="aprobacion_congreso"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h2 class="font-weight-bold">
+                    Rechazo al presidente del Congreso
+                </h2>
+                <p>
+                    En la misma línea, José Williams, presidente del Congreso, aumenta su desaprobación. El rechazo a su
+                    desempeño varía de un 62% a un 68%; es decir, aumenta en 6 puntos porcentuales. Por otro lado, su
+                    aprobación disminuye 1% y alcanza un 14% en la medición de noviembre.
+                </p>
+                <p class="question">
+                    ¿Usted aprueba o desaprueba el desempeño del presidente del
+                    Congreso, José Williams?
+                </p>
+                <div id="nuevo_presidente_congreso"></div>
+            </div>
+        </div> -->
+        <div class="row">
+            <div class="col">
+                <h2 class="font-weight-bold">
+                    El futuro político de la presidenta
+                </h2>
+                <p>
+                    Ante ello, casi la mitad de las personas encuestadas (46%) cree que empeorará la situación política en el Gobierno de Boluarte, mientras que un 29% considera que estará igual y un 17% que empeorará.
+                    <br>
+                    Cabe mencionar que, entre aquellos que respondieron antes del anuncio de adelanto de elecciones de la madrugada del 12 de diciembre, un 41% consideraba que la situación política empeoraría, mientras que, luego de dicho mensaje, un 52% tenía una visión más pesimista sobre el futuro político del país.                
+                </p>
+                <p class="question">
+                    Ahora que Dina Boluarte es la presidenta del Perú ¿cree que la situación política?
+                </p>
+                <!-- <div class="special_box">
+                    <p>
+                        <b>Opción 1</b>: Está de acuerdo con el trabajo de la fiscalía porque hay varios indicios de corrupción.
+                    </p>
+                    <p>
+                        <b>Opción 2</b>: Cree que hay una persecución injusta de la fiscalía contra el presidente y su familia.
+                    </p>
+                    <p><b>Opción 3</b>: NS/NP</p>
+                </div> -->
+                <div id="futuro_boluarte"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h2 class="font-weight-bold">
+                    Evaluación final del gobierno de Castillo
+                </h2>
+                <p>
+                    Por otro lado, a pesar de que la última aprobación de Pedro Castillo de noviembre llegó a un 31%, el exmandatario tuvo una calificación de un 42% de rechazo sobre su gestión: un 22% cree que tuvo un desempeño muy malo y un 10% como malo. Solo un 26% lo considera bueno (19.5%) y muy bueno (6,8%). Un 29% piensa que es ni bueno ni malo su mandato de 16 meses.
+                </p>
+                <p class="question">
+                    Pedro Castillo estuvo como presidente 16 meses. Pensando en todo su gobierno, ¿cómo evaluaría su desempeño como jefe de estado?
+                </p>
+                <!-- <div class="special_box">
+                    <p>
+                        <b>Opción 1</b>: Está de acuerdo con el trabajo de la fiscalía porque hay varios indicios de corrupción.
+                    </p>
+                    <p>
+                        <b>Opción 2</b>: Cree que hay una persecución injusta de la fiscalía contra el presidente y su familia.
+                    </p>
+                    <p><b>Opción 3</b>: NS/NP</p>
+                </div> -->
+                <div id="evaluacion_final_castillo"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h2 class="font-weight-bold">
+                    Descontento con la democracia
+                </h2>
+                <p>
+                    De manera muy similar con la medición de mayo de 2022, hay un alto descontento social con el funcionamiento de la democracia en el país, ya que un 80% está insatisfecho (50%) o muy insatisfecho (30%) con su desarrollo.
+                </p>
+                <p class="question">
+                    En general, ¿usted diría que está muy satisfecho(a), satisfecho(a), insatisfecho(a) o muy insatisfecho(a) con la forma en que la democracia funciona en Perú?
+                </p>
+                <!-- <div class="special_box">
+                    <p>
+                        <b>Opción 1</b>: Está de acuerdo con el trabajo de la fiscalía porque hay varios indicios de corrupción.
+                    </p>
+                    <p>
+                        <b>Opción 2</b>: Cree que hay una persecución injusta de la fiscalía contra el presidente y su familia.
+                    </p>
+                    <p><b>Opción 3</b>: NS/NP</p>
+                </div> -->
+                <div id="satisfaccion_democracia"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h2 class="font-weight-bold">
+                    Sin mucha tolerancia al cierre del Congreso
+                </h2>
+                <p>
+                    Ante el intento de golpe de Estado de Pedro Castillo con el cierre del Congreso, un 60% de la ciudadanía señala que no se justificaría cerrar el Parlamento ante momentos muy difíciles. Un resultado muy similar al de mayo de 2022, en el que un 62% consideró que no era una opción.
+                </p>
+                <p class="question">
+                    Cree usted que cuando el país enfrenta momentos muy difíciles, ¿se justifica que el presidente del país cierre el Congreso y gobierne sin Congreso?
+                </p>
+                <!-- <div class="special_box">
+                    <p>
+                        <b>Opción 1</b>: Está de acuerdo con el trabajo de la fiscalía porque hay varios indicios de corrupción.
+                    </p>
+                    <p>
+                        <b>Opción 2</b>: Cree que hay una persecución injusta de la fiscalía contra el presidente y su familia.
+                    </p>
+                    <p><b>Opción 3</b>: NS/NP</p>
+                </div> -->
+                <div id="tolerancia_cierre_congreso"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h2 class="font-weight-bold">
+                    Sin mucha tolerancia a un golpe militar
+                </h2>
+                <p>
+                    En tanto, de manera muy similar ante momentos difíciles en el territorio nacional, un 60% tampoco justificaría que los militares tomen el poder a través de un golpe de Estado, aunque un 38% sí estaría de acuerdo con la medida.
+                </p>
+                <p class="question">
+                    Cree usted que cuando el país enfrenta momentos muy difíciles, ¿se justifica que los militares tomen el poder a través de un golpe de estado?
+                </p>
+                <!-- <div class="special_box">
+                    <p>
+                        <b>Opción 1</b>: Está de acuerdo con el trabajo de la fiscalía porque hay varios indicios de corrupción.
+                    </p>
+                    <p>
+                        <b>Opción 2</b>: Cree que hay una persecución injusta de la fiscalía contra el presidente y su familia.
+                    </p>
+                    <p><b>Opción 3</b>: NS/NP</p>
+                </div> -->
+                <div id="tolerancia_golpe_militar"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h2 class="font-weight-bold">
+                    Intento de Pedro Castillo en cerrar el Congreso
+                </h2>
+                <p>
+                    Poco más de la mitad de las personas encuestadas desaprueba el intento de Pedro Castillo de cerrar el Congreso. No obstante, un 44% señala estar a favor.
+                </p>
+                <p class="question">
+                    ¿Aprueba o desaprueba que Pedro Castillo haya intentado disolver el Congreso?
+                </p>
+                <!-- <div class="special_box">
+                    <p>
+                        <b>Opción 1</b>: Está de acuerdo con el trabajo de la fiscalía porque hay varios indicios de corrupción.
+                    </p>
+                    <p>
+                        <b>Opción 2</b>: Cree que hay una persecución injusta de la fiscalía contra el presidente y su familia.
+                    </p>
+                    <p><b>Opción 3</b>: NS/NP</p>
+                </div> -->
+                <a href="#desagregado_2" type="button" class="btn btn-success btn-sm" id="desagregado_button">Ver
+                    detalle.</a>
+                <div id="intento_disolucion_congreso"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h2 class="font-weight-bold">
+                    Participación en protestas
+                </h2>
+                <p>
+                    Ante la pregunta de los motivos por los que la ciudadanía sale a protestar, el adelanto de elecciones (71%) es la principal razón para hacerlo. En segundo lugar, un 40% lo haría para mostrar su apoyo al expresidente Pedro Castillo y un 15% a favor del Congreso.
+                </p>
+                <p class="question">
+                    ¿Usted participaría en una marcha o algún tipo de protesta en favor…?
+                </p>
+                <!-- <div class="special_box">
+                    <p>
+                        <b>Opción 1</b>: Está de acuerdo con el trabajo de la fiscalía porque hay varios indicios de corrupción.
+                    </p>
+                    <p>
+                        <b>Opción 2</b>: Cree que hay una persecución injusta de la fiscalía contra el presidente y su familia.
+                    </p>
+                    <p><b>Opción 3</b>: NS/NP</p>
+                </div> -->
+                <div id="intencion_protestas_adelanto"></div>
+                <div id="intencion_protestas_castillo"></div>
+                <div id="intencion_protestas_congreso"></div>
+                <div id="intencion_protestas_boluarte"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="desagregado_1">
+        <img src="hr.png" alt="" class="separador" />
+        <h2 class="font-weight-bold">
+            Aprobación de Dina Boluarte por nivel socioeconómico
+        </h2>
+        <p>
+            El mayor respaldo con el gobierno de Dina Boluarte se evidencia en el sector A/B, en el cual logra un 41%. En tanto, en el sector D/E obtiene la mayor desaprobación con un 75%, aunque muy cerca del sector C, en el cual llega a un 72% de rechazo.
+        </p>
+        <p class="question">
+            ¿Usted está de acuerdo o en desacuerdo con que Dina Boluarte haya asumido la Presidencia del Perú?
+        </p>
+        <div id="aprobacion_nse_a"></div>
+        <div id="aprobacion_nse_c"></div>
+        <div id="aprobacion_nse_d"></div>
+        <h2 class="font-weight-bold">
+            Aprobación de Dina Boluarte en ámbitos urbano y rural
+        </h2>
+        <p>
+            La llegada de Dina Boluarte a la presidencia del Perú es rechazada en su mayoría por el ámbito rural en un 77% y por el ámbito urbano en un 74%. Sin embargo, Lima Metropolitana es el sector en el que hay más acuerdo de que haya asumido como jefa de Estado con un 35%.
+        </p>
+        <p class="question">
+            ¿Usted está de acuerdo o en desacuerdo con que Dina Boluarte haya asumido la Presidencia del Perú?
+        </p>
+        <div id="aprobacion_ambito_lima"></div>
+        <div id="aprobacion_ambito_urbano"></div>
+        <div id="aprobacion_ambito_rural"></div>
+        <h2 class="font-weight-bold">Aprobación de Dina Boluarte por macrozonas</h2>
+        <p>
+            Asimismo, en la evaluación por macrozona, Boluarte obtiene un 33% de aprobación en el oriente y un 26% en el norte. Contrariamente, altos porcentajes de rechazo lo alcanza en el sur (86%), centro (79%) y también en el norte (71%).
+        </p>
+        <p class="question">
+            ¿Usted está de acuerdo o en desacuerdo con que Dina Boluarte haya asumido la Presidencia del Perú?
+        </p>
+        <div class="flourish-embed flourish-map" data-src="visualisation/12202778"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+        <!-- <div id="aprobacion_macrozona_lima"></div>
+        <div id="aprobacion_macrozona_norte"></div>
+        <div id="aprobacion_macrozona_centro"></div>
+        <div id="aprobacion_macrozona_sur"></div>
+        <div id="aprobacion_macrozona_oriente"></div> -->
+
+    </div>
+    <div class="container" id="desagregado_2">
+        <img src="hr.png" alt="" class="separador" />
+        <h2 class="font-weight-bold">
+            Intento de disolución del Congreso por nivel socioeconómico
+        </h2>
+        <p>
+            Sobre el intento de cierre del Congreso, el mayor rechazo se evidencia en el sector A/B (69%). Del otro lado, la mayor aprobación se obtiene en el sector D/E (52%). En el sector C un 57% está en contra del cierre y un 41% a favor.
+        </p>
+        <p class="question">
+            ¿Aprueba o desaprueba que Pedro Castillo haya intentado disolver el Congreso?
+        </p>
+        <div id="aprobacion_nse_a_disolucion"></div>
+        <div id="aprobacion_nse_c_disolucion"></div>
+        <div id="aprobacion_nse_d_disolucion"></div>
+        <h2 class="font-weight-bold">
+            Intento de disolución del Congreso en ámbitos urbano y rural
+        </h2>
+        <p>
+            En tanto, un 63% desaprueba que se haya intentado disolver el Parlamento en Lima Metropolitana. Contrariamente, un 52% del ámbito rural y un 48% del ámbito urbano está a favor.
+        </p>
+        <p class="question">
+            ¿Usted aprueba que Pedro Castillo haya intentado disolver el Congreso?
+        </p>
+        <div id="aprobacion_ambito_lima_disolucion"></div>
+        <div id="aprobacion_ambito_urbano_disolucion"></div>
+        <div id="aprobacion_ambito_rural_disolucion"></div>
+        <h2 class="font-weight-bold">Intento de disolución del Congreso por macrozonas</h2>
+        <p>
+            Finalmente, por macrozona, un 58% del sur está de acuerdo con que se haya intentado disolver el Congreso, seguido de un 54% del centro. Por otro lado, un 55% del norte y un 54% oriente desaprueba el intento.
+        </p>
+        <p class="question">
+            ¿Aprueba o desaprueba que Pedro Castillo haya intentado disolver el Congreso?
+        </p>
+        <div class="flourish-embed flourish-map" data-src="visualisation/12203392"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+        <!-- <div id="aprobacion_macrozona_lima_disolucion"></div>
+        <div id="aprobacion_macrozona_norte_disolucion"></div>
+        <div id="aprobacion_macrozona_centro_disolucion"></div>
+        <div id="aprobacion_macrozona_sur_disolucion"></div>
+        <div id="aprobacion_macrozona_oriente_disolucion"></div> -->
+    </div>
+    <div class="container">
+        <div class="row mt-21">
+            <div class="col-12">
+                <p class="question text-left">FICHA TÉCNICA:</p>
+                <p class="ficha_tecnica">
+                    Encuestadora: Instituto de Estudios Peruanos (IEP). Partida 0393-REE/JNE – 281-2021-DCGI/JNE. Financiación: Diario La República e Instituto de Estudios Peruanos. Objetivo: Recoger la opinión de la ciudadanía sobre coyuntura política. Tamaño y distribución de la muestra: 1216 entrevistados en 24 departamentos, 148 provincias y 418 distritos. Encuesta telefónica. Muestreo probabilístico con método de selección aleatoria de números de celular. Puntos de muestreo: Lima Met., Perú urbano y Perú rural. Margen de error: ± 2,8 pts. para resultados a nivel nacional. Nivel de confianza: 95%. Representatividad provincial: 95,10%. Fuente de marco muestral: Relación de cabeceras de operadores de móviles (MTC 2019). Fecha de campo: 9 al 14 de diciembre de 2022.
+                    <a href="https://larepublica.pe/" target="_blank">www.larepublica.pe</a>. y
+                    <a href="http://www.iep.org.pe/" target="_blank">www.iep.org.pe</a>.
+                </p>
+            </div>
+            <!-- <div class="col-12">
+                  <iframe class="iframe_yt" width="100%" height="420" src="https://www.youtube.com/embed/GMUVKkKjAX8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div> -->
+
+            <div class="historico">
+                <span>Histórico de encuestas:</span>
+                <a role="button" class="btn btn-outline-danger" style="margin-right: 10px" href="https://data.larepublica.pe/encuesta-iep-aprobacion-desaprobacion-peru-presidente-congreso-de-la-republica/noviembre-2022/">
+                    Nov 2022</a>
+                <a role="button" class="btn btn-outline-danger" style="margin-right: 10px" href="https://data.larepublica.pe/encuesta-iep-aprobacion-desaprobacion-peru-presidente-congreso-de-la-republica/octubre-2-2022/">
+                    Oct II 2022</a>
+                <a role="button" class="btn btn-outline-danger" style="margin-right: 10px" href="https://data.larepublica.pe/encuesta-iep-aprobacion-desaprobacion-peru-presidente-congreso-de-la-republica/octubre-1-2022/">
+                    Oct I 2022</a>
+                <a role="button" class="btn btn-outline-danger" style="margin-right: 10px" href="https://data.larepublica.pe/encuesta-iep-aprobacion-desaprobacion-peru-presidente-congreso-de-la-republica/setiembre-2022/">
+                    Set 2022
+                </a>
+                <a role="button" class="btn btn-outline-danger" style="margin-right: 10px" href="https://data.larepublica.pe/encuesta-iep-aprobacion-desaprobacion-peru-presidente-congreso-de-la-republica/julio-2022/">
+                    Jul 2022
+                </a>
+                <a role="button" class="btn btn-outline-danger" style="margin-right: 10px" href="https://data.larepublica.pe/encuesta-iep-aprobacion-desaprobacion-peru-presidente-congreso-de-la-republica/junio-2022/">
+                    Jun 2022
+                </a>
+                <a role="button" class="btn btn-outline-danger" style="margin-right: 10px" href="https://data.larepublica.pe/encuesta-iep-aprobacion-desaprobacion-peru-presidente-congreso-de-la-republica/mayo-2022/">
+                    May 2022
+                </a>
+
+                <!-- <a role="button" class="btn btn-outline-danger" style="margin-right: 10px" href="enero-2022/">
+            Enero 2022
+          </a> -->
+            </div>
+        </div>
+    </div>
+    <footer style="background-color: #f0f0f0">
+        <div class="w-1000">
+            <span><strong>Redacción:</strong> La República</span>
+            <span><strong>Desarrollo Web:</strong> Anna Absi</span>
+            <br />
+            <span>© Grupo La República </span>
+            <span>Todos los derechos reservados.</span>
+        </div>
+    </footer>
+    <script defer src="https://www.googletagmanager.com/gtag/js?id=UA-6536106-1"></script>
+    <script type="text/javascript" defer>
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        (window.dataLayer = window.dataLayer || []),
+            gtag("js", new Date()),
+            gtag("config", "UA-6536106-1");
+    </script>
+    <script>
+
+        $(window).on("scroll", function () {
+            //centerDiv("#congreso_castillo");
+        });
+
+        $.when($.getJSON("data-iep.json")).then(function (data) {
+            var boluarte_nsnp = data["boluarte_nsnp"];
+            var boluarte_aprueba = data["boluarte_aprueba"];
+            var boluarte_desaprueba = data["boluarte_desaprueba"];
+
+            var congreso_nsnp = data["congreso_nsnp"];
+            var congreso_aprueba = data["congreso_aprueba"];
+            var congreso_desaprueba = data["congreso_desaprueba"];
+
+            var nse_a = data["nse_a"];
+            var nse_b = data["nse_b"];
+            var nse_c = data["nse_c"];
+            var nse_d = data["nse_d"];
+            var nse_e = data["nse_e"];
+
+            var ambito_lima = data["ambito_lima"];
+            var ambito_rural = data["ambito_rural"];
+            var ambito_urbano = data["ambito_urbano"];
+
+            var ambito_lima_congreso = data["ambito_lima_congreso"];
+            var ambito_rural_congreso = data["ambito_rural_congreso"];
+            var ambito_urbano_congreso = data["ambito_urbano_congreso"];
+
+            // console.log(ambito_lima_congreso);
+
+            var elecciones_lima = data["elecciones_lima"];
+            var elecciones_rural = data["elecciones_rural"];
+            var elecciones_urbano = data["elecciones_urbano"];
+
+            var aprobacion_ideologia_agosto = data["aprobacion_ideologia_agosto"];
+            var aprobacion_ideologia_setiembre =
+                data["aprobacion_ideologia_setiembre"];
+            var aprobacion_ideologia_octubre = data["aprobacion_ideologia_octubre"];
+
+            var mca_aprueba = data["mca_aprueba"];
+            var mca_desaprueba = data["mca_desaprueba"];
+            var mca_nsnp = data["mca_nsnp"];
+
+            var anibal_desaprueba = data["anibal_desaprueba"];
+            var anibal_aprueba = data["anibal_aprueba"];
+            var anibal_nsnp = data["anibal_nsnp"];
+
+            function filter_datita(data, filteredValue) {
+                //console.log(data, filteredValue);
+                if (
+                    data == boluarte_nsnp ||
+                    data == boluarte_aprueba ||
+                    data == boluarte_desaprueba
+                ) {
+                    return _.filter(
+                        data,
+                        (e) => e["p01"].toLowerCase() === filteredValue
+                    );
+                }
+
+                if (
+                    data == congreso_nsnp ||
+                    data == congreso_aprueba ||
+                    data == congreso_desaprueba
+                ) {
+                    return _.filter(
+                        data,
+                        (e) => e["p05_3"].toLowerCase() === filteredValue
+                    );
+                }
+
+                if (
+                    data == nse_a ||
+                    data == nse_b ||
+                    data == nse_c ||
+                    data == nse_d ||
+                    data == nse_e
+                ) {
+                    return _.filter(
+                        data,
+                        (e) => e["p01"].toLowerCase() === filteredValue
+                    );
+                }
+
+                if (
+                    data == nse_a_disolucion ||
+                    data == nse_c_disolucion ||
+                    data == nse_d_disolucion
+                ) {
+                    return _.filter(
+                        data,
+                        (e) => e["p01"].toLowerCase() === filteredValue
+                    );
+                }
+
+                if (
+                    data == ambito_lima ||
+                    data == ambito_rural ||
+                    data == ambito_urbano
+                ) {
+                    return _.filter(
+                        data,
+                        (e) => e["p01"].toLowerCase() === filteredValue
+                    );
+                }
+
+                if (
+                    data == ambito_lima_disolucion ||
+                    data == ambito_rural_disolucion ||
+                    data == ambito_urbano_disolucion
+                ) {
+                    return _.filter(
+                        data,
+                        (e) => e["p01"].toLowerCase() === filteredValue
+                    );
+                }
+
+                // if (
+                //   data == aprobacion_ideologia_agosto ||
+                //   data == aprobacion_ideologia_setiembre ||
+                //   data == aprobacion_ideologia_octubre
+                // ) {
+                //   return _.filter(
+                //     data,
+                //     e => e["periodo"].toLowerCase() === filteredValue
+                //   );
+                // }
+
+                if (
+                    data == mca_aprueba ||
+                    data == mca_desaprueba ||
+                    data == mca_nsnp
+                ) {
+                    return _.filter(
+                        data,
+                        (e) => e["p01"].toLowerCase() === filteredValue
+                    );
+                }
+
+                if (
+                    data == anibal_aprueba ||
+                    data == anibal_desaprueba ||
+                    data == anibal_nsnp
+                ) {
+                    return _.filter(
+                        data,
+                        (e) => e["p01"].toLowerCase() === filteredValue
+                    );
+                }
+            }
+
+            const posible_salida_crisis= bb.generate({
+                data: {
+                    columns: [
+                        ["data1", 83],
+                        ["data2", 13],
+                        ["data3", 4],
+                    ],
+                    type: "donut", // for ESM specify as: donut()
+                    names: {
+                        data1: "Opción 1",
+                        data2: "Opción 2",
+                        data3: "Opción 3",
+                    },
+                    colors: {
+                        data3: "#ffe48f",
+                        data2: "#adcc76",
+                        data1: "#de425b",
+                    },
+                    onclick: function (d, i) {
+                        // console.log("onclick", d, i);
+                    },
+                    onover: function (d, i) {
+                        // console.log("onover", d, i);
+                    },
+                    onout: function (d, i) {
+                        // console.log("onout", d, i);
+                    },
+                },
+                donut: {
+                    title: "Salida a la crisis",
+                },
+                tooltip: {
+                    format: {
+                        title: function (id) {
+                            return id;
+                        },
+                        value: function (value, ratio, id) {
+                            return d3.format(",")(value.toFixed(1)) + "%";
+                        },
+                    },
+                },
+                bindto: "#posible_salida_crisis",
+            });
+
+            const futuro_boluarte = bb.generate({
+                data: {
+                    columns: [
+                        ["data1", 8],
+                        ["data2", 17],
+                        ["data3", 29],
+                        ["data4", 46],
+                    ],
+                    type: "donut", // for ESM specify as: donut()
+                    names: {
+                        data1: "NS/NP",
+                        data2: "Mejorará",
+                        data3: "Seguirá igual",
+                        data4: "Empeorará",
+                    },
+                    colors: {
+                        data1: "#ffe48f",
+                        data2: "#adcc76",
+                        data3: "#4dc1d6",
+                        data4: "#de425b",
+                    },
+                    onclick: function (d, i) {
+                        // console.log("onclick", d, i);
+                    },
+                    onover: function (d, i) {
+                        // console.log("onover", d, i);
+                    },
+                    onout: function (d, i) {
+                        // console.log("onout", d, i);
+                    },
+                },
+                donut: {
+                    title: "Dina Boluarte",
+                },
+                tooltip: {
+                    format: {
+                        title: function (id) {
+                            return id;
+                        },
+                        value: function (value, ratio, id) {
+                            return d3.format(",")(value.toFixed(1)) + "%";
+                        },
+                    },
+                },
+                bindto: "#futuro_boluarte",
+            });
+
+            const evaluacion_final_castillo = bb.generate({
+                data: {
+                    columns: [
+                        ["data1", 2],
+                        ["data2", 7],
+                        ["data3", 20],
+                        ["data4", 29],
+                        ["data5", 20],
+                        ["data6", 22],
+                    ],
+                    type: "donut", // for ESM specify as: donut()
+                    names: {
+                        data1: "NS/NP",
+                        data2: "Muy bueno",
+                        data3: "Bueno",
+                        data4: "Ni bueno ni malo",
+                        data5: "Malo",
+                        data6: "Muy malo",
+                    },
+                    colors: {
+                        data1: "#ffe48f",
+                        data2: "#adcc76",
+                        data3: "#cfe1ae",
+                        data4: "#4dc1d6",
+                        data5: "#ed919d",
+                        data6: "#de425b",
+                    },
+                    onclick: function (d, i) {
+                        // console.log("onclick", d, i);
+                    },
+                    onover: function (d, i) {
+                        // console.log("onover", d, i);
+                    },
+                    onout: function (d, i) {
+                        // console.log("onout", d, i);
+                    },
+                },
+                donut: {
+                    title: "Pedro Castillo",
+                },
+                tooltip: {
+                    format: {
+                        title: function (id) {
+                            return id;
+                        },
+                        value: function (value, ratio, id) {
+                            return d3.format(",")(value.toFixed(1)) + "%";
+                        },
+                    },
+                },
+                bindto: "#evaluacion_final_castillo",
+            });
+
+
+            const satisfaccion_democracia = bb.generate({
+                data: {
+                    columns: [
+                        ["data1", 4, 15, 47, 32, 2],
+                        ["data2", 3, 13, 50, 30, 4],
+                    ],
+                    type: "bar", // for ESM specify as: bar()
+                    names: {
+                        data1: "May-22",
+                        data2: "Dic-22",
+                    },
+                    colors: {
+                        data1: "#adcc76",
+                        data2: "#f7c856",
+                    },
+                },
+                axis: {
+                    x: {
+                        type: "category",
+                        categories: [
+                            "Muy satisfecho(a)",
+                            "Satisfecho(a)",
+                            "Insatisfecho(a)",
+                            "Muy insatisfecho(a)",
+                            "NS/NP",
+                        ],
+                    },
+                },
+                bar: 10,
+                tooltip: {
+                    format: {
+                        value: function (value, ratio, id) {
+                            return d3.format(",")(Math.round(value)) + "%";
+                        },
+                    },
+                },
+                bindto: "#satisfaccion_democracia",
+            });
+
+            const tolerancia_cierre_congreso = bb.generate({
+                data: {
+                    columns: [
+                        ["data1", 33, 62, 5],
+                        ["data2", 36, 60, 4]
+                    ],
+                    type: "bar", // for ESM specify as: bar()
+                    names: {
+                        data1: "May-22",
+                        data2: "Dic-22",
+                    },
+                    colors: {
+                        data1: "#adcc76",
+                        data2: "#f7c856",
+                    },
+                },
+                axis: {
+                    x: {
+                        type: "category",
+                        categories: [
+                            "Se justificaría",
+                            "No se justificaría",
+                            "NS/NP",
+                        ],
+                    },
+                },
+                bar: 10,
+                tooltip: {
+                    format: {
+                        value: function (value, ratio, id) {
+                            return d3.format(",")(Math.round(value)) + "%";
+                        },
+                    },
+                },
+                bindto: "#tolerancia_cierre_congreso",
+            });
+
+            const tolerancia_golpe_militar = bb.generate({
+                data: {
+                    columns: [
+                        ["data1", 2],
+                        ["data2", 38],
+                        ["data3", 60],
+                    ],
+                    type: "donut", // for ESM specify as: donut()
+                    names: {
+                        data1: "NS/NP",
+                        data2: "Sí se justifica",
+                        data3: "No se justifica",
+                    },
+                    colors: {
+                        data1: "#ffe48f",
+                        data2: "#adcc76",
+                        data3: "#de425b",
+                    },
+                    onclick: function (d, i) {
+                        // console.log("onclick", d, i);
+                    },
+                    onover: function (d, i) {
+                        // console.log("onover", d, i);
+                    },
+                    onout: function (d, i) {
+                        // console.log("onout", d, i);
+                    },
+                },
+                donut: {
+                    title: "",
+                },
+                tooltip: {
+                    format: {
+                        title: function (id) {
+                            return id;
+                        },
+                        value: function (value, ratio, id) {
+                            return d3.format(",")(value.toFixed(1)) + "%";
+                        },
+                    },
+                },
+                bindto: "#tolerancia_golpe_militar",
+            });
+
+            const intento_disolucion_congreso = bb.generate({
+                data: {
+                    columns: [
+                        ["data1", 3],
+                        ["data2", 44],
+                        ["data3", 53],
+                    ],
+                    type: "donut", // for ESM specify as: donut()
+                    names: {
+                        data1: "NS/NP",
+                        data2: "Aprueba",
+                        data3: "Desaprueba",
+                    },
+                    colors: {
+                        data1: "#ffe48f",
+                        data2: "#adcc76",
+                        data3: "#de425b",
+                    },
+                    onclick: function (d, i) {
+                        // console.log("onclick", d, i);
+                    },
+                    onover: function (d, i) {
+                        // console.log("onover", d, i);
+                    },
+                    onout: function (d, i) {
+                        // console.log("onout", d, i);
+                    },
+                },
+                donut: {
+                    title: "",
+                },
+                tooltip: {
+                    format: {
+                        title: function (id) {
+                            return id;
+                        },
+                        value: function (value, ratio, id) {
+                            return d3.format(",")(value.toFixed(1)) + "%";
+                        },
+                    },
+                },
+                bindto: "#intento_disolucion_congreso",
+            });
+
+            const intencion_protestas_adelanto = bb.generate({
+                data: {
+                    columns: [
+                        ["data1", 1],
+                        ["data2", 71],
+                        ["data3", 28],
+                    ],
+                    type: "donut", // for ESM specify as: donut()
+                    names: {
+                        data1: "NS/NP",
+                        data2: "Si participaría",
+                        data3: "No participaría",
+                    },
+                    colors: {
+                        data1: "#ffe48f",
+                        data2: "#adcc76",
+                        data3: "#de425b",
+                    },
+                    onclick: function (d, i) {
+                        // console.log("onclick", d, i);
+                    },
+                    onover: function (d, i) {
+                        // console.log("onover", d, i);
+                    },
+                    onout: function (d, i) {
+                        // console.log("onout", d, i);
+                    },
+                },
+                donut: {
+                    title: "Del adelanto de elecciones",
+                },
+                tooltip: {
+                    format: {
+                        title: function (id) {
+                            return id;
+                        },
+                        value: function (value, ratio, id) {
+                            return d3.format(",")(value.toFixed(1)) + "%";
+                        },
+                    },
+                },
+                bindto: "#intencion_protestas_adelanto",
+            });
+
+            const intencion_protestas_castillo = bb.generate({
+                data: {
+                    columns: [
+                        ["data1", 1],
+                        ["data2", 40],
+                        ["data3", 59],
+                    ],
+                    type: "donut", // for ESM specify as: donut()
+                    names: {
+                        data1: "NS/NP",
+                        data2: "Si participaría",
+                        data3: "No participaría",
+                    },
+                    colors: {
+                        data1: "#ffe48f",
+                        data2: "#adcc76",
+                        data3: "#de425b",
+                    },
+                    onclick: function (d, i) {
+                        // console.log("onclick", d, i);
+                    },
+                    onover: function (d, i) {
+                        // console.log("onover", d, i);
+                    },
+                    onout: function (d, i) {
+                        // console.log("onout", d, i);
+                    },
+                },
+                donut: {
+                    title: "De Pedro Castillo",
+                },
+                tooltip: {
+                    format: {
+                        title: function (id) {
+                            return id;
+                        },
+                        value: function (value, ratio, id) {
+                            return d3.format(",")(value.toFixed(1)) + "%";
+                        },
+                    },
+                },
+                bindto: "#intencion_protestas_castillo",
+            });
+
+            const intencion_protestas_congreso = bb.generate({
+                data: {
+                    columns: [
+                        ["data1", 1],
+                        ["data2", 15],
+                        ["data3", 84],
+                    ],
+                    type: "donut", // for ESM specify as: donut()
+                    names: {
+                        data1: "NS/NP",
+                        data2: "Si participaría",
+                        data3: "No participaría",
+                    },
+                    colors: {
+                        data1: "#ffe48f",
+                        data2: "#adcc76",
+                        data3: "#de425b",
+                    },
+                    onclick: function (d, i) {
+                        // console.log("onclick", d, i);
+                    },
+                    onover: function (d, i) {
+                        // console.log("onover", d, i);
+                    },
+                    onout: function (d, i) {
+                        // console.log("onout", d, i);
+                    },
+                },
+                donut: {
+                    title: "Del Congreso",
+                },
+                tooltip: {
+                    format: {
+                        title: function (id) {
+                            return id;
+                        },
+                        value: function (value, ratio, id) {
+                            return d3.format(",")(value.toFixed(1)) + "%";
+                        },
+                    },
+                },
+                bindto: "#intencion_protestas_congreso",
+            });
+
+            const intencion_protestas_boluarte = bb.generate({
+                data: {
+                    columns: [
+                        ["data1", 2],
+                        ["data2", 11],
+                        ["data3", 87],
+                    ],
+                    type: "donut", // for ESM specify as: donut()
+                    names: {
+                        data1: "NS/NP",
+                        data2: "Si participaría",
+                        data3: "No participaría",
+                    },
+                    colors: {
+                        data1: "#ffe48f",
+                        data2: "#adcc76",
+                        data3: "#de425b",
+                    },
+                    onclick: function (d, i) {
+                        // console.log("onclick", d, i);
+                    },
+                    onover: function (d, i) {
+                        // console.log("onover", d, i);
+                    },
+                    onout: function (d, i) {
+                        // console.log("onout", d, i);
+                    },
+                },
+                donut: {
+                    title: "De Dina Boluarte",
+                },
+                tooltip: {
+                    format: {
+                        title: function (id) {
+                            return id;
+                        },
+                        value: function (value, ratio, id) {
+                            return d3.format(",")(value.toFixed(1)) + "%";
+                        },
+                    },
+                },
+                bindto: "#intencion_protestas_boluarte",
+            });
+
+            
+            const aprobacion_boluarte= bb.generate({
+                data: {
+                    columns: [
+                        ["data1", 2],
+                        ["data2", 27],
+                        ["data3", 71],
+                    ],
+                    type: "donut", // for ESM specify as: donut()
+                    names: {
+                        data1: "NS/NP",
+                        data2: "De acuerdo",
+                        data3: "En desacuerdo",
+                    },
+                    colors: {
+                        data1: "#ffe48f",
+                        data2: "#adcc76",
+                        data3: "#de425b",
+                    },
+                    onclick: function (d, i) {
+                        // console.log("onclick", d, i);
+                    },
+                    onover: function (d, i) {
+                        // console.log("onover", d, i);
+                    },
+                    onout: function (d, i) {
+                        // console.log("onout", d, i);
+                    },
+                },
+                donut: {
+                    title: "Dina Boluarte",
+                },
+                tooltip: {
+                    format: {
+                        title: function (id) {
+                            return id;
+                        },
+                        value: function (value, ratio, id) {
+                            return d3.format(",")(value.toFixed(1)) + "%";
+                        },
+                    },
+                },
+                bindto: "#aprobacion_boluarte",
+            });
+
+            const aprobacion_nse_a = bb.generate({
+                data: {
+                    columns: [
+                        ["data1", 3],
+                        ["data2", 41],
+                        ["data3", 56],
+                    ],
+                    type: "donut", // for ESM specify as: donut()
+                    names: {
+                        data1: "NS/NP",
+                        data2: "De acuerdo",
+                        data3: "En desacuerdo",
+                    },
+                    colors: {
+                        data1: "#ffe48f",
+                        data2: "#adcc76",
+                        data3: "#de425b",
+                    },
+                    onclick: function (d, i) {
+                        // console.log("onclick", d, i);
+                    },
+                    onover: function (d, i) {
+                        // console.log("onover", d, i);
+                    },
+                    onout: function (d, i) {
+                        // console.log("onout", d, i);
+                    },
+                },
+                donut: {
+                    title: "NSE A/B",
+                },
+                tooltip: {
+                    format: {
+                        title: function (id) {
+                            return id;
+                        },
+                        value: function (value, ratio, id) {
+                            return d3.format(",")(value.toFixed(1)) + "%";
+                        },
+                    },
+                },
+                bindto: "#aprobacion_nse_a",
+            });
+
+            const aprobacion_nse_c = bb.generate({
+                data: {
+                    columns: [
+                        ["data1", 3],
+                        ["data2", 25],
+                        ["data3", 72],
+                    ],
+                    type: "donut", // for ESM specify as: donut()
+                    names: {
+                        data1: "NS/NP",
+                        data2: "De acuerdo",
+                        data3: "En desacuerdo",
+                    },
+                    colors: {
+                        data1: "#ffe48f",
+                        data2: "#adcc76",
+                        data3: "#de425b",
+                    },
+                    onclick: function (d, i) {
+                        // console.log("onclick", d, i);
+                    },
+                    onover: function (d, i) {
+                        // console.log("onover", d, i);
+                    },
+                    onout: function (d, i) {
+                        // console.log("onout", d, i);
+                    },
+                },
+                donut: {
+                    title: "NSE C",
+                },
+                tooltip: {
+                    format: {
+                        title: function (id) {
+                            return id;
+                        },
+                        value: function (value, ratio, id) {
+                            return d3.format(",")(value.toFixed(1)) + "%";
+                        },
+                    },
+                },
+                bindto: "#aprobacion_nse_c",
+            });
+
+            const aprobacion_nse_d = bb.generate({
+                data: {
+                    columns: [
+                        ["data1", 3],
+                        ["data2", 22],
+                        ["data3", 75],
+                    ],
+                    type: "donut", // for ESM specify as: donut()
+                    names: {
+                        data1: "NS/NP",
+                        data2: "De acuerdo",
+                        data3: "En desacuerdo",
+                    },
+                    colors: {
+                        data1: "#ffe48f",
+                        data2: "#adcc76",
+                        data3: "#de425b",
+                    },
+                    onclick: function (d, i) {
+                        // console.log("onclick", d, i);
+                    },
+                    onover: function (d, i) {
+                        // console.log("onover", d, i);
+                    },
+                    onout: function (d, i) {
+                        // console.log("onout", d, i);
+                    },
+                },
+                donut: {
+                    title: "NSE D/E",
+                },
+                tooltip: {
+                    format: {
+                        title: function (id) {
+                            return id;
+                        },
+                        value: function (value, ratio, id) {
+                            return d3.format(",")(value.toFixed(1)) + "%";
+                        },
+                    },
+                },
+                bindto: "#aprobacion_nse_d",
+            });
+
+            const aprobacion_ambito_lima = bb.generate({
+                data: {
+                    columns: [
+                        ["data1", 2],
+                        ["data2", 35],
+                        ["data3", 63],
+                    ],
+                    type: "donut", // for ESM specify as: donut()
+                    names: {
+                        data1: "NS/NP",
+                        data2: "De acuerdo",
+                        data3: "En desacuerdo",
+                    },
+                    colors: {
+                        data1: "#ffe48f",
+                        data2: "#adcc76",
+                        data3: "#de425b",
+                    },
+                    onclick: function (d, i) {
+                        // console.log("onclick", d, i);
+                    },
+                    onover: function (d, i) {
+                        // console.log("onover", d, i);
+                    },
+                    onout: function (d, i) {
+                        // console.log("onout", d, i);
+                    },
+                },
+                donut: {
+                    title: "Lima Metropolitana",
+                },
+                tooltip: {
+                    format: {
+                        title: function (id) {
+                            return id;
+                        },
+                        value: function (value, ratio, id) {
+                            return d3.format(",")(value.toFixed(1)) + "%";
+                        },
+                    },
+                },
+                bindto: "#aprobacion_ambito_lima",
+            });
+
+            const aprobacion_ambito_urbano = bb.generate({
+                data: {
+                    columns: [
+                        ["data1", 2],
+                        ["data2", 24],
+                        ["data3", 74],
+                    ],
+                    type: "donut", // for ESM specify as: donut()
+                    names: {
+                        data1: "NS/NP",
+                        data2: "De acuerdo",
+                        data3: "En desacuerdo",
+                    },
+                    colors: {
+                        data1: "#ffe48f",
+                        data2: "#adcc76",
+                        data3: "#de425b",
+                    },
+                    onclick: function (d, i) {
+                        // console.log("onclick", d, i);
+                    },
+                    onover: function (d, i) {
+                        // console.log("onover", d, i);
+                    },
+                    onout: function (d, i) {
+                        // console.log("onout", d, i);
+                    },
+                },
+                donut: {
+                    title: "Perú urbano",
+                },
+                tooltip: {
+                    format: {
+                        title: function (id) {
+                            return id;
+                        },
+                        value: function (value, ratio, id) {
+                            return d3.format(",")(value.toFixed(1)) + "%";
+                        },
+                    },
+                },
+                bindto: "#aprobacion_ambito_urbano",
+            });
+
+            const aprobacion_ambito_rural = bb.generate({
+                data: {
+                    columns: [
+                        ["data1", 3],
+                        ["data2", 20],
+                        ["data3", 77],
+                    ],
+                    type: "donut", // for ESM specify as: donut()
+                    names: {
+                        data1: "NS/NP",
+                        data2: "De acuerdo",
+                        data3: "En desacuerdo",
+                    },
+                    colors: {
+                        data1: "#ffe48f",
+                        data2: "#adcc76",
+                        data3: "#de425b",
+                    },
+                    onclick: function (d, i) {
+                        // console.log("onclick", d, i);
+                    },
+                    onover: function (d, i) {
+                        // console.log("onover", d, i);
+                    },
+                    onout: function (d, i) {
+                        // console.log("onout", d, i);
+                    },
+                },
+                donut: {
+                    title: "Perú rural",
+                },
+                tooltip: {
+                    format: {
+                        title: function (id) {
+                            return id;
+                        },
+                        value: function (value, ratio, id) {
+                            return d3.format(",")(value.toFixed(1)) + "%";
+                        },
+                    },
+                },
+                bindto: "#aprobacion_ambito_rural",
+            });
+
+            // const aprobacion_macrozona_lima = bb.generate({
+            //     data: {
+            //         columns: [
+            //             ["data1", 2],
+            //             ["data2", 35],
+            //             ["data3", 63],
+            //         ],
+            //         type: "donut", // for ESM specify as: donut()
+            //         names: {
+            //             data1: "NS/NP",
+            //             data2: "De acuerdo",
+            //             data3: "En desacuerdo",
+            //         },
+            //         colors: {
+            //             data1: "#ffe48f",
+            //             data2: "#adcc76",
+            //             data3: "#de425b",
+            //         },
+            //         onclick: function (d, i) {
+            //             // console.log("onclick", d, i);
+            //         },
+            //         onover: function (d, i) {
+            //             // console.log("onover", d, i);
+            //         },
+            //         onout: function (d, i) {
+            //             // console.log("onout", d, i);
+            //         },
+            //     },
+            //     donut: {
+            //         title: "Lima Metropolitana",
+            //     },
+            //     tooltip: {
+            //         format: {
+            //             title: function (id) {
+            //                 return id;
+            //             },
+            //             value: function (value, ratio, id) {
+            //                 return d3.format(",")(value.toFixed(1)) + "%";
+            //             },
+            //         },
+            //     },
+            //     bindto: "#aprobacion_macrozona_lima",
+            // });
+
+            // const aprobacion_macrozona_norte = bb.generate({
+            //     data: {
+            //         columns: [
+            //             ["data1", 3],
+            //             ["data2", 26],
+            //             ["data3", 71],
+            //         ],
+            //         type: "donut", // for ESM specify as: donut()
+            //         names: {
+            //             data1: "NS/NP",
+            //             data2: "De acuerdo",
+            //             data3: "En desacuerdo",
+            //         },
+            //         colors: {
+            //             data1: "#ffe48f",
+            //             data2: "#adcc76",
+            //             data3: "#de425b",
+            //         },
+            //         onclick: function (d, i) {
+            //             // console.log("onclick", d, i);
+            //         },
+            //         onover: function (d, i) {
+            //             // console.log("onover", d, i);
+            //         },
+            //         onout: function (d, i) {
+            //             // console.log("onout", d, i);
+            //         },
+            //     },
+            //     donut: {
+            //         title: "Norte",
+            //     },
+            //     tooltip: {
+            //         format: {
+            //             title: function (id) {
+            //                 return id;
+            //             },
+            //             value: function (value, ratio, id) {
+            //                 return d3.format(",")(value.toFixed(1)) + "%";
+            //             },
+            //         },
+            //     },
+            //     bindto: "#aprobacion_macrozona_norte",
+            // });
+
+            // const aprobacion_macrozona_centro = bb.generate({
+            //     data: {
+            //         columns: [
+            //             ["data1", 1],
+            //             ["data2", 20],
+            //             ["data3", 79],
+            //         ],
+            //         type: "donut", // for ESM specify as: donut()
+            //         names: {
+            //             data1: "NS/NP",
+            //             data2: "De acuerdo",
+            //             data3: "En desacuerdo",
+            //         },
+            //         colors: {
+            //             data1: "#ffe48f",
+            //             data2: "#adcc76",
+            //             data3: "#de425b",
+            //         },
+            //         onclick: function (d, i) {
+            //             // console.log("onclick", d, i);
+            //         },
+            //         onover: function (d, i) {
+            //             // console.log("onover", d, i);
+            //         },
+            //         onout: function (d, i) {
+            //             // console.log("onout", d, i);
+            //         },
+            //     },
+            //     donut: {
+            //         title: "Centro",
+            //     },
+            //     tooltip: {
+            //         format: {
+            //             title: function (id) {
+            //                 return id;
+            //             },
+            //             value: function (value, ratio, id) {
+            //                 return d3.format(",")(value.toFixed(1)) + "%";
+            //             },
+            //         },
+            //     },
+            //     bindto: "#aprobacion_macrozona_centro",
+            // });
+
+            // const aprobacion_macrozona_sur = bb.generate({
+            //     data: {
+            //         columns: [
+            //             ["data1", 3],
+            //             ["data2", 13],
+            //             ["data3", 84],
+            //         ],
+            //         type: "donut", // for ESM specify as: donut()
+            //         names: {
+            //             data1: "NS/NP",
+            //             data2: "De acuerdo",
+            //             data3: "En desacuerdo",
+            //         },
+            //         colors: {
+            //             data1: "#ffe48f",
+            //             data2: "#adcc76",
+            //             data3: "#de425b",
+            //         },
+            //         onclick: function (d, i) {
+            //             // console.log("onclick", d, i);
+            //         },
+            //         onover: function (d, i) {
+            //             // console.log("onover", d, i);
+            //         },
+            //         onout: function (d, i) {
+            //             // console.log("onout", d, i);
+            //         },
+            //     },
+            //     donut: {
+            //         title: "Sur",
+            //     },
+            //     tooltip: {
+            //         format: {
+            //             title: function (id) {
+            //                 return id;
+            //             },
+            //             value: function (value, ratio, id) {
+            //                 return d3.format(",")(value.toFixed(1)) + "%";
+            //             },
+            //         },
+            //     },
+            //     bindto: "#aprobacion_macrozona_sur",
+            // });
+
+            // const aprobacion_macrozona_oriente = bb.generate({
+            //     data: {
+            //         columns: [
+            //             ["data1", 2],
+            //             ["data2", 33],
+            //             ["data3", 65],
+            //         ],
+            //         type: "donut", // for ESM specify as: donut()
+            //         names: {
+            //             data1: "NS/NP",
+            //             data2: "De acuerdo",
+            //             data3: "En desacuerdo",
+            //         },
+            //         colors: {
+            //             data1: "#ffe48f",
+            //             data2: "#adcc76",
+            //             data3: "#de425b",
+            //         },
+            //         onclick: function (d, i) {
+            //             // console.log("onclick", d, i);
+            //         },
+            //         onover: function (d, i) {
+            //             // console.log("onover", d, i);
+            //         },
+            //         onout: function (d, i) {
+            //             // console.log("onout", d, i);
+            //         },
+            //     },
+            //     donut: {
+            //         title: "Oriente",
+            //     },
+            //     tooltip: {
+            //         format: {
+            //             title: function (id) {
+            //                 return id;
+            //             },
+            //             value: function (value, ratio, id) {
+            //                 return d3.format(",")(value.toFixed(1)) + "%";
+            //             },
+            //         },
+            //     },
+            //     bindto: "#aprobacion_macrozona_oriente",
+            // });
+
+            const aprobacion_nse_a_disolucion = bb.generate({
+                data: {
+                    columns: [
+                        ["data1", 2],
+                        ["data2", 29],
+                        ["data3", 69],
+                    ],
+                    type: "donut", // for ESM specify as: donut()
+                    names: {
+                        data1: "NS/NP",
+                        data2: "Aprueba",
+                        data3: "Desaprueba",
+                    },
+                    colors: {
+                        data1: "#ffe48f",
+                        data2: "#adcc76",
+                        data3: "#de425b",
+                    },
+                    onclick: function (d, i) {
+                        // console.log("onclick", d, i);
+                    },
+                    onover: function (d, i) {
+                        // console.log("onover", d, i);
+                    },
+                    onout: function (d, i) {
+                        // console.log("onout", d, i);
+                    },
+                },
+                donut: {
+                    title: "NSE A/B",
+                },
+                tooltip: {
+                    format: {
+                        title: function (id) {
+                            return id;
+                        },
+                        value: function (value, ratio, id) {
+                            return d3.format(",")(value.toFixed(1)) + "%";
+                        },
+                    },
+                },
+                bindto: "#aprobacion_nse_a_disolucion",
+            });
+
+            const aprobacion_nse_c_disolucion = bb.generate({
+                data: {
+                    columns: [
+                        ["data1", 2],
+                        ["data2", 41],
+                        ["data3", 57],
+                    ],
+                    type: "donut", // for ESM specify as: donut()
+                    names: {
+                        data1: "NS/NP",
+                        data2: "Aprueba",
+                        data3: "Desaprueba",
+                    },
+                    colors: {
+                        data1: "#ffe48f",
+                        data2: "#adcc76",
+                        data3: "#de425b",
+                    },
+                    onclick: function (d, i) {
+                        // console.log("onclick", d, i);
+                    },
+                    onover: function (d, i) {
+                        // console.log("onover", d, i);
+                    },
+                    onout: function (d, i) {
+                        // console.log("onout", d, i);
+                    },
+                },
+                donut: {
+                    title: "NSE C",
+                },
+                tooltip: {
+                    format: {
+                        title: function (id) {
+                            return id;
+                        },
+                        value: function (value, ratio, id) {
+                            return d3.format(",")(value.toFixed(1)) + "%";
+                        },
+                    },
+                },
+                bindto: "#aprobacion_nse_c_disolucion",
+            });
+
+            const aprobacion_nse_d_disolucion = bb.generate({
+                data: {
+                    columns: [
+                        ["data1", 4],
+                        ["data2", 52],
+                        ["data3", 44],
+                    ],
+                    type: "donut", // for ESM specify as: donut()
+                    names: {
+                        data1: "NS/NP",
+                        data2: "Aprueba",
+                        data3: "Desaprueba",
+                    },
+                    colors: {
+                        data1: "#ffe48f",
+                        data2: "#adcc76",
+                        data3: "#de425b",
+                    },
+                    onclick: function (d, i) {
+                        // console.log("onclick", d, i);
+                    },
+                    onover: function (d, i) {
+                        // console.log("onover", d, i);
+                    },
+                    onout: function (d, i) {
+                        // console.log("onout", d, i);
+                    },
+                },
+                donut: {
+                    title: "NSE D/E",
+                },
+                tooltip: {
+                    format: {
+                        title: function (id) {
+                            return id;
+                        },
+                        value: function (value, ratio, id) {
+                            return d3.format(",")(value.toFixed(1)) + "%";
+                        },
+                    },
+                },
+                bindto: "#aprobacion_nse_d_disolucion",
+            });
+
+            const aprobacion_ambito_lima_disolucion = bb.generate({
+                data: {
+                    columns: [
+                        ["data1", 3],
+                        ["data2", 34],
+                        ["data3", 63],
+                    ],
+                    type: "donut", // for ESM specify as: donut()
+                    names: {
+                        data1: "NS/NP",
+                        data2: "Aprueba",
+                        data3: "Desaprueba",
+                    },
+                    colors: {
+                        data1: "#ffe48f",
+                        data2: "#adcc76",
+                        data3: "#de425b",
+                    },
+                    onclick: function (d, i) {
+                        // console.log("onclick", d, i);
+                    },
+                    onover: function (d, i) {
+                        // console.log("onover", d, i);
+                    },
+                    onout: function (d, i) {
+                        // console.log("onout", d, i);
+                    },
+                },
+                donut: {
+                    title: "Lima Metropolitana",
+                },
+                tooltip: {
+                    format: {
+                        title: function (id) {
+                            return id;
+                        },
+                        value: function (value, ratio, id) {
+                            return d3.format(",")(value.toFixed(1)) + "%";
+                        },
+                    },
+                },
+                bindto: "#aprobacion_ambito_lima_disolucion",
+            });
+
+            const aprobacion_ambito_urbano_disolucion = bb.generate({
+                data: {
+                    columns: [
+                        ["data1", 2],
+                        ["data2", 48],
+                        ["data3", 50],
+                    ],
+                    type: "donut", // for ESM specify as: donut()
+                    names: {
+                        data1: "NS/NP",
+                        data2: "Aprueba",
+                        data3: "Desaprueba",
+                    },
+                    colors: {
+                        data1: "#ffe48f",
+                        data2: "#adcc76",
+                        data3: "#de425b",
+                    },
+                    onclick: function (d, i) {
+                        // console.log("onclick", d, i);
+                    },
+                    onover: function (d, i) {
+                        // console.log("onover", d, i);
+                    },
+                    onout: function (d, i) {
+                        // console.log("onout", d, i);
+                    },
+                },
+                donut: {
+                    title: "Perú urbano",
+                },
+                tooltip: {
+                    format: {
+                        title: function (id) {
+                            return id;
+                        },
+                        value: function (value, ratio, id) {
+                            return d3.format(",")(value.toFixed(1)) + "%";
+                        },
+                    },
+                },
+                bindto: "#aprobacion_ambito_urbano_disolucion",
+            });
+
+            const aprobacion_ambito_rural_disolucion = bb.generate({
+                data: {
+                    columns: [
+                        ["data1", 4],
+                        ["data2", 52],
+                        ["data3", 44],
+                    ],
+                    type: "donut", // for ESM specify as: donut()
+                    names: {
+                        data1: "NS/NP",
+                        data2: "Aprueba",
+                        data3: "Desaprueba",
+                    },
+                    colors: {
+                        data1: "#ffe48f",
+                        data2: "#adcc76",
+                        data3: "#de425b",
+                    },
+                    onclick: function (d, i) {
+                        // console.log("onclick", d, i);
+                    },
+                    onover: function (d, i) {
+                        // console.log("onover", d, i);
+                    },
+                    onout: function (d, i) {
+                        // console.log("onout", d, i);
+                    },
+                },
+                donut: {
+                    title: "Perú rural",
+                },
+                tooltip: {
+                    format: {
+                        title: function (id) {
+                            return id;
+                        },
+                        value: function (value, ratio, id) {
+                            return d3.format(",")(value.toFixed(1)) + "%";
+                        },
+                    },
+                },
+                bindto: "#aprobacion_ambito_rural_disolucion",
+            });
+
+            // const aprobacion_macrozona_lima_disolucion = bb.generate({
+            //     data: {
+            //         columns: [
+            //             ["data1", 3],
+            //             ["data2", 34],
+            //             ["data3", 63],
+            //         ],
+            //         type: "donut", // for ESM specify as: donut()
+            //         names: {
+            //             data1: "NS/NP",
+            //             data2: "Aprueba",
+            //             data3: "Desaprueba",
+            //         },
+            //         colors: {
+            //             data1: "#ffe48f",
+            //             data2: "#adcc76",
+            //             data3: "#de425b",
+            //         },
+            //         onclick: function (d, i) {
+            //             // console.log("onclick", d, i);
+            //         },
+            //         onover: function (d, i) {
+            //             // console.log("onover", d, i);
+            //         },
+            //         onout: function (d, i) {
+            //             // console.log("onout", d, i);
+            //         },
+            //     },
+            //     donut: {
+            //         title: "Lima Metropolitana",
+            //     },
+            //     tooltip: {
+            //         format: {
+            //             title: function (id) {
+            //                 return id;
+            //             },
+            //             value: function (value, ratio, id) {
+            //                 return d3.format(",")(value.toFixed(1)) + "%";
+            //             },
+            //         },
+            //     },
+            //     bindto: "#aprobacion_macrozona_lima_disolucion",
+            // });
+
+            // const aprobacion_macrozona_norte_disolucion = bb.generate({
+            //     data: {
+            //         columns: [
+            //             ["data1", 3],
+            //             ["data2", 42],
+            //             ["data3", 55],
+            //         ],
+            //         type: "donut", // for ESM specify as: donut()
+            //         names: {
+            //             data1: "NS/NP",
+            //             data2: "Aprueba",
+            //             data3: "Desaprueba",
+            //         },
+            //         colors: {
+            //             data1: "#ffe48f",
+            //             data2: "#adcc76",
+            //             data3: "#de425b",
+            //         },
+            //         onclick: function (d, i) {
+            //             // console.log("onclick", d, i);
+            //         },
+            //         onover: function (d, i) {
+            //             // console.log("onover", d, i);
+            //         },
+            //         onout: function (d, i) {
+            //             // console.log("onout", d, i);
+            //         },
+            //     },
+            //     donut: {
+            //         title: "Norte",
+            //     },
+            //     tooltip: {
+            //         format: {
+            //             title: function (id) {
+            //                 return id;
+            //             },
+            //             value: function (value, ratio, id) {
+            //                 return d3.format(",")(value.toFixed(1)) + "%";
+            //             },
+            //         },
+            //     },
+            //     bindto: "#aprobacion_macrozona_norte_disolucion",
+            // });
+
+            // const aprobacion_macrozona_centro_disolucion = bb.generate({
+            //     data: {
+            //         columns: [
+            //             ["data1", 2],
+            //             ["data2", 54],
+            //             ["data3", 44],
+            //         ],
+            //         type: "donut", // for ESM specify as: donut()
+            //         names: {
+            //             data1: "NS/NP",
+            //             data2: "Aprueba",
+            //             data3: "Desaprueba",
+            //         },
+            //         colors: {
+            //             data1: "#ffe48f",
+            //             data2: "#adcc76",
+            //             data3: "#de425b",
+            //         },
+            //         onclick: function (d, i) {
+            //             // console.log("onclick", d, i);
+            //         },
+            //         onover: function (d, i) {
+            //             // console.log("onover", d, i);
+            //         },
+            //         onout: function (d, i) {
+            //             // console.log("onout", d, i);
+            //         },
+            //     },
+            //     donut: {
+            //         title: "Centro",
+            //     },
+            //     tooltip: {
+            //         format: {
+            //             title: function (id) {
+            //                 return id;
+            //             },
+            //             value: function (value, ratio, id) {
+            //                 return d3.format(",")(value.toFixed(1)) + "%";
+            //             },
+            //         },
+            //     },
+            //     bindto: "#aprobacion_macrozona_centro_disolucion",
+            // });
+
+            // const aprobacion_macrozona_sur_disolucion = bb.generate({
+            //     data: {
+            //         columns: [
+            //             ["data1", 4],
+            //             ["data2", 58],
+            //             ["data3", 38],
+            //         ],
+            //         type: "donut", // for ESM specify as: donut()
+            //         names: {
+            //             data1: "NS/NP",
+            //             data2: "Aprueba",
+            //             data3: "Desaprueba",
+            //         },
+            //         colors: {
+            //             data1: "#ffe48f",
+            //             data2: "#adcc76",
+            //             data3: "#de425b",
+            //         },
+            //         onclick: function (d, i) {
+            //             // console.log("onclick", d, i);
+            //         },
+            //         onover: function (d, i) {
+            //             // console.log("onover", d, i);
+            //         },
+            //         onout: function (d, i) {
+            //             // console.log("onout", d, i);
+            //         },
+            //     },
+            //     donut: {
+            //         title: "Sur",
+            //     },
+            //     tooltip: {
+            //         format: {
+            //             title: function (id) {
+            //                 return id;
+            //             },
+            //             value: function (value, ratio, id) {
+            //                 return d3.format(",")(value.toFixed(1)) + "%";
+            //             },
+            //         },
+            //     },
+            //     bindto: "#aprobacion_macrozona_sur_disolucion",
+            // });
+
+            // const aprobacion_macrozona_oriente_disolucion = bb.generate({
+            //     data: {
+            //         columns: [
+            //             ["data1", 1],
+            //             ["data2", 45],
+            //             ["data3", 54],
+            //         ],
+            //         type: "donut", // for ESM specify as: donut()
+            //         names: {
+            //             data1: "NS/NP",
+            //             data2: "Aprueba",
+            //             data3: "Desaprueba",
+            //         },
+            //         colors: {
+            //             data1: "#ffe48f",
+            //             data2: "#adcc76",
+            //             data3: "#de425b",
+            //         },
+            //         onclick: function (d, i) {
+            //             // console.log("onclick", d, i);
+            //         },
+            //         onover: function (d, i) {
+            //             // console.log("onover", d, i);
+            //         },
+            //         onout: function (d, i) {
+            //             // console.log("onout", d, i);
+            //         },
+            //     },
+            //     donut: {
+            //         title: "Oriente",
+            //     },
+            //     tooltip: {
+            //         format: {
+            //             title: function (id) {
+            //                 return id;
+            //             },
+            //             value: function (value, ratio, id) {
+            //                 return d3.format(",")(value.toFixed(1)) + "%";
+            //             },
+            //         },
+            //     },
+            //     bindto: "#aprobacion_macrozona_oriente_disolucion",
+            // });
+
+            // const nuevo_presidente_congreso = bb.generate({
+            //     data: {
+            //         columns: [
+            //             ["data1", 62, 15, 23],
+            //             ["data2", 68, 14, 18],
+            //         ],
+            //         type: "bar", // for ESM specify as: bar()
+            //         names: {
+            //             data1: "Oct II-22",
+            //             data2: "Nov-22",
+            //         },
+            //         colors: {
+            //             data1: "#adcc76",
+            //             data2: "#f7c856",
+            //         },
+            //     },
+            //     axis: {
+            //         x: {
+            //             type: "category",
+            //             categories: [
+            //                 "Desaprueba",
+            //                 "Aprueba",
+            //                 "NS/NP",
+            //             ],
+            //         },
+            //     },
+            //     bar: 10,
+            //     tooltip: {
+            //         format: {
+            //             value: function (value, ratio, id) {
+            //                 return d3.format(",")(Math.round(value)) + "%";
+            //             },
+            //         },
+            //     },
+            //     bindto: "#nuevo_presidente_congreso",
+            // });
+        });
+
+        function centerDiv(that_element) {
+            var element = document.querySelector(that_element);
+            var position = element.getBoundingClientRect();
+
+            // checking whether fully visible
+            if (position.top >= 0 && position.bottom <= window.innerHeight) {
+                //  set your counter to 1
+
+                // (function(valor1, valor2) {
+                console.log("entro");
+                if (firstTime == 0) {
+                    var format = d3.format(",d");
+
+                    var valor1 = 43;
+                    var valor2 = 31;
+
+                    let number_1 = d3.select(".number_1");
+
+                    let number_2 = d3.select(".number_2");
+
+                    number_1
+                        .transition()
+                        .duration(8500)
+                        .on("start", function repeat() {
+                            d3.active(this)
+                                .tween("text", function () {
+                                    var that = d3.select(this),
+                                        i = d3.interpolateNumber(
+                                            that.text().replace(/,/g, ""),
+                                            valor1
+                                        );
+
+                                    return function (t) {
+                                        that.text(format(i(t)));
+                                        // that2.text(format(i(t)));
+                                    };
+                                })
+                                .transition()
+                                // .delay(500)
+                                .on("start", repeat);
+                        });
+
+                    number_2
+                        .transition()
+                        .duration(8000)
+                        .on("start", function repeat() {
+                            d3.active(this)
+                                .tween("text", function () {
+                                    var that = d3.select(this),
+                                        i = d3.interpolateNumber(
+                                            that.text().replace(/,/g, ""),
+                                            valor2
+                                        );
+
+                                    return function (t) {
+                                        that.text(format(i(t)));
+                                        // that2.text(format(i(t)));
+                                    };
+                                })
+                                .transition()
+                                // .delay(500)
+                                .on("start", repeat);
+                        });
+                }
+                firstTime = 1;
+                // })(43, 31);
+            }
+
+            // firstTime=1
+            // checking for partial visibility
+            // if (position.top < window.innerHeight && position.bottom >= 0) {
+            // }
+        }
+    </script>
+    <!-- <script src="script.js" defer></script> -->
+</body>
+
+</html>
